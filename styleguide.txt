@@ -1,0 +1,7 @@
+1. Main Color 
+
+#f2dcb3
+
+2. Font 
+- Noto Sans KR
+- Montserrat
