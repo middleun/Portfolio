@@ -1,6 +1,10 @@
-*{margin:0; padding:0; }
+*{margin:0; padding:0; box-sizing: border-box; }
+*::before,
+*::after{box-sizing: border-box;}
 body{box-sizing:border-box; text-decoration: none; font-family: 'Noto Sans KR';}
 ul, ol{list-style: none;}
 
 
-.wrap{width:100%; height:100%; }
+.wrap{width:100%; height:100vh; background:#e9d5c4;}
+.center{width:100%; height:auto; max-width:1024px; margin:auto;}
+.clear:after{content: ''; display:block;box-sizing: border-box;}
