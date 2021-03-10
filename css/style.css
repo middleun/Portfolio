@@ -1,10 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* Header Style */
-#header{width:100%; position:fixed;  height:80px; display:flex; justify-content: center;align-items: center;}
-#header .center{height:100%;display: flex;justify-content: space-between; align-items: center; position:relative;}
+/********************
+ Hidden Navigation style
+ *********************/
+#hiddenNav{width:100%; height:100vh; background:#ba621c;top:0; font-size:30px; 
+_position:fixed; }
+#hiddenNav .hiddenWrap{float:right; height:auto; padding:0 10px;}
+#hiddenNav .hiddenWrap ul{margin-top:50px;  display:flex; flex-direction: column; padding:10px;}
+#hiddenNav .hiddenWrap ul li{margin:10px; text-align: right;}
+#hiddenNav .hiddenWrap ul li a{text-transform: uppercase; color:#fff;}
 
-#header .topLogo{width:20%; height:100%;background: #ba621c;}
-#header .topNav{width:50px; height:auto; display:flex; flex-wrap: wrap;justify-content: center; align-items: center;
-padding:10px;}
-#header .topNav span{display:block; width:100%; height:2px; background:#253812;}
+
+#hiddenNav .hiddenWrap .hiddenTopBar{width:50px; height:auto; padding:10px;float:right; }
+#hiddenNav .hiddenWrap .hiddenTopBar span{display:block; width:100%; height:3px; background: #fff;
+border-radius: 10px; margin:5px auto; }
+#hiddenNav .hiddenWrap .hiddenTopBar span:nth-child(1){transform:translateY(200%) rotate(45deg);} 
+#hiddenNav .hiddenWrap .hiddenTopBar span:nth-child(2){transform:translateY(-50%) rotate(-45deg);} 
+
+
+/******************
+ Header Style 
+ *******************/
+#header{width:100%; position:fixed;  height:80px; display: flex;justify-content: space-between; align-items: center; position:relative;
+padding:0 10px;}
+#header .center{height:100%;}
+
+#header .topLogo{width:20%; height:100%;_background: #ba621c; display: flex; justify-content: center; align-items: center;}
+#header .topLogo h1{width:100%; text-align: center; font-family: 'Montserrat'; text-transform: uppercase; }
+
+#header .topBar{width:50px; height:auto; display:flex; flex-wrap: wrap;justify-content: center; align-items: center;
+padding:10px;z-index:10; }
+#header .topBar span{display:block; width:100%; height:3px; background: #253812; _border:1px solid #253812; _border-radius: 5px;
+margin:5px auto; position:relative;}
+
+
+/*****************
+ About Section Style 
+ ******************/
+ #aboutSec{width:100%; height:500px;border:1px solid #253812;}
