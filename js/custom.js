@@ -1,5 +1,8 @@
-// page tilt effect
+
+
 $(function(){
+
+    // page tilt effect
     var tiltNav={
         $contents:$('.contentsWrap'),
         $contentsFront:$('.contentsFront'),
