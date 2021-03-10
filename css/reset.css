@@ -11,7 +11,3 @@ a{text-decoration: none; color:#000;}
 .center{width:100%; height:auto; max-width:1024px; margin:auto; _position:relative;}
 
 
-/* common style */
-.contentsWrap{width:100%; height:auto; background:#fff; box-shadow: 4px 4px rgba(0, 0, 0, 0.548);
-position:relative; z-index:2; transition:all 0.4s linear;}
-.contentsWrap.tilt{overflow: hidden;}
