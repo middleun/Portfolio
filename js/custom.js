@@ -50,6 +50,8 @@ $(function(){
         bindEvents:function(){
             this.$topBar.on('click',this.open.bind(this));
             $('.hiddenTopBar').on('click', this.close.bind(this));
+            $('.home').on('click', this.close.bind(this));
+
             this.$contents.on('scroll',this.updateTransformOrigin.bind(this));
         },
         init:function(){

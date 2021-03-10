@@ -1,13 +1,13 @@
 *{margin:0; padding:0; box-sizing: border-box; }
-*::before,
-*::after{box-sizing: border-box;}
-body{box-sizing:border-box; text-decoration: none; font-family: 'Noto Sans KR';}
+
+body{box-sizing:border-box; text-decoration: none; font-family: 'Noto Sans KR'; background:#e9d5c4 fixed;}
 ul, ol{list-style: none;}
 a{text-decoration: none; color:#000;}
 .clear:after{content: ''; display:block;box-sizing: border-box;}
 
 
-.wrap{width:100%; height:100vh; background:#e9d5c4; overflow-y: scroll;}
+.wrap{width:100%; height:100vh;   }
 .center{width:100%; height:auto; max-width:1024px; margin:auto; _position:relative; transition:all 1.2s ;}
+
 
 
