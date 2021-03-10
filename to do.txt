@@ -14,8 +14,22 @@ What i have to do //
 
 
 to do from now
-1. about section 텍스트 효과
-2. page tilt 반응형
+
+1. about section 
+    - 텍스트 효과
+    - 
+
+2. header
+    - 스크롤이벤트 적용 
+    - fixed header
+
+3. page tilt
+   - 고정
+   - 스크롤이벤트 적용  
+   - menu 클릭시 tilt close -> menu위치로
+
+4. Hidden navigation
+    -                                                                                                    
 
 
 
