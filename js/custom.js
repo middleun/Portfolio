@@ -12,13 +12,13 @@ $(function(){
         open:function(){
             this.$contents.addClass('tilt');
             this.$topBar.off('click');
-            $('.sectionWrap, .topBar').on('click',this.close.bind(this));
+            $('.topBar').on('click',this.close.bind(this));
             this.topBarFix(true);
             console.log('opening');
         },
         close:function(){
             this.$contents.removeClass('tilt');
-            $('.sectionWrap, .topBar',).off('click');
+            $('.topBar',).off('click');
             this.$topBar.on('click', this.open.bind(this));
             this.topBarFix(false);
             console.log('closing');

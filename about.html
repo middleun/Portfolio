@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+   <title>LEEJUNGEUN</title>
+
+
+   <!-- reset css link -->
+   <link rel="stylesheet" href="../portfolio/css/reset.css">
+
+   <!-- main style css link -->
+   <link rel="stylesheet" href="../portfolio/css/style.css">
+
+   <!-- media css link  -->
+   <link rel="stylesheet" href="../portfolio/css/media.css">
+
+
+   <!-- Awesome Font cdn link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+   <div class="wrap">
+      <div class="center">
+
+         <div id="hiddenNav" class="clear">            
+            <div class="hiddenWrap clear">
+               <div class="hiddenTopBar">
+                  <span></span>
+                  <span></span>
+               </div>
+               <ul>
+                  <li><a href="../portfolio/index.html" class="home">Home</a></li>
+                  <li><a href="../portfolio/about.html" class="about">About</a></li>
+                  <li><a href="../portfolio/skill.html" class="skill">Skill</a></li>
+                  <li><a href="#" class="portfolio">Portfolio</a></li>
+                  <li><a href="#" class="contact">Contact</a></li>
+               </ul>
+               
+            </div>           
+            
+         </div>
+         <!-- end of hiddenNavigtion -->
+   
+         <div class="contentsWrap">
+            <div class="contentsFront">
+               <header id="header">
+                  
+                     <div class="topLogo">
+                        <h1>leejungeun</h1>
+                        <img src="#" alt="">
+                     </div>
+                     <div class="topBar">
+                        <span></span>
+                        <span></span>
+                        <span></span>                    
+      
+                     </div>
+                     
+                     
+               </header>
+               <!-- end of header -->
+
+               <div class="sectionWrap">
+                  <section id="aboutSec">
+                     <div class="aboutTit">
+                        <h1 class="topTit">이</h1>
+                        <h1 class="midTit">中</h1>
+                        <h1 class="botTit">은</h1>
+
+                     </div>
+                     <div class="aboutBox clear">
+                        <div class="aboutVideo" >
+                           <!-- <img src="#" alt=""> -->
+                           <video autoplay loop muted>
+                              <source src="../portfolio/video/aboutVideo_1.mp4"type="video/webm">
+                           </video>
+                        </div>
+                        <div class="aboutTxt">
+
+                        </div>
+                     </div>
+                  </section>
+                  <!-- end of about Section -->                
+                
+
+
+
+               </div>
+               <!--end of section wrap-->
+         
+               
+            </div>
+            <!-- end of  front contetns -->
+         </div>
+         <!-- end of main contents wrap -->
+
+      </div>
+      <!-- end of center -->
+
+      
+
+      
+   </div>
+   <!-- end of wrap -->
+   
+</body>
+
+<!-- jQuery CDN link -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- piechart link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+
+<!-- main jquery link -->
+<script src="../portfolio/js/custom.js"></script>
+
+<!-- piechart jquery link -->
+<script src="../portfolio/js/piechart.js"></script>
+
+<script>
+   $(function(){
+      
+      // About Section Name Title effect
+
+      let midTit=$(".midTit");
+      
+      $(".topTit, .botTit").css("opacity","0");
+
+      $(".midTit").click(function(){         
+         $(this).toggleClass("click");
+         if($(this).hasClass("click")){
+            $(".midTit").addClass("active");
+            $(".topTit, .botTit").css("opacity","1");
+            $(".topTit, .botTit").css("transition","opacity 1.2s linear");
+           
+         }else{
+            $(midtit).removeClass("active");
+            // $(".topTit, .botTit").css("opacity","0");
+
+         }
+
+      });      
+      
+     
+   });
+  
+</script>
+
+</html>
