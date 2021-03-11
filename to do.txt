@@ -29,8 +29,11 @@ to do from now
    - menu 클릭시 tilt close -> menu위치로
 
 4. Hidden navigation
-    - 각 섹션 페이지 분리해서 클릭시 바로 이동                                                                                                
+    - 각 섹션 페이지 분리해서 클릭시 바로 이동      
 
+5. portfolio section                                                                                          
+
+****height문제! (fitHeight??)
 
 
 

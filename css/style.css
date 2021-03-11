@@ -37,7 +37,7 @@ bottom:0; height:2px; background:#fff;  width:0; right: 0;transition:all 0.5s li
 
 /* common contents wrap style */
 .contentsWrap{width:100%; height: 100vh; position:relative; z-index:2;   _display:none;}
-.contentsWrap.tilt{_overflow: hidden; pointer-events: none;}
+.contentsWrap.tilt{overflow: hidden; pointer-events: none;}
 .contentsWrap.tilt .contentsFront{transform: rotate(-30deg) translateZ(0);}
 
 .contentsFront{background:#fff; transform-origin: center 70%;box-shadow: 4px -4px rgba(0, 0, 0, 0.39);transition:all 0.4s linear;
@@ -62,15 +62,13 @@ padding:0 30px; transition:all 0.4s linear;}
 margin:8px auto; position:relative;}
 
 
-/* section wrap style */
- .sectionWrap{width:100%; height:1200px;border:1px solid #253812;}
- .sectionWrap .center{width:100%; height:100%;max-width: 90%; margin:auto;}
+
 
  /*****************
  About Section Style 
  ******************/
- #aboutSec{width:100%; height:800px; _background:#282b25; padding:20px; max-width:90%; margin:30px auto; }
- #aboutSec .aboutTit{width:100%; height:60%;display: flex; flex-direction:column;  _display:none; position:relative;
+ /* #aboutSec{width:100%; height:100vh;} */
+ #aboutSec .aboutTit{width:100%; _height:60%;_display: flex; _flex-direction:column;  _display:none; position:relative;
 justify-content: center; ;}
  #aboutSec .aboutTit h1{font-size:100px; font-family: 'Noto Sans KR'; }
  #aboutSec .aboutTit h1.topTit,
@@ -85,21 +83,24 @@ _border-bottom:1px solid #253812;}
 font-weight: 600; font-size: 40px; color:#253812;}
 
 
- #aboutSec .aboutBox{width:100%; height:40%;}
- #aboutSec .aboutVideo{width:40%; height:100%; float:left; display:flex; justify-content: center; align-items: center;}
+ #aboutSec .aboutBox{width:100%; height:100%;position:relative; margin-top:30px;}
+ #aboutSec .aboutVideo{width:100%;  float:left; display:flex; justify-content: flex-start; align-items: center;}
  #aboutSec .aboutVideo video{height:100%;display: block; margin:20px; overflow:hidden; }
 
- #aboutSec .aboutTxt{float:right; width:60%; height:100%;display:flex; justify-content: center; flex-direction: column;
-font-family: 'Noto Sans KR'; }
- #aboutSec .aboutTxt h1{font-weight: 700; font-size: 40px;text-align: center; text-transform: uppercase; padding-bottom:10px;}
- #aboutSec .aboutTxt .aboutInfo{width:100%; height: 90%; border:1px solid #253812;}
- 
+#aboutSec .aboutTxt{_float:right; width:60%; height:100%;display:flex; justify-content: center; flex-direction: column;
+font-family: 'Noto Sans KR'; position:absolute; right:0;}
+#aboutSec .aboutTxt h1{font-weight: 700; font-size: 40px;text-align: right; text-transform: uppercase; padding-bottom:10px;
+border-bottom:2px solid #253812; padding:10px 0;}
+#aboutSec .aboutTxt h1 span{display: inline-block;color:#ba621c;}
+ #aboutSec .aboutTxt .aboutInfo{width:100%; height: 100%; border-bottom:1px solid #253812; font-family: 'Montserrat';
+overflow:hidden; padding:50px 10px 0 10px ; }
+ #aboutSec .aboutTxt .aboutInfo p{font-size:20px;font-weight: 600;text-align: justify;}
 
 
  /*****************
  Skill Section Style 
  ******************/
-#skillSec{width:100%;height:auto; padding:30px 0; max-width:90%; margin:auto;}
+
 #skillSec .skillTit{width:100%; display:flex; justify-content: center;align-items: center;}
 #skillSec .skillTit h3{font-size: 50px; _text-transform: uppercase;font-family: 'Montserrats';}
 #skillSec .skillGrid{width:100%; height:auto;display:grid; grid-template-columns: repeat(3,1fr); grid-template-rows: repeat(2, minmax(200px,auto));

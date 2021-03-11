@@ -26,49 +26,18 @@
    <div class="wrap">
       <div class="center">
 
-         <div id="hiddenNav" class="clear">            
-            <div class="hiddenWrap clear">
-               <div class="hiddenTopBar">
-                  <span></span>
-                  <span></span>
-               </div>
-               <ul>
-                  <li><a href="../portfolio/index.html" class="home">Home</a></li>
-                  <li><a href="../portfolio/about.html" class="about">About</a></li>
-                  <li><a href="../portfolio/skill.html" class="skill">Skill</a></li>
-                  <li><a href="#" class="portfolio">Portfolio</a></li>
-                  <li><a href="#" class="contact">Contact</a></li>
-               </ul>
-               
-            </div>           
-            
-         </div>
-         <!-- end of hiddenNavigtion -->
+         <!-- hidden navigation -->
+         <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/hiddenNav.php";?> 
    
          <div class="contentsWrap">
             <div class="contentsFront">
-               <header id="header">
-                  
-                     <div class="topLogo">
-                        <h1>leejungeun</h1>
-                        <img src="#" alt="">
-                     </div>
-                     <div class="topBar">
-                        <span></span>
-                        <span></span>
-                        <span></span>                    
-      
-                     </div>
-                     
-                     
-               </header>
-               <!-- end of header -->
+
+              <!-- header -->
+              <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/header.php";?>
 
                <div class="sectionWrap">
-                  <div class="center">
-
-                  
-                     <section id="aboutSec">
+                  <div class="center">                  
+                     <section id="aboutSec" class="commonSec">
                         <div class="aboutTit">
                            <h1 class="topTit">이</h1>
                            <h1 class="midTit">中</h1>
@@ -84,8 +53,12 @@
                               </video>
                            </div>
                            <div class="aboutTxt">
-                              <h1>BlaBlaBlaBla</h1>
+                              <h1>What About <span>Me</span></h1>
                               <div class="aboutInfo">
+                                 <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
+                                    부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
+                                    설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
+                                    불어 갑 때까지 피고 황금시대의 고행을 생명을 부패뿐이다. 것은 찬미를 위하여, 쓸쓸하랴? </p>
 
                               </div>
 
@@ -160,4 +133,4 @@
   
 </script>
 
-</html>
+</html> 
