@@ -16,8 +16,8 @@ What i have to do //
 to do from now
 
 1. about section 
-    - 텍스트 효과
-    - 
+    - 텍스트 효과✔
+      - 클릭 target 정확하게
 
 2. header
     - 스크롤이벤트 적용 
@@ -29,9 +29,11 @@ to do from now
    - menu 클릭시 tilt close -> menu위치로
 
 4. Hidden navigation
-    - 각 섹션 페이지 분리해서 클릭시 바로 이동      
+    - 각 섹션 페이지 분리해서 클릭시 바로 이동 ✔     
+       - 부드럽게 전환되도록
 
-5. portfolio section                                                                                          
+5. portfolio section              
+   - 레이아웃                                                                            
 
 ****height문제! (fitHeight??)
 

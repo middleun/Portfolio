@@ -38,7 +38,7 @@
 
                <div class="sectionWrap">
                   <div class="center">      
-                     <div class="protfolioSec">
+                     <section id="protfolioSec" class="commonSec">
 
                      </div>            
                      

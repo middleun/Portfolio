@@ -15,4 +15,4 @@ a{text-decoration: none; color:#000;}
 
 .sectionWrap{width:100%; height:2500px;border:1px solid #253812;}
 .sectionWrap .center{width:100%; height:100%;max-width: 90%; margin:auto;}
-.sectionWrap .commonSec{width:100%; height:100%;  margin:30px auto;}
+.sectionWrap .commonSec{width:100%; height:100vh;  margin:30px auto;}
