@@ -61,14 +61,14 @@ margin:8px auto; position:relative;}
  ******************/
  #aboutSec{width:100%; height:800px; _background:#282b25; padding:20px; max-width:90%; margin:30px auto; }
  #aboutSec .aboutTit{width:100%; height:50%;display: flex; flex-direction:column;  _display:none;}
- #aboutSec .aboutTit h1{font-size:80px; font-family: 'Noto Sans KR'; transition:transform 3.5s linear;}
- #aboutSec .aboutTit h1:nth-child(1),
- #aboutSec .aboutTit h1:nth-child(3){left:-50%; _opacity: 0;}
- #aboutSec .aboutTit h1:nth-child(1):hover,
- #aboutSec .aboutTit h1:nth-child(3):hover{opacity:1;}
+ #aboutSec .aboutTit h1{font-size:80px; font-family: 'Noto Sans KR'; }
+ #aboutSec .aboutTit h1.topTit,
+ #aboutSec .aboutTit h1.botTit{left:-50%;  _transition:opacity 1.2s linear;}
+ /* #aboutSec .aboutTit h1.topTit:hover,
+ #aboutSec .aboutTit h1.botTit:hover{opacity:1;} */
 
- #aboutSec .aboutTit h1:nth-child(2){display:flex; justify-content: center;align-items: center;}
- #aboutSec .aboutTit h1:nth-child(2):hover{transform:translateX(-45%) ;}
+ #aboutSec .aboutTit h1.midTit{display:flex; justify-content: center;align-items: center; transition:transform 1.2s linear;}
+ #aboutSec .aboutTit h1.midTit.active{transform:translateX(-45%) ;}
 
 
  #aboutSec .aboutBox{width:100%; height:50%;}

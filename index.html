@@ -67,9 +67,9 @@
                <div class="sectionWrap">
                   <section id="aboutSec">
                      <div class="aboutTit">
-                        <h1 class="lee">이</h1>
-                        <h1 class="jung">中</h1>
-                        <h1 class="eun">은</h1>
+                        <h1 class="topTit">이</h1>
+                        <h1 class="midTit">中</h1>
+                        <h1 class="botTit">은</h1>
 
                      </div>
                      <div class="aboutBox clear">
@@ -216,11 +216,31 @@
 
 <script>
    $(function(){
-      let middleName = $(".jung");
-      if($middleName){
+      
+      // About Section Name Title effect
 
-      }
+      let midTit=$(".midTit");
+      
+      $(".topTit, .botTit").css("opacity","0");
+
+      $(".midTit").click(function(){         
+         $(this).toggleClass("click");
+         if($(this).hasClass("click")){
+            $(".midTit").addClass("active");
+            $(".topTit, .botTit").css("opacity","1");
+            $(".topTit, .botTit").css("transition","opacity 1.2s linear");
+           
+         }else{
+            $(midtit).removeClass("active");
+            // $(".topTit, .botTit").css("opacity","0");
+
+         }
+
+      });      
+      
+     
    });
+  
 </script>
 
 </html>
