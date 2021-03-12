@@ -7,12 +7,12 @@ a{text-decoration: none; color:#000;}
 
 
 .wrap{width:100%; height:100vh;   }
-.center{width:100%; height:auto; max-width:1024px; margin:auto; _position:relative; transition:all 1.2s ;}
+/* .center{width:100%; height:auto; max-width:1024px; margin:auto; _position:relative; transition:all 1.2s ;} */
 
 
 
 /* Common Section Style */
 
-.sectionWrap{width:100%; height:2500px;border:1px solid #253812;}
+.sectionWrap{width:100%; _height:2500px;border:1px solid #253812;}
 .sectionWrap .center{width:100%; height:100%;max-width: 90%; margin:auto;}
-.sectionWrap .commonSec{width:100%; height:100vh;  margin:30px auto;}
+.sectionWrap .commonSec{width:100%; height:calc(100vh - 100px);  margin:30px auto 100px;}

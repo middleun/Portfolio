@@ -8,9 +8,9 @@
        </div>
        <ul>
           <li><a href="../portfolio/index.php" class="home">Home</a></li>
-          <li><a href="../portfolio/about.php" class="about">About</a></li>
-          <li><a href="../portfolio/skill.php" class="skill">Skill</a></li>
-          <li><a href="../portfolio/portfolio.php" class="portfolio">Portfolio</a></li>
+          <li><a href="../portfolio/index.php#about" class="about">About</a></li>
+          <li><a href="../portfolio/index.php#skillSec" class="skill">Skill</a></li>
+          <li><a href="../portfolio/index.php#portfolio" class="portfolio">Portfolio</a></li>
           <li><a href="#" class="contact">Contact</a></li>
        </ul>
        

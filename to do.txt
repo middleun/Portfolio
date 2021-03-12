@@ -21,7 +21,7 @@ to do from now
 
 2. header
     - 스크롤이벤트 적용 
-    - fixed header
+    - fixed header!
 
 3. page tilt
    - 고정
@@ -31,11 +31,14 @@ to do from now
 4. Hidden navigation
     - 각 섹션 페이지 분리해서 클릭시 바로 이동 ✔     
        - 부드럽게 전환되도록
+       ------>> 페이지 분리 X 원페이지로 변경!!! 메뉴클릭시 홈화면->스크롤이동
 
 5. portfolio section              
    - 레이아웃                                                                            
 
 ****height문제! (fitHeight??)
+
+6. 
 
 
 

@@ -69,6 +69,37 @@ $(function(){
     tiltPage.init();
 
 
+
+    
+     // Fixed Header
+
+     const offTop = $("#header").offset().top;    
+     $(window).scroll(function(){
+         let scroll = $(window).scrollTop();
+         if(offTop <= scroll){
+             $("#header").css({"position":"fixed","background":"#fff"});
+             
+             
+         }else{
+             $("#header").css({"position":"relative", "background":"#fcf7ef"});
+         }
+     });      
+
+
+
+
+    //  move scroll to each location when click menu
+    const loca=$(location).attr('href').split('#')[1];
+
+    if(loca == 'skillSec'){
+        const sectionOff = $('.' + loca).offset().top;
+        // console.log(sectionOff);
+        $("html,body").animate({scrollTop:sectionOff}, 1000, 'ease-in-out');
+
+    }
+
+
+    
     
 
 });
