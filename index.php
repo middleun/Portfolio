@@ -11,6 +11,10 @@
    <!-- reset css link -->
    <link rel="stylesheet" href="../portfolio/css/reset.css">
 
+   <!-- light slider css link -->
+   <link rel="stylesheet" href="../portfolio/plugin/lightslider.css">
+
+
    <!-- main style css link -->
    <link rel="stylesheet" href="../portfolio/css/style.css">
 
@@ -67,95 +71,59 @@
                         </div>
                      </section>
                      <!-- end of about Section -->
-                     <section id="skillSec" class="commonSec skill">
-                        <div class="skillTit">
-                           <h3>My Skill</h3>
-                        </div>
-                        <div class="skillGrid">
-                           <div class="item">
-                              <div class="skillGraph">
-                                 <div class="graphContainer">
-                                    <div class="graphCircle easyPieChart" data-percent="50">
-                                       <p>50%</p>                                
-                                    </div>
 
-                                 </div>
-                                 <p class="skillTxt">HTML5</p>
-                              </div>
-                           </div>
-                           <!-- end of skill item -->
-                           <div class="item">
-                              <div class="skillGraph">
-                                 <div class="graphContainer">
-                                    <div class="graphCircle easyPieChart" data-percent="50">
-                                       <p>50%</p>                                
-                                    </div>
+                     <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/skill.php";?>
 
-                                 </div>
-                                 <p class="skillTxt">CSS3</p>
-                              </div>
-                           </div>
-                           <!-- end of skill item -->
-
-                           <div class="item">
-                              <div class="skillGraph">
-                                 <div class="graphContainer">
-                                    <div class="graphCircle easyPieChart" data-percent="50">
-                                       <p>50%</p>                                
-                                    </div>
-
-                                 </div>
-                                 <p class="skillTxt">jQuery</p>
-                              </div>
-                           </div>
-                           <!-- end of skill item -->
-
-                           <div class="item">
-                              <div class="skillGraph">
-                                 <div class="graphContainer">
-                                    <div class="graphCircle easyPieChart" data-percent="50">
-                                       <p>50%</p>                                
-                                    </div>
-
-                                 </div>
-                                 <p class="skillTxt">PHP</p>
-                              </div>
-                           </div>
-                           <!-- end of skill item -->
-
-                           <div class="item">
-                              <div class="skillGraph">
-                                 <div class="graphContainer">
-                                    <div class="graphCircle easyPieChart" data-percent="50">
-                                       <p>50%</p>                                
-                                    </div>
-
-                                 </div>
-                                 <p class="skillTxt">Adobe Photoshop</p>
-                              </div>
-                           </div>
-                           <!-- end of skill item -->
-
-                           <div class="item">
-                              <div class="skillGraph">
-                                 <div class="graphContainer">
-                                    <div class="graphCircle easyPieChart" data-percent="50">
-                                       <p>50%</p>                                
-                                    </div>
-
-                                 </div>
-                                 <p class="skillTxt">Adobe Illustrator</p>
-                              </div>
-                           </div>
-                           <!-- end of skill item -->
-
-
-                        </div>
-                        <!-- end of skill grid -->
-                        
-                        
-                     </section>
                      <!-- end of Skill Section -->
+                     <section id="prtfolSec" class="commonSec">
+                     <div class="prtfolTit title">
+                        <h3>Portfolio</h3>
+                     </div>
+                     <div class="prtfolBox" id="prtfolSlide">      
+                                  
+                        <div class="prtfolImg">
+                           <!-- <img src="#" alt=""> -->
+                        </div>
+                        <div class="prtfolTxt">
+                           <h2>Data Base Project</h2>
+                           <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
+                                    부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
+                                    설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
+                                    불어 갑 때까지 피고 황금시대의 고행을 생명을 부패뿐이다.</p>
+                           
+
+                        </div>
+                     </div>
+                     <div class="prtfolBox" id="prtfolSlide">                        
+                        <div class="prtfolImg">
+
+                        </div>
+                        <div class="prtfolTxt">
+
+                        </div>
+                     </div>
+                     <div class="prtfolBox" id="prtfolSlide">                        
+                        <div class="prtfolImg">
+
+                        </div>
+                        <div class="prtfolTxt">
+
+                        </div>
+                     </div>
+                     <div class="prtfolBox" id="prtfolSlide">                        
+                        <div class="prtfolImg">
+
+                        </div>
+                        <div class="prtfolTxt">
+
+                        </div>
+                     </div>
+
+
+
+                     </section>   
+
+
                   
 
                   </div>
@@ -163,6 +131,8 @@
                </div>
                <!--end of section wrap-->
          
+                    
+
                
             </div>
             <!-- end of  front contetns -->
@@ -180,17 +150,28 @@
 <!-- jQuery CDN link -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+
+<!-- lightslider jQuery link -->
+<script src="../portfolio/plugin/lightslider.js"></script>
+
 <!-- piechart link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
 
-<!-- main jquery link -->
-<script src="../portfolio/js/custom.js"></script>
+
+
 
 <!-- piechart jquery link -->
 <script src="../portfolio/js/piechart.js"></script>
 
+
+
+<!-- main jquery link -->
+<script src="../portfolio/js/custom.js"></script>
+
+
 <script>
    $(function(){
+
       
       // About Section Name Title effect
 
@@ -214,9 +195,44 @@
          }
 
       });      
+
+      $("#prtfolSlide").lightSlider({
+                            
+                            item:1,
+                            slideMove:1,
+                            auto:true,
+                            loop:true,
+                            speed:400,
+                            controls:true,
+                            pager:true,
+                            responsive : [
+                                {
+                                    breakpoint:1024,
+                                    settings: {
+                                        item:4,
+                                        slideMove:1,
+                                        // slideMargin:6
+                                      }
+                                }
+                            ]  
+      });
+
+
+
+
+   });   
+  
+     
+   
+
+
+      // // lightslider 
+      // 
+      
+
       
      
-   });
+  
   
 </script>
 

@@ -101,8 +101,8 @@ overflow:hidden; padding:50px 10px 0 10px ; }
  Skill Section Style 
  ******************/
 #skillSec{margin-top:50px;}
-#skillSec .skillTit{width:100%; display:flex; justify-content: center;align-items: center;}
-#skillSec .skillTit h3{font-size: 50px; _text-transform: uppercase;font-family: 'Montserrats';}
+
+
 #skillSec .skillGrid{width:100%; height:auto;display:grid; grid-template-columns: repeat(3,1fr); grid-template-rows: repeat(2, minmax(200px,auto));
 gap:5px; padding-top:30px;}
 /* #skillSec .skillGrid .item{border:2px solid #f8dfb8;} */
@@ -123,4 +123,11 @@ color:#253812;}
 /*****************
  Portfolio Section Style 
  ******************/
-#portfolioSec{width:100%; height:800px;}
+
+#prtfolSec .prtfolBox{width:100%; height:auto; display:flex; justify-content: space-between; align-items: center; position:relative;
+box-shadow:4px 4px #25381257; margin-bottom:10px;}
+#prtfolSec .prtfolBox .prtfolImg{width:50%; height:400px; background:#ba621c; margin:20px;}
+/* #prtfolSec .prtfolBox .prtfolImg img{height:100%;} */
+#prtfolSec .prtfolBox .prtfolTxt{width:50%; height:150px; display:flex; flex-direction: column; justify-content: flex-start;}
+#prtfolSec .prtfolBox .prtfolTxt h2{width:100%; margin-bottom:10px;}
+

@@ -38,7 +38,7 @@ to do from now
 
 ****height문제! (fitHeight??)
 
-6. 
+6. section wrap 높이 문제 
 
 
 

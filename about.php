@@ -119,7 +119,6 @@
             $(".topTit, .botTit, .aboutTit span").css("transition","opacity 1.2s linear");
             
 
-           
          }else{
             $(midtit).removeClass("active");
             // $(".topTit, .botTit").css("opacity","0");

@@ -89,14 +89,29 @@ $(function(){
 
 
     //  move scroll to each location when click menu
-    const loca=$(location).attr('href').split('#')[1];
 
-    if(loca == 'skillSec'){
-        const sectionOff = $('.' + loca).offset().top;
-        // console.log(sectionOff);
-        $("html,body").animate({scrollTop:sectionOff}, 1000, 'ease-in-out');
+    // const eachSec = $()
 
-    }
+    // $("#hiddenNav ul li a").click(function(){         
+    //     $(this).toggleClass("click");
+    //     if($(this).hasClass("click")){
+    //         let offset=$('#skillSec').offset().top;
+    //         console.log(offset);
+    //         $('html, body').animate({scrollTop:offset}, 1000, 'ease-in-out');
+        
+    //     }
+        
+    // });
+
+
+    // const loca=$('#hiddenNav ul li a').attr('href').split('#')[1];
+    // console.log(loca);
+
+    // if(loca == 'skill'){
+    //     const sectionOff = $('#' + loca + "Sec").offset().top;
+    //     // console.log(sectionOff);
+    //     $('html,body').animate({scrollTop:sectionOff}, 1000, 'ease-in-out');
+    // }
 
 
     

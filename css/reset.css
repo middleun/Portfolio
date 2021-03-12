@@ -15,4 +15,9 @@ a{text-decoration: none; color:#000;}
 
 .sectionWrap{width:100%; _height:2500px;border:1px solid #253812;}
 .sectionWrap .center{width:100%; height:100%;max-width: 90%; margin:auto;}
-.sectionWrap .commonSec{width:100%; height:calc(100vh - 100px);  margin:30px auto 100px;}
+.sectionWrap .commonSec{width:100%; _height:calc(100vh - 100px);  margin:200px auto ;}
+
+
+/* common title style */
+.title{width:100%; display:flex; justify-content: center;align-items: center; margin-bottom:20px;}
+.title h3{font-size: 50px; _text-transform: uppercase;font-family: 'Montserrats';}
