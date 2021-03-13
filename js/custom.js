@@ -50,14 +50,9 @@ $(function(){
         bindEvents:function(){
             this.$topBar.on('click',this.open.bind(this));
             $('.hiddenTopBar').on('click', this.close.bind(this));
-            $('.home').on('click', this.close.bind(this));
-            $('.about').on('click', this.close.bind(this));
-            $('.skill').on('click', this.close.bind(this));
-
-
-
-
+            $('.home, .about, .skill, .prtfol, .contact').on('click', this.close.bind(this));
             this.$contents.on('scroll',this.updateTransformOrigin.bind(this));
+
         },
         init:function(){
             this.bindEvents();
@@ -77,11 +72,12 @@ $(function(){
      $(window).scroll(function(){
          let scroll = $(window).scrollTop();
          if(offTop <= scroll){
-             $("#header").css({"position":"fixed","background":"#fff"});
+             $("header").css({"position":"relative"});
+             $("#header .topBar").css({"position":"fixed","background":"none", "right":"20px"})
              
              
          }else{
-             $("#header").css({"position":"relative", "background":"#fcf7ef"});
+             $("#header").css({"background":"#f8dfb8"});
          }
      });      
 
@@ -114,11 +110,12 @@ $(function(){
 
         let navIdx=$(this).index();
         // console.log(navIdx);
-        let navHref=$('#hiddenNav ul li').eq(navIdx).find("a").attr('href');
-          //console.log(navHref);
-        const offset=$(navHref).offset().top;
+        let navHref=$('#hiddenNav ul li').eq(navIdx).find("a").attr('href').split('#')[1];
+        let headerHeight=$('#header').outerHeight();
+        //   console.log(marginHeight);
+        const offset=$('#'+navHref).offset().top+headerHeight;
         // console.log(offset);
-        $('html,body').animate({scrollTop:offset}, 1000, 'linear');
+        $('html,body').animate({scrollTop:offset}, 2000, 'linear');
     });  
 
 

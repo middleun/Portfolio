@@ -27,6 +27,7 @@ to do from now
    - 고정
    - 스크롤이벤트 적용  
    - menu 클릭시 tilt close -> menu위치로✔!!!! 성공!
+   ---> section margin 만큼 scrollTop에서 더 빼주기
 
 4. Hidden navigation
     - 각 섹션 페이지 분리해서 클릭시 바로 이동 ✔     

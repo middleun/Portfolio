@@ -50,7 +50,7 @@ position:relative; z-index:3; pointer-events: auto;}
 /******************
  Header Style 
  *******************/
-#header{width:100%; position:fixed;  height:100px; display: flex;justify-content: space-between; align-items: center; position:relative;
+#header{width:100%;  height:100px; display: flex;justify-content: space-between; align-items: center; position:relative;
 padding:0 30px; transition:all 0.4s linear; z-index:10; border-bottom:1px solid #ba631c77;}
 #header .center{height:100%;}
 
