@@ -12,7 +12,12 @@
    <link rel="stylesheet" href="../portfolio/css/reset.css">
 
    <!-- light slider css link -->
-   <link rel="stylesheet" href="../portfolio/plugin/lightslider.css">
+   <!-- <link rel="stylesheet" href="../portfolio/plugin/lightslider.css"> -->
+
+   <!-- swiper slider css cdn link-->
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 
    <!-- main style css link -->
@@ -73,52 +78,70 @@
                      <!-- end of about Section -->
 
                      <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/skill.php";?>
-
                      <!-- end of Skill Section -->
+
                      <section id="prtfolSec" class="commonSec">
-                     <div class="prtfolTit title">
-                        <h3>Portfolio</h3>
-                     </div>
-                     <div class="prtfolBox" id="prtfolSlide">      
-                                  
-                        <div class="prtfolImg">
-                           <!-- <img src="#" alt=""> -->
+                        <div class="prtfolTit title">
+                           <h3>Portfolio</h3>
                         </div>
-                        <div class="prtfolTxt">
-                           <h2>Data Base Project</h2>
-                           <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
-                                    부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
-                                    설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
-                                    불어 갑 때까지 피고 황금시대의 고행을 생명을 부패뿐이다.</p>
+                        <div class="prtfolCon swiper-container">
+                           <div class="swiper-wrapper">
+                          
+                              <div class="prtfolBox swiper-slide">     
                            
+                                 <div class="prtfolImg">
+                                    <!-- <img src="#" alt=""> -->
+                                 </div>
+                                 <div class="prtfolTxt">
+                                    <h2>Data Base Project</h2>
+                                    <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
+                                             부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
+                                             설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
+                                             불어 갑 때까지 피고 황금시대의 고행을 생명을 부패뿐이다.</p>
+                                    
+
+                                 </div>
+                              </div>
+                              <div class="prtfolBox swiper-slide">     
+                           
+                                 <div class="prtfolImg">
+                                    <!-- <img src="#" alt=""> -->
+                                 </div>
+                                 <div class="prtfolTxt">
+                                    <h2>Data Base Project</h2>
+                                    <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
+                                             부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
+                                             설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
+                                             불어 갑 때까지 피고 황금시대의 고행을 생명을 부패뿐이다.</p>
+                                    
+
+                                 </div>
+                              </div>
+                              <div class="prtfolBox swiper-slide">     
+                           
+                                 <div class="prtfolImg">
+                                    <!-- <img src="#" alt=""> -->
+                                 </div>
+                                 <div class="prtfolTxt">
+                                    <h2>Data Base Project</h2>
+                                    <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
+                                             부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
+                                             설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
+                                             불어 갑 때까지 피고 황금시대의 고행을 생명을 부패뿐이다.</p>
+                                    
+
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <div class="swiper-button-next"></div>
+                           <div class="swiper-button-prev"></div>
+                        
 
                         </div>
-                     </div>
-                     <div class="prtfolBox" id="prtfolSlide">                        
-                        <div class="prtfolImg">
-
-                        </div>
-                        <div class="prtfolTxt">
-
-                        </div>
-                     </div>
-                     <div class="prtfolBox" id="prtfolSlide">                        
-                        <div class="prtfolImg">
-
-                        </div>
-                        <div class="prtfolTxt">
-
-                        </div>
-                     </div>
-                     <div class="prtfolBox" id="prtfolSlide">                        
-                        <div class="prtfolImg">
-
-                        </div>
-                        <div class="prtfolTxt">
-
-                        </div>
-                     </div>
-
+                        <!-- end of prtfol contents -->
+                        
 
 
                      </section>   
@@ -150,9 +173,13 @@
 <!-- jQuery CDN link -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<!-- swiper slider jquery cdn llink -->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 
 <!-- lightslider jQuery link -->
-<script src="../portfolio/plugin/lightslider.js"></script>
+<!-- <script src="../portfolio/plugin/lightslider.js"></script> -->
 
 <!-- piechart link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
@@ -196,27 +223,41 @@
 
       });      
 
-      $("#prtfolSlide").lightSlider({
+      // $("#prtfolSlide").lightSlider({
                             
-                            item:1,
-                            slideMove:1,
-                            auto:true,
-                            loop:true,
-                            speed:400,
-                            controls:true,
-                            pager:true,
-                            responsive : [
-                                {
-                                    breakpoint:1024,
-                                    settings: {
-                                        item:4,
-                                        slideMove:1,
-                                        // slideMargin:6
-                                      }
-                                }
-                            ]  
-      });
+      //                       item:1,
+      //                       slideMove:1,
+      //                       auto:true,
+      //                       loop:true,
+      //                       speed:400,
+      //                       controls:true,
+      //                       pager:true,
+      //                       responsive : [
+      //                           {
+      //                               breakpoint:1024,
+      //                               settings: {
+      //                                   item:4,
+      //                                   slideMove:1,
+      //                                   // slideMargin:6
+      //                                 }
+      //                           }
+      //                       ]  
+      // });
 
+
+         // swiper slide 
+
+         var swiper = new Swiper('.swiper-container',{
+            cssMode : true,
+            navigation:{
+               nextEl : '.swiper-button-next',
+               prevEl : '.swiper-button-prev',
+
+            },
+            loop:true,
+            autoplay:true,
+
+         });
 
 
 
@@ -226,9 +267,7 @@
    
 
 
-      // // lightslider 
-      // 
-      
+     
 
       
      
