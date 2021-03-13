@@ -123,11 +123,15 @@ color:#253812;}
 /*****************
  Portfolio Section Style 
  ******************/
-
+#prtfolSec .prtfolCon{width:100%; height:100%; border:1px solid #253812; margin-bottom:10px;}
 #prtfolSec .prtfolBox{width:100%; height:auto; display:flex; justify-content: space-between; align-items: center; position:relative;
-box-shadow:4px 4px #25381257; margin-bottom:10px;}
-#prtfolSec .prtfolBox .prtfolImg{width:50%; height:400px; background:#ba621c; margin:20px;}
-/* #prtfolSec .prtfolBox .prtfolImg img{height:100%;} */
+}
+#prtfolSec .prtfolBox .prtfolImg{width:50%; height:400px; _background:#ba621c; margin:20px; display:flex; justify-content: center;
+align-items: center;}
+/* #prtfolSec .prtfolBox:nth-child(2) .prtfolImg{background: #253812;;} */
+#prtfolSec .prtfolBox .prtfolImg img{height:100%;}
 #prtfolSec .prtfolBox .prtfolTxt{width:50%; height:150px; display:flex; flex-direction: column; justify-content: flex-start;}
 #prtfolSec .prtfolBox .prtfolTxt h2{width:100%; margin-bottom:10px;}
 
+#prtfolSec .prtfolNext,
+#prtfolSec .prtfolPrev{color:#ba621c; }

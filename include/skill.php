@@ -1,6 +1,4 @@
-<meta charset="UTF-8">
-
-          
+         
                   
                      <section id="skillSec" class="commonSec">
                         <div class="skillTit title">

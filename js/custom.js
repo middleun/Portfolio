@@ -14,14 +14,14 @@ $(function(){
             this.$topBar.off('click');
             $('.topBar').on('click',this.close.bind(this));
             this.topBarFix(true);
-            console.log('opening');
+            // console.log('opening');
         },
         close:function(){
             this.$contents.removeClass('tilt');
             $('.topBar',).off('click');
             this.$topBar.on('click', this.open.bind(this));
             this.topBarFix(false);
-            console.log('closing');
+            // console.log('closing');
 
 
         },
@@ -85,25 +85,58 @@ $(function(){
          }
      });      
 
+    
+
+    //  Move Scroll to each location when click menu
+
+    //  3차시도
+    // const navLi=$("#hiddenNav ul li");
+    //     let navIdx=navLi.index();
+    //     let navClass=navLi.eq(navIdx).find("a").attr('class');
+       
+    //     console.log(navClass);          
+     
+
+    // if($(navLi).eq().click){
+    //     const offset=$("#"+navClass+"Sec").offset().top;
+    //     console.log(offset);
+
+    // }           // $(this).toggleClass('click');
+    // if($(this).eq(i).hasClass("click")){        
+        
+    // }
+
+
+    //  4차시도! 성공!
+    
+    $('#hiddenNav ul li').click(function(event){
+        event.preventDefault();           
+
+        let navIdx=$(this).index();
+        // console.log(navIdx);
+        let navHref=$('#hiddenNav ul li').eq(navIdx).find("a").attr('href');
+          //console.log(navHref);
+        const offset=$(navHref).offset().top;
+        // console.log(offset);
+        $('html,body').animate({scrollTop:offset}, 1000, 'linear');
+    });  
 
 
 
-    //  move scroll to each location when click menu
-
-    // const eachSec = $()
-
+          
+    //  2차시도
     // $("#hiddenNav ul li a").click(function(){         
     //     $(this).toggleClass("click");
     //     if($(this).hasClass("click")){
-    //         let offset=$('#skillSec').offset().top;
+    //         // let offset=$('#skillSec').offset().top;
     //         console.log(offset);
-    //         $('html, body').animate({scrollTop:offset}, 1000, 'ease-in-out');
+            // $('html, body').animate({scrollTop:$('#skillSec').offset().top}, 1000, 'ease-in-out');
         
     //     }
         
     // });
 
-
+    // 1차시도
     // const loca=$('#hiddenNav ul li a').attr('href').split('#')[1];
     // console.log(loca);
 

@@ -1,7 +1,4 @@
-$(function() {
-
-    
-  
+$(function() {  
     
       let pieSize=120;
       let winWidth=$(window).width();

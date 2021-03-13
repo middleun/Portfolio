@@ -15,7 +15,6 @@
    <!-- <link rel="stylesheet" href="../portfolio/plugin/lightslider.css"> -->
 
    <!-- swiper slider css cdn link-->
-
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -90,7 +89,7 @@
                               <div class="prtfolBox swiper-slide">     
                            
                                  <div class="prtfolImg">
-                                    <!-- <img src="#" alt=""> -->
+                                    <img src="../portfolio/img/portfolio_img_1.png" alt="">
                                  </div>
                                  <div class="prtfolTxt">
                                     <h2>Data Base Project</h2>
@@ -102,6 +101,7 @@
 
                                  </div>
                               </div>
+                              <!-- end of prtfolBox /swiper-slide  -->
                               <div class="prtfolBox swiper-slide">     
                            
                                  <div class="prtfolImg">
@@ -117,6 +117,7 @@
 
                                  </div>
                               </div>
+                              <!-- end of prtfolBox /swiper-slide  -->
                               <div class="prtfolBox swiper-slide">     
                            
                                  <div class="prtfolImg">
@@ -132,11 +133,48 @@
 
                                  </div>
                               </div>
+                              <!-- end of prtfolBox /swiper-slide  -->
+                              <div class="prtfolBox swiper-slide">     
+                           
+                                 <div class="prtfolImg">
+                                    <!-- <img src="#" alt=""> -->
+                                 </div>
+                                 <div class="prtfolTxt">
+                                    <h2>Data Base Project</h2>
+                                    <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
+                                             부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
+                                             설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
+                                             불어 갑 때까지 피고 황금시대의 고행을 생명을 부패뿐이다.</p>
+                                    
+
+                                 </div>
+                              </div>
+                              <!-- end of prtfolBox /swiper-slide  -->
+                              <div class="prtfolBox swiper-slide">     
+                           
+                                 <div class="prtfolImg">
+                                    <!-- <img src="#" alt=""> -->
+                                 </div>
+                                 <div class="prtfolTxt">
+                                    <h2>Data Base Project</h2>
+                                    <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
+                                             부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
+                                             설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
+                                             불어 갑 때까지 피고 황금시대의 고행을 생명을 부패뿐이다.</p>
+                                    
+
+                                 </div>
+                              </div>
+                              <!-- end of prtfolBox /swiper-slide  -->
+
+
+                              
                            </div>
+                           <!-- end of swiper wrapper -->
 
 
-                           <div class="swiper-button-next"></div>
-                           <div class="swiper-button-prev"></div>
+                           <!-- <div class="prtfolNext swiper-button-next"></div>
+                           <div class="prtfolPrev swiper-button-prev"></div> -->
                         
 
                         </div>
@@ -173,18 +211,15 @@
 <!-- jQuery CDN link -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<!-- piechart link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+
 <!-- swiper slider jquery cdn llink -->
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-
 <!-- lightslider jQuery link -->
 <!-- <script src="../portfolio/plugin/lightslider.js"></script> -->
-
-<!-- piechart link -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
-
-
 
 
 <!-- piechart jquery link -->
@@ -256,6 +291,10 @@
             },
             loop:true,
             autoplay:true,
+            // spacebetween:30,
+            keyboard:{
+               enabled:true,
+            },
 
          });
 
