@@ -22,17 +22,19 @@ to do from now
 2. header
     - 스크롤이벤트 적용 
     - fixed header!✔
+    ----> 풀페이지일 때 fixed header적용( scroll이 없을 때)
 
 3. page tilt
    - 고정
    - 스크롤이벤트 적용  
-   - menu 클릭시 tilt close -> menu위치로✔!!!! 성공!
+   - menu 클릭시 tilt close -> menu위치로✔!!!!
    ---> section margin 만큼 scrollTop에서 더 빼주기
 
 4. Hidden navigation
     - 각 섹션 페이지 분리해서 클릭시 바로 이동 ✔     
-       - 부드럽게 전환되도록
-       ------>> 페이지 분리 X 원페이지로 변경!!! 메뉴클릭시 홈화면->스크롤이동
+       - 부드럽게 전환되도록✔
+       ------>> 페이지 분리 X 원페이지로 변경!!! 메뉴클릭시 홈화면->스크롤이동 (X)
+       -------------->> 풀페이지 사용
 
 5. portfolio section              
    - 레이아웃               
@@ -42,6 +44,10 @@ to do from now
 ****height문제! (fitHeight??)
 
 6. section wrap 높이 문제 
+
+7. 파비콘
+
+8. seo
 
 
 

@@ -68,18 +68,22 @@ $(function(){
     
      // Fixed Header
 
-     const offTop = $("#header").offset().top;    
-     $(window).scroll(function(){
-         let scroll = $(window).scrollTop();
-         if(offTop <= scroll){
-             $("header").css({"position":"relative"});
-             $("#header .topBar").css({"position":"fixed","background":"none", "right":"20px"})
-             
-             
-         }else{
-             $("#header").css({"background":"#f8dfb8"});
-         }
-     });      
+    const offTop = $("#header").offset().top;    
+    // console.log(offTop);
+    $(window).scroll(function(){
+        let scroll = $(window).scrollTop();
+        // console.log(scroll)
+;        if(offTop <= scroll){
+           //  $("header").css({"position":"relative"});
+            $("#header .topBar").css({"position":"fixed", "right":"50px"});
+            
+            
+        }
+        // else{
+        //     // $("#header").css({"background":"#f8dfb8"});
+        //     $("#header .topBar").css({"position":"relative","background":"none"});
+        // }
+    });      
 
     
 

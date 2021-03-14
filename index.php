@@ -33,7 +33,7 @@
    <div class="wrap">
 
          <!-- hidden navigation -->
-         <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/hiddenNav.php";?>    
+         <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/hidden_nav.php";?>    
          
    
          <div class="contentsWrap">
@@ -44,7 +44,7 @@
                
 
                <div class="sectionWrap" id="fullpage">
-                  <!-- <div class="center">  -->
+                  <div class="center"> 
                      <section id="mainSec" class="section" >
                         <div class="mainTit">
                            <h1 class="topTit">이</h1>
@@ -94,7 +94,7 @@
                               <div class="prtfolBox swiper-slide">     
                            
                                  <div class="prtfolImg">
-                                    <img src="../portfolio/img/portfolio_img_1.png" alt="">
+                                    <img src="../portfolio/img/prtfol_img_1.png" alt="">
                                  </div>
                                  <div class="prtfolTxt">
                                     <h2>Data Base Project</h2>
@@ -192,7 +192,7 @@
 
                   
 
-                  <!-- </div> -->
+                  </div>
                   <!-- end of center of section wrap -->
                </div>
                <!--end of section wrap-->
@@ -265,14 +265,15 @@
 
       // full page 
       $("#fullpage").fullpage({
-         navigation:true,
-         navigationPosition:'left',
-         // navigationTooltips:[]
+         // navigation:true,
+         // navigationPosition:'left',
          sectionSelector:'.section',
-         autoScrolling:true,
-		   scrollHorizontally: true,
-         fixedElement:".topBar",
+         // autoScrolling:true,
+		   // scrollHorizontally: true,
+         // fixedElement:".topBar",
          anchors:['firstSec','secondSec','thirdSec','fourthSec'],
+         scrollBar:true,
+         scrollOverflowReset: true,
       });
 
      
