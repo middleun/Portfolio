@@ -105,18 +105,19 @@ $(function(){
 
     //  4차시도! 성공!
     
-    $('#hiddenNav ul li').click(function(event){
-        event.preventDefault();           
+    // $('#hiddenNav ul li').click(function(event){
+    //     event.preventDefault();           
 
-        let navIdx=$(this).index();
-        // console.log(navIdx);
-        let navHref=$('#hiddenNav ul li').eq(navIdx).find("a").attr('href').split('#')[1];
-        let headerHeight=$('#header').outerHeight();
-        //   console.log(marginHeight);
-        const offset=$('#'+navHref).offset().top+headerHeight;
-        // console.log(offset);
-        $('html,body').animate({scrollTop:offset}, 2000, 'linear');
-    });  
+    //     let navIdx=$(this).index();
+    //     // console.log(navIdx);
+    //     let navHref=$('#hiddenNav ul li').eq(navIdx).find("a").attr('href').split('#')[1];
+    //     let headerHeight=$('#header').outerHeight();
+    //     //   console.log(headerHeight);
+    //     const offset=$('#'+navHref).offset().top+headerHeight;
+    //     // console.log(offset);
+    //     // $('html,body').animate({scrollTop:offset}, 2000, 'linear');
+    //     return;
+    // });  
 
 
 

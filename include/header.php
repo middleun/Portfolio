@@ -1,5 +1,5 @@
 
-<header id="header">
+<section id="header">
                   
     <div class="topLogo">
        <h1>leejungeun</h1>
@@ -12,5 +12,5 @@
     </div>
       
       
-</header>
+</section>
 <!-- end of header -->

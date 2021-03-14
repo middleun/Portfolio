@@ -10,14 +10,13 @@
 
    <!-- reset css link -->
    <link rel="stylesheet" href="../portfolio/css/reset.css">
-
-   <!-- light slider css link -->
-   <!-- <link rel="stylesheet" href="../portfolio/plugin/lightslider.css"> -->
+ 
+   <!-- full page plugin css link -->
+   <link rel="stylesheet" href="../portfolio/plugin/jquery.fullpage.css">
 
    <!-- swiper slider css cdn link-->
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
 
    <!-- main style css link -->
    <link rel="stylesheet" href="../portfolio/css/style.css">
@@ -44,16 +43,22 @@
                <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/header.php";?>         
                
 
-               <div class="sectionWrap">
-                  <div class="center">                  
-                     <section id="aboutSec" class="commonSec">
-                        <div class="aboutTit">
+               <div class="sectionWrap" id="fullpage">
+                  <!-- <div class="center">  -->
+                     <section id="mainSec" class="section" >
+                        <div class="mainTit">
                            <h1 class="topTit">이</h1>
                            <h1 class="midTit">中</h1>
                            <h1 class="botTit">은</h1>
                            <span>心을 잃지 않는 웹퍼블리셔</span>
 
                         </div>
+
+                     </section> 
+                      <!-- end of main section -->
+
+                     <section id="aboutSec" class="section">
+                       
                         <div class="aboutBox clear">
                            <div class="aboutVideo" >
                               <!-- <img src="#" alt=""> -->
@@ -79,7 +84,7 @@
                      <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/skill.php";?>
                      <!-- end of Skill Section -->
 
-                     <section id="prtfolSec" class="commonSec">
+                     <section id="prtfolSec" class="section" >
                         <div class="prtfolTit title">
                            <h3>Portfolio</h3>
                         </div>
@@ -173,8 +178,8 @@
                            <!-- end of swiper wrapper -->
 
 
-                           <!-- <div class="prtfolNext swiper-button-next"></div>
-                           <div class="prtfolPrev swiper-button-prev"></div> -->
+                           <div class="prtfolNext swiper-button-next"></div>
+                           <div class="prtfolPrev swiper-button-prev"></div>
                         
 
                         </div>
@@ -187,7 +192,7 @@
 
                   
 
-                  </div>
+                  <!-- </div> -->
                   <!-- end of center of section wrap -->
                </div>
                <!--end of section wrap-->
@@ -214,17 +219,15 @@
 <!-- piechart link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
 
-<!-- swiper slider jquery cdn llink -->
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<!-- lightslider jQuery link -->
-<!-- <script src="../portfolio/plugin/lightslider.js"></script> -->
-
+<!-- fullpage plugin jquery link -->
+<script src="../portfolio/plugin/jquery.fullpage.js"></script>
 
 <!-- piechart jquery link -->
 <script src="../portfolio/js/piechart.js"></script>
 
+<!-- swiper slider jquery cdn llink -->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
 <!-- main jquery link -->
@@ -239,14 +242,14 @@
 
       let midTit=$(".midTit");
       
-      $(".topTit, .botTit, .aboutTit span").css("opacity","0");
+      $(".topTit, .botTit, .mainTit span").css("opacity","0");
 
       $(".midTit").click(function(){         
          $(this).toggleClass("click");
          if($(this).hasClass("click")){
             $(".midTit").addClass("active");
-            $(".topTit, .botTit, .aboutTit span").css("opacity","1");
-            $(".topTit, .botTit, .aboutTit span").css("transition","opacity 1.2s linear");
+            $(".topTit, .botTit, .mainTit span").css("opacity","1");
+            $(".topTit, .botTit, .mainTit span").css("transition","opacity 1.2s linear");
             
 
            
@@ -258,27 +261,21 @@
 
       });      
 
-      // $("#prtfolSlide").lightSlider({
-                            
-      //                       item:1,
-      //                       slideMove:1,
-      //                       auto:true,
-      //                       loop:true,
-      //                       speed:400,
-      //                       controls:true,
-      //                       pager:true,
-      //                       responsive : [
-      //                           {
-      //                               breakpoint:1024,
-      //                               settings: {
-      //                                   item:4,
-      //                                   slideMove:1,
-      //                                   // slideMargin:6
-      //                                 }
-      //                           }
-      //                       ]  
-      // });
+     
 
+      // full page 
+      $("#fullpage").fullpage({
+         navigation:true,
+         navigationPosition:'left',
+         // navigationTooltips:[]
+         sectionSelector:'.section',
+         autoScrolling:true,
+		   scrollHorizontally: true,
+         fixedElement:".topBar",
+         anchors:['firstSec','secondSec','thirdSec','fourthSec'],
+      });
+
+     
 
          // swiper slide 
 
@@ -295,6 +292,9 @@
             keyboard:{
                enabled:true,
             },
+            mousewheel:{
+               invert:false,
+            },   
 
          });
 

@@ -1,6 +1,6 @@
          
                   
-                     <section id="skillSec" class="commonSec">
+                     <section id="skillSec" class="section" >
                         <div class="skillTit title">
                            <h3>My Skill</h3>
                         </div>
@@ -85,7 +85,7 @@
 
                         </div>
                         <!-- end of skill grid -->
-   
+                     </section>
       
 
       
