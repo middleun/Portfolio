@@ -11,7 +11,7 @@
           <li data-menuanchor="secondSec"><a href="#secondSec" class="about">About</a></li>
           <li data-menuanchor="thirdSec"><a href="#thirdSec" class="skill">Skill</a></li>
           <li data-menuanchor="fourthSec"><a href="#fourthSec" class="prtfol">Portfolio</a></li>
-          <li ><a href="#" class="contact">Contact</a></li>
+          <!-- <li data-menuanchor="fifthSec"><a href="#fifthSec" class="contact">Contact</a></li> -->
        </ul>
        
     </div>           

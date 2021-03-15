@@ -48,7 +48,9 @@
                      <section id="mainSec" class="section" >
                         <div class="mainTit">
                            <h1 class="topTit">이</h1>
-                           <h1 class="midTit">中</h1>
+                           <h1 class="midTit">中心</h1>
+                           <h1 class="midTit">中心</h1>
+                           <h1 class="midTit">中心</h1>
                            <h1 class="botTit">은</h1>
                            <span>心을 잃지 않는 웹퍼블리셔</span>
 
@@ -126,7 +128,7 @@
 
                                  </div>
                                  <div class="prtfolTxt">
-                                    <h2>Data Base Project</h2>
+                                    <h2>Renewal Project</h2>
                                     <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
                                              부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
                                              설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
@@ -143,7 +145,7 @@
 
                                  </div>
                                  <div class="prtfolTxt">
-                                    <h2>Data Base Project</h2>
+                                    <h2>API Project</h2>
                                     <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
                                              부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
                                              설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
@@ -160,7 +162,7 @@
 
                                  </div>
                                  <div class="prtfolTxt">
-                                    <h2>Data Base Project</h2>
+                                    <h2>기획 Project</h2>
                                     <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
                                              부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
                                              설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
@@ -177,7 +179,7 @@
 
                                  </div>
                                  <div class="prtfolTxt">
-                                    <h2>Data Base Project</h2>
+                                    <h2>MY Schedule</h2>
                                     <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
                                              부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
                                              설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
@@ -204,14 +206,7 @@
 
 
                      </section>   
-                     <!-- end of portfolio section -->
-                     <section id="contactSec">
-                        <div class="contactTit title">
-                           <h3>Contact me</h3>
-
-                        </div>
-
-                     </section>
+                     <!-- end of portfolio section -->              
 
 
                   
@@ -220,6 +215,14 @@
                   <!-- end of center of section wrap -->
                </div>
                <!--end of section wrap-->
+
+               <footer id="footer">
+                  <div class="contactTit title">
+                     <h3>Contact me</h3>
+
+                  </div>
+
+               </footer>
          
                     
 
@@ -295,7 +298,7 @@
          // autoScrolling:true,
 		   // scrollHorizontally: true,
          // fixedElement:".topBar",
-         anchors:['firstSec','secondSec','thirdSec','fourthSec'],
+         anchors:['firstSec','secondSec','thirdSec','fourthSec','fifthSec'],
          scrollBar:true,
          scrollOverflowReset: true,
       });
@@ -312,7 +315,7 @@
 
             },
             loop:true,
-            // autoplay:true,
+            autoplay:true,
             // spacebetween:30,
             keyboard:{
                enabled:true,

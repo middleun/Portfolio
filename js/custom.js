@@ -83,71 +83,17 @@ $(function(){
         //     // $("#header").css({"background":"#f8dfb8"});
         //     $("#header .topBar").css({"position":"relative","background":"none"});
         // }
-    });      
+    });        
 
-    
 
-    //  Move Scroll to each location when click menu
-
-    //  3차시도
-    // const navLi=$("#hiddenNav ul li");
-    //     let navIdx=navLi.index();
-    //     let navClass=navLi.eq(navIdx).find("a").attr('class');
-       
-    //     console.log(navClass);          
-     
-
-    // if($(navLi).eq().click){
-    //     const offset=$("#"+navClass+"Sec").offset().top;
-    //     console.log(offset);
-
-    // }           // $(this).toggleClass('click');
-    // if($(this).eq(i).hasClass("click")){        
+    // Footer click event
+    $('#footer').click(function(){
         
-    // }
-
-
-    //  4차시도! 성공!
-    
-    // $('#hiddenNav ul li').click(function(event){
-    //     event.preventDefault();           
-
-    //     let navIdx=$(this).index();
-    //     // console.log(navIdx);
-    //     let navHref=$('#hiddenNav ul li').eq(navIdx).find("a").attr('href').split('#')[1];
-    //     let headerHeight=$('#header').outerHeight();
-    //     //   console.log(headerHeight);
-    //     const offset=$('#'+navHref).offset().top+headerHeight;
-    //     // console.log(offset);
-    //     // $('html,body').animate({scrollTop:offset}, 2000, 'linear');
-    //     return;
-    // });  
-
-
-
-          
-    //  2차시도
-    // $("#hiddenNav ul li a").click(function(){         
-    //     $(this).toggleClass("click");
-    //     if($(this).hasClass("click")){
-    //         // let offset=$('#skillSec').offset().top;
-    //         console.log(offset);
-            // $('html, body').animate({scrollTop:$('#skillSec').offset().top}, 1000, 'ease-in-out');
+        $("#footer").toggleClass("active");
         
-    //     }
         
-    // });
 
-    // 1차시도
-    // const loca=$('#hiddenNav ul li a').attr('href').split('#')[1];
-    // console.log(loca);
-
-    // if(loca == 'skill'){
-    //     const sectionOff = $('#' + loca + "Sec").offset().top;
-    //     // console.log(sectionOff);
-    //     $('html,body').animate({scrollTop:sectionOff}, 1000, 'ease-in-out');
-    // }
-
+    })
 
     
     
