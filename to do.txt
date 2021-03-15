@@ -41,7 +41,9 @@ to do from now
    - 슬라이드 내 컨텐츠를 변수처리???   
    - 반응형 (slider breakpoint)                                                          
 
-****height문제! (fitHeight??)
+
+6. contact section 
+   - fixed footer로
 
 6. section wrap 높이 문제 
 

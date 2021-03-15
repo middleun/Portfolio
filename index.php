@@ -94,7 +94,36 @@
                               <div class="prtfolBox swiper-slide">     
                            
                                  <div class="prtfolImg">
-                                    <img src="../portfolio/img/prtfol_img_1.png" alt="">
+                                    <img src="../portfolio/img/prtfol_img_2.png" alt="Data Base portfolio img">
+                                 </div>
+                                 <div class="prtfolTxt">
+                                    <h2><span>Data Base</span> Project</h2>
+                                    <div class="prtfolTag">
+                                       <span>#로그인 </span>
+                                       <span>#회원가입 </span>
+                                       <span>#Q&A </span>
+                                       <span>#회원관리 </span>
+                                       <span>#댓글관리 </span>
+                                    </div>
+                                    
+
+                                    <p>제작기간 : </p>
+                                    <div class="prtfolBtn">
+                                       <a href="#">pdf다운로드</a>
+                                       <a href="#">사이트 바로가기</a>
+                                    </div>
+                                    
+
+                                 </div>
+                                 
+                                 
+                              </div>
+                              <!-- end of prtfolBox /swiper-slide  -->
+                              <div class="prtfolBox swiper-slide">     
+                           
+                                 <div class="prtfolImg">
+                                    <img src="../portfolio/img/prtfol_img_2.png" alt="Data Base portfolio img">
+
                                  </div>
                                  <div class="prtfolTxt">
                                     <h2>Data Base Project</h2>
@@ -110,7 +139,8 @@
                               <div class="prtfolBox swiper-slide">     
                            
                                  <div class="prtfolImg">
-                                    <!-- <img src="#" alt=""> -->
+                                    <img src="../portfolio/img/prtfol_img_2.png" alt="Data Base portfolio img">
+
                                  </div>
                                  <div class="prtfolTxt">
                                     <h2>Data Base Project</h2>
@@ -126,7 +156,8 @@
                               <div class="prtfolBox swiper-slide">     
                            
                                  <div class="prtfolImg">
-                                    <!-- <img src="#" alt=""> -->
+                                    <img src="../portfolio/img/prtfol_img_2.png" alt="Data Base portfolio img">
+
                                  </div>
                                  <div class="prtfolTxt">
                                     <h2>Data Base Project</h2>
@@ -142,35 +173,20 @@
                               <div class="prtfolBox swiper-slide">     
                            
                                  <div class="prtfolImg">
-                                    <!-- <img src="#" alt=""> -->
+                                    <img src="../portfolio/img/prtfol_img_1.png" alt="Data Base portfolio img">
+
                                  </div>
                                  <div class="prtfolTxt">
                                     <h2>Data Base Project</h2>
                                     <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
                                              부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
                                              설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
-                                             불어 갑 때까지 피고 황금시대의 고행을 생명을 부패뿐이다.</p>
-                                    
+                                             불어 갑 때까지 피고 황금시대의 고행을 생명을 부패뿐이다.</p>                                   
 
                                  </div>
                               </div>
                               <!-- end of prtfolBox /swiper-slide  -->
-                              <div class="prtfolBox swiper-slide">     
-                           
-                                 <div class="prtfolImg">
-                                    <!-- <img src="#" alt=""> -->
-                                 </div>
-                                 <div class="prtfolTxt">
-                                    <h2>Data Base Project</h2>
-                                    <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
-                                             부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
-                                             설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
-                                             불어 갑 때까지 피고 황금시대의 고행을 생명을 부패뿐이다.</p>
-                                    
-
-                                 </div>
-                              </div>
-                              <!-- end of prtfolBox /swiper-slide  -->
+                              
 
 
                               
@@ -178,16 +194,24 @@
                            <!-- end of swiper wrapper -->
 
 
-                           <div class="prtfolNext swiper-button-next"></div>
-                           <div class="prtfolPrev swiper-button-prev"></div>
+                           
                         
 
                         </div>
                         <!-- end of prtfol contents -->
-                        
+                        <div class="prtfolNext swiper-button-next"></div>
+                           <div class="prtfolPrev swiper-button-prev"></div>
 
 
                      </section>   
+                     <!-- end of portfolio section -->
+                     <section id="contactSec">
+                        <div class="contactTit title">
+                           <h3>Contact me</h3>
+
+                        </div>
+
+                     </section>
 
 
                   
@@ -288,7 +312,7 @@
 
             },
             loop:true,
-            autoplay:true,
+            // autoplay:true,
             // spacebetween:30,
             keyboard:{
                enabled:true,

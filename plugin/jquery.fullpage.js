@@ -1225,9 +1225,10 @@
                 scrollings.push(Math.abs(value));
 
                 //preventing to scroll the site on mouse wheel when scrollbar is present
-                if(options.scrollBar){
-                    e.preventDefault ? e.preventDefault() : e.returnValue = false;
-                }
+                // if(options.scrollBar){
+                //     e.preventDefault ? e.preventDefault() : e.returnValue = false; 
+                // }
+               
 
                 //time difference between the last scroll and the current one
                 var timeDiff = curTime-prevTime;
