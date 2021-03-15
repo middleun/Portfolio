@@ -43,7 +43,8 @@ to do✔
 1. 레이아웃✔   ---> swiper slide            
 2. 슬라이드 내 컨텐츠를 변수처리???   
 3. 반응형 (slider breakpoint)    
-4. 화살표                                                      
+4. 화살표                 
+5. 이미지 호버 -> 제작기간 / 사용 언어                                     
 
 
 # footer(contact section)

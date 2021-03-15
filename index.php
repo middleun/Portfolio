@@ -109,7 +109,7 @@
                                     </div>
                                     
 
-                                    <p>제작기간 : </p>
+                                    <p>데이터베이스를 활용하여 만든 사이트입니다. </p>
                                     <div class="prtfolBtn">
                                        <a href="#">pdf다운로드</a>
                                        <a href="#">사이트 바로가기</a>
@@ -128,11 +128,46 @@
 
                                  </div>
                                  <div class="prtfolTxt">
-                                    <h2>Renewal Project</h2>
-                                    <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
-                                             부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
-                                             설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
-                                             불어 갑 때까지 피고 황금시대의 고행을 생명을 부패뿐이다.</p>
+                                    <h2><span>movie api</span> Project</h2>
+                                    <div class="prtfolTag">
+                                       <span>#검색기능 </span>
+                                       <span>#장르별 </span>
+                                       <span>#상세정보페이지 </span>
+                                       <span>#masonry </span>
+                                       <span>#블라블라 </span>
+                                    </div>                                    
+
+                                    <p>영화 api를 활용하여 만든 사이트입니다. </p>
+                                    <div class="prtfolBtn">
+                                       <a href="#">pdf다운로드</a>
+                                       <a href="#">사이트 바로가기</a>
+                                    </div>
+                                    
+
+                                 </div>
+                              </div>
+                              <!-- end of prtfolBox /swiper-slide  -->
+                              <div class="prtfolBox swiper-slide">     
+                           
+                                 <div class="prtfolImg">
+                                    <img src="../portfolio/img/prtfol_img_2.png" alt="Data Base portfolio img">
+
+                                 </div>
+                                 <div class="prtfolTxt">                                    
+                                    <h2><span>Renewal</span> Project</h2>
+                                    <div class="prtfolTag">
+                                       <span>#로그인 </span>
+                                       <span>#회원가입 </span>
+                                       <span>#Q&A </span>
+                                       <span>#회원관리 </span>
+                                       <span>#댓글관리 </span>
+                                    </div>                                    
+
+                                    <p>데이터베이스를 활용하여 만든 사이트입니다. </p>
+                                    <div class="prtfolBtn">
+                                       <a href="#">pdf다운로드</a>
+                                       <a href="#">사이트 바로가기</a>
+                                    </div>
                                     
 
                                  </div>
@@ -145,28 +180,21 @@
 
                                  </div>
                                  <div class="prtfolTxt">
-                                    <h2>API Project</h2>
-                                    <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
-                                             부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
-                                             설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
-                                             불어 갑 때까지 피고 황금시대의 고행을 생명을 부패뿐이다.</p>
+                                    <h2><span>My Schedule</span> Project</h2>
+                                    <div class="prtfolTag">
+                                       <span>#로그인 </span>
+                                       <span>#회원가입 </span>
+                                       <span>#Q&A </span>
+                                       <span>#회원관리 </span>
+                                       <span>#댓글관리 </span>
+                                    </div>
                                     
 
-                                 </div>
-                              </div>
-                              <!-- end of prtfolBox /swiper-slide  -->
-                              <div class="prtfolBox swiper-slide">     
-                           
-                                 <div class="prtfolImg">
-                                    <img src="../portfolio/img/prtfol_img_2.png" alt="Data Base portfolio img">
-
-                                 </div>
-                                 <div class="prtfolTxt">
-                                    <h2>기획 Project</h2>
-                                    <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
-                                             부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
-                                             설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
-                                             불어 갑 때까지 피고 황금시대의 고행을 생명을 부패뿐이다.</p>
+                                    <p>데이터베이스를 활용하여 만든 사이트입니다. </p>
+                                    <div class="prtfolBtn">
+                                       <a href="#">pdf다운로드</a>
+                                       <a href="#">사이트 바로가기</a>
+                                    </div>
                                     
 
                                  </div>
@@ -179,11 +207,21 @@
 
                                  </div>
                                  <div class="prtfolTxt">
-                                    <h2>MY Schedule</h2>
-                                    <p>사는가 이상, 위하여서 거친 가는 그와 철환하였는가? 미인을 위하여, 얼음과 동산에는 발휘하기 그들의 인류의 트고, 
-                                             부패뿐이다. 구하기 구할 꽃이 듣기만 인생을 그들의 살 인간의 아니한 아름다우냐? 뼈 만물은 두손을 수 인간의 것이다. 
-                                             설레는 불어 영원히 아니다. 위하여 얼마나 풀이 못하다 소담스러운 방황하였으며, 청춘 것이다. 
-                                             불어 갑 때까지 피고 황금시대의 고행을 생명을 부패뿐이다.</p>                                   
+                                    <h2><span>Web Planning</span> Project</h2>
+                                    <div class="prtfolTag">
+                                       <span>#로그인 </span>
+                                       <span>#회원가입 </span>
+                                       <span>#Q&A </span>
+                                       <span>#회원관리 </span>
+                                       <span>#댓글관리 </span>
+                                    </div>
+                                    
+
+                                    <p>데이터베이스를 활용하여 만든 사이트입니다. </p>
+                                    <div class="prtfolBtn">
+                                       <a href="#">pdf다운로드</a>
+                                       <a href="#">사이트 바로가기</a>
+                                    </div>                                 
 
                                  </div>
                               </div>

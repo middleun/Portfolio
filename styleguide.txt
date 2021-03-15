@@ -17,6 +17,19 @@ calm blue
 #084f93
 
 
+
+//deep sincerity.
+#1f2b6c
+
+--pallette
+#6389df
+#a3ccf4
+
+#bebcc1(gray)
+#c7bab1(beige)
+
+
+
 2. Font 
 - Noto Sans KR
 - Montserrat

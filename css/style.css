@@ -4,7 +4,7 @@
 /********************
  Hidden Navigation style
  *********************/
-#hiddenNav{width:100%; height:100vh; background:#084f93;top:0; font-size:30px; position:fixed; max-width:inherit; }
+#hiddenNav{width:100%; height:100vh; background:var(--main-color);top:0; font-size:30px; position:fixed; max-width:inherit; }
 #hiddenNav .hiddenWrap{float:right; height:auto; padding:0 10px;}
 
 #hiddenNav .hiddenWrap .hiddenTopBar{width:50px; height:auto; padding:10px;float:right;margin-top:20px; _position:fixed;
@@ -63,7 +63,7 @@ font-size:40px; }
 #header .topBar span{display:block; width:100%; height:4px; background: #fff; _border-radius: 10px;
 margin:8px auto; position:relative;transition:width 0.4s ease; }
 
-#header .topBar::before{content:''; display: block; box-sizing: border-box; width:120px; height:50px; background:#ba621c; 
+#header .topBar::before{content:''; display: block; box-sizing: border-box; width:120px; height:50px; background:var(--main-color); 
 _position:absolute; z-index:-1; left:-20px; opacity:0.8; _transform:skewX(10deg); transform: translate(-25px, 45px) skew(16deg, 0deg);
 transition:opacity 0.4s ease;}
 #header .topBar:hover span:nth-child(1){width:80%;right:20%;}
@@ -104,7 +104,7 @@ font-weight: 600; font-size: 40px; color:#253812; bottom:40%;}
 font-family: 'Noto Sans KR'; position:absolute; right:0;}
 #aboutSec .aboutTxt h1{font-weight: 700; font-size: 40px;text-align: right; text-transform: uppercase; padding-bottom:10px;
 border-bottom:2px solid #253812; padding:10px 0;}
-#aboutSec .aboutTxt h1 span{display: inline-block;color:#ba621c;}
+#aboutSec .aboutTxt h1 span{display: inline-block;color:var(--main-color);}
  #aboutSec .aboutTxt .aboutInfo{width:100%; height: 100%;  font-family: 'Montserrat';
 overflow:hidden; padding:50px 10px 0 10px ; }
  #aboutSec .aboutTxt .aboutInfo p{font-size:20px;font-weight: 600;text-align: justify;}
@@ -143,14 +143,18 @@ max-width:1200px;}
 #prtfolSec .prtfolBox{width:100%; height:auto; display:flex; justify-content: space-between; align-items: center; position:relative;
 padding:0 5% 0 0;}
 #prtfolSec .prtfolBox .prtfolImg{_width:45%; height:400px; _background:#ba621c; _margin:20px; _display:flex; _justify-content: center;
-_align-items: center;}
+_align-items: center; }
 /* #prtfolSec .prtfolBox:nth-child(2) .prtfolImg{background: #253812;;} */
-#prtfolSec .prtfolBox .prtfolImg img{height:100%;}
+#prtfolSec .prtfolBox .prtfolImg img{height:100%; transition: all 0.4s linear;}
+#prtfolSec .prtfolBox .prtfolImg:hover img{transform: scale(1.2);}
+
 #prtfolSec .prtfolBox .prtfolTxt{width:50%; _height:150px; display:flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
 #prtfolSec .prtfolBox .prtfolTxt h2{width:100%; font-size: 30px; display:flex; justify-content: flex-start;}
-#prtfolSec .prtfolBox .prtfolTxt h2 span{display:block; text-transform: uppercase; margin-right:10px; }
+#prtfolSec .prtfolBox .prtfolTxt h2 span{display:block; text-transform: uppercase; margin-right:10px; color:var(--main-color)}
 
-#prtfolSec .prtfolBox .prtfolTxt span{display:inline-block; margin-bottom:30px; margin-right:10px;}
+#prtfolSec .prtfolBox .prtfolTxt .prtfolTag span{display:inline-block; margin-bottom:30px; margin-right:10px; font-size:25px; 
+color:#3C4572;}
+
 #prtfolSec .prtfolBox .prtfolTxt p{width:100%; text-align: justify;}
 #prtfolSec .prtfolBox .prtfolTxt .prtfolBtn{width:60%; margin-top:30px; display:flex; justify-content: space-between; align-items: center;}
 #prtfolSec .prtfolBox .prtfolTxt .prtfolBtn a{width:45%; height:50px; padding:10px;  border:1px solid #253812; text-align: center;
@@ -158,13 +162,13 @@ _line-height: 1.2;}
 
 #prtfolSec .prtfolArrow{position:absolute; width:100%; height:50px; display:flex; align-items: center;
 justify-content: space-between;bottom:65%; padding:0 10%;}
-#prtfolSec .prtfolArrow i{color:#ba621c; font-size:80px;display:block; outline: none;}
+#prtfolSec .prtfolArrow i{color:#bebcc1; font-size:80px;display:block; outline: none;}
 #prtfolSec .prtfolArrow i:focus{outline: none;}
 
 /*****************
 Contact Section Style 
  ******************/
-#footer{width:100%; height:80px; position:fixed; left:0; bottom:0;background: #ba621c; opacity:0.9;display:flex; justify-content: center;align-items: center;
+#footer{width:100%; height:80px; position:fixed; left:0; bottom:0;background: var(--main-color); opacity:0.9;display:flex; justify-content: center;align-items: center;
 transition:height 0.4s ease; }
 #footer .contactTit{margin-bottom:0;z-index:20;position:relative; color:#fff; opacity:1; 
 _text-shadow: -2px 0 black, 0 2px black,2px 0 black, 0 -2px black;}
