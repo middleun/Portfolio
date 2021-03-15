@@ -4,7 +4,7 @@
 /********************
  Hidden Navigation style
  *********************/
-#hiddenNav{width:100%; height:100vh; background:#ba621c;top:0; font-size:30px; position:fixed; max-width:inherit; }
+#hiddenNav{width:100%; height:100vh; background:#084f93;top:0; font-size:30px; position:fixed; max-width:inherit; }
 #hiddenNav .hiddenWrap{float:right; height:auto; padding:0 10px;}
 
 #hiddenNav .hiddenWrap .hiddenTopBar{width:50px; height:auto; padding:10px;float:right;margin-top:20px; _position:fixed;
@@ -59,7 +59,7 @@ padding:0 50px; transition:all 0.4s linear; z-index:10; _border-bottom:1px solid
 #header .topLogo h1{width:100%; text-align: center; font-family: 'Montserrat'; text-transform: uppercase;font-weight: 700;
 font-size:40px; }
 
-#header .topBar{width:35px; height:auto; z-index:10; cursor: pointer;  padding:50px 0;}
+#header .topBar{width:35px; height:auto; z-index:10; cursor: pointer;  padding:30px 0;}
 #header .topBar span{display:block; width:100%; height:4px; background: #fff; _border-radius: 10px;
 margin:8px auto; position:relative;transition:width 0.4s ease; }
 
@@ -136,6 +136,8 @@ color:#253812;}
 /*****************
  Portfolio Section Style 
  ******************/
+
+#prtfolSec{position:relative;}
 #prtfolSec .prtfolCon{width:100%; _height:100%; _border:1px solid #253812; margin-bottom:10px;box-shadow:3px 3px 15px rgba(0, 0, 0, 0.233);
 max-width:1200px;}
 #prtfolSec .prtfolBox{width:100%; height:auto; display:flex; justify-content: space-between; align-items: center; position:relative;
@@ -147,21 +149,29 @@ _align-items: center;}
 #prtfolSec .prtfolBox .prtfolTxt{width:50%; _height:150px; display:flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
 #prtfolSec .prtfolBox .prtfolTxt h2{width:100%; font-size: 30px; display:flex; justify-content: flex-start;}
 #prtfolSec .prtfolBox .prtfolTxt h2 span{display:block; text-transform: uppercase; margin-right:10px; }
-#prtfolSec .prtfolBox .prtfolTxt span{display:inline-block; margin-bottom:30px;}
+
+#prtfolSec .prtfolBox .prtfolTxt span{display:inline-block; margin-bottom:30px; margin-right:10px;}
 #prtfolSec .prtfolBox .prtfolTxt p{width:100%; text-align: justify;}
 #prtfolSec .prtfolBox .prtfolTxt .prtfolBtn{width:60%; margin-top:30px; display:flex; justify-content: space-between; align-items: center;}
 #prtfolSec .prtfolBox .prtfolTxt .prtfolBtn a{width:45%; height:50px; padding:10px;  border:1px solid #253812; text-align: center;
 _line-height: 1.2;}
 
-
-#prtfolSec .prtfolNext,
-#prtfolSec .prtfolPrev{color:#ba621c; }
-
+#prtfolSec .prtfolArrow{position:absolute; width:100%; height:50px; display:flex; align-items: center;
+justify-content: space-between;bottom:65%; padding:0 10%;}
+#prtfolSec .prtfolArrow i{color:#ba621c; font-size:80px;display:block; outline: none;}
+#prtfolSec .prtfolArrow i:focus{outline: none;}
 
 /*****************
 Contact Section Style 
  ******************/
 #footer{width:100%; height:80px; position:fixed; left:0; bottom:0;background: #ba621c; opacity:0.9;display:flex; justify-content: center;align-items: center;
-transition:height 0.4s ease;}
-#footer .contactTit{margin-bottom:0;z-index:20;position:relative; color:#fff; opacity:1;_text-shadow: -2px 0 black, 0 2px black,2px 0 black, 0 -2px black;}
-#footer.active{height:200px; opacity:1;}
+transition:height 0.4s ease; }
+#footer .contactTit{margin-bottom:0;z-index:20;position:relative; color:#fff; opacity:1; 
+_text-shadow: -2px 0 black, 0 2px black,2px 0 black, 0 -2px black;}
+#footer .contactCon{display:none;}
+
+#footer.active{height:200px; opacity:1; justify-content: flex-start; flex-direction: column;}
+#footer.active .contactCon{ position:relative;width:100%; height:100px; margin-top:20px;   max-width:50%;  display:flex; }
+#footer.active .contactCon ul{width:100%;display:flex;justify-content:space-between;align-items: center;margin:auto;}
+/* #footer.active .contactCon ul li{width:33.33%;} */
+#footer.active .contactCon ul li a{font-size:50px; color:#fff;}

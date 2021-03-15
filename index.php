@@ -26,7 +26,7 @@
 
 
    <!-- Awesome Font cdn link -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 
 </head>
 <body>
@@ -193,7 +193,7 @@
 
                               
                            </div>
-                           <!-- end of swiper wrapper -->
+                           <!-- end of swiper wrapper -->                  
 
 
                            
@@ -201,8 +201,18 @@
 
                         </div>
                         <!-- end of prtfol contents -->
-                        <div class="prtfolNext swiper-button-next"></div>
-                           <div class="prtfolPrev swiper-button-prev"></div>
+                        <div class="prtfolArrow">
+                           
+                           <div class="prtfolPrev">
+                              <i class="fas fa-caret-left"></i>
+
+                           </div>
+                           <div class="prtfolNext">
+                              <i class="fas fa-caret-right"></i>
+                           </div>
+                        </div>
+                        
+                        
 
 
                      </section>   
@@ -218,9 +228,17 @@
 
                <footer id="footer">
                   <div class="contactTit title">
-                     <h3>Contact me</h3>
+                     <h3>Contact me</h3>                   
 
                   </div>
+                  <div class="contactCon">
+                     <ul>
+                        <li><a href="#"><i class="fas fa-phone"></i></a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                     </ul>
+                  </div>
+                  
 
                </footer>
          
@@ -310,12 +328,14 @@
          var swiper = new Swiper('.swiper-container',{
             cssMode : true,
             navigation:{
-               nextEl : '.swiper-button-next',
-               prevEl : '.swiper-button-prev',
+               nextEl:'.prtfolNext',
+               prevEl:'.prtfolPrev',
 
-            },
+            },            
             loop:true,
-            autoplay:true,
+            autoplay:{
+               delay:5000,
+            },
             // spacebetween:30,
             keyboard:{
                enabled:true,
