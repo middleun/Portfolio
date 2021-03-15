@@ -30,6 +30,9 @@
 
 </head>
 <body>
+   <div class="loadingPage">
+
+   </div>
    <div class="wrap">
 
          <!-- hidden navigation -->
@@ -45,7 +48,7 @@
 
                <div class="sectionWrap" id="fullpage">
                   <div class="center"> 
-                     <section id="mainSec" class="section" >
+                     <section id="mainSec" class="section fp-auto-height-responsive" >
                         <div class="mainTit">
                            <h1 class="topTit">이</h1>
                            <h1 class="midTit">中心</h1>
@@ -59,7 +62,7 @@
                      </section> 
                       <!-- end of main section -->
 
-                     <section id="aboutSec" class="section">
+                     <section id="aboutSec" class="section fp-auto-height-responsive">
                        
                         <div class="aboutBox clear">
                            <div class="aboutVideo" >
@@ -86,7 +89,7 @@
                      <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/skill.php";?>
                      <!-- end of Skill Section -->
 
-                     <section id="prtfolSec" class="section" >
+                     <section id="prtfolSec" class="section fp-auto-height-responsive fp-auto-height" >
                         <div class="prtfolTit title">
                            <h3>Portfolio</h3>
                         </div>
@@ -225,13 +228,24 @@
 
                                  </div>
                               </div>
-                              <!-- end of prtfolBox /swiper-slide  -->
-                              
+                              <!-- end of prtfolBox /swiper-slide  -->                            
 
 
                               
                            </div>
-                           <!-- end of swiper wrapper -->                  
+                           <!-- end of swiper wrapper -->   
+                           <div class="prtfolArrow">
+                           
+                              <div class="prtfolPrev">
+                                 <i class="fas fa-caret-left"></i>
+
+                              </div>
+                              <div class="prtfolNext">
+                                 <i class="fas fa-caret-right"></i>
+                              </div>
+                           </div>     
+                        
+                                     
 
 
                            
@@ -239,16 +253,7 @@
 
                         </div>
                         <!-- end of prtfol contents -->
-                        <div class="prtfolArrow">
-                           
-                           <div class="prtfolPrev">
-                              <i class="fas fa-caret-left"></i>
-
-                           </div>
-                           <div class="prtfolNext">
-                              <i class="fas fa-caret-right"></i>
-                           </div>
-                        </div>
+                        
                         
                         
 
@@ -318,7 +323,13 @@
 
 
 <script>
-   $(function(){
+   // loading page
+   $(document).ready(function(){
+         $(".loadingPage").css({"opacity":"0"},5000);
+      });
+
+   $(function(){   
+          
 
       
       // About Section Name Title effect
@@ -327,10 +338,10 @@
       
       $(".topTit, .botTit, .mainTit span").css("opacity","0");
 
-      $(".midTit").click(function(){         
+      $(midTit).click(function(){         
          $(this).toggleClass("click");
          if($(this).hasClass("click")){
-            $(".midTit").addClass("active");
+            $(mb_decode_numericentity).addClass("active");
             $(".topTit, .botTit, .mainTit span").css("opacity","1");
             $(".topTit, .botTit, .mainTit span").css("transition","opacity 1.2s linear");
             
@@ -351,12 +362,25 @@
          // navigation:true,
          // navigationPosition:'left',
          sectionSelector:'.section',
-         // autoScrolling:true,
+         autoScrolling:true,
 		   // scrollHorizontally: true,
-         // fixedElement:".topBar",
+         fixedElement:".topBar",
          anchors:['firstSec','secondSec','thirdSec','fourthSec','fifthSec'],
+         animateAnchor:true,
          scrollBar:true,
-         scrollOverflowReset: true,
+         responsiveHeight:537,
+         // scrollOverflowReset:true,
+         
+         // css3:true,
+         // onLeave: function(origin, destination, direction){
+		   // //목적지가 세번째 구역인 경우 스크롤되지 않음
+		   //    if(destination.index == 3){
+			//    return false;
+         //    }
+         // } 
+		
+         
+         
       });
 
      
@@ -383,10 +407,12 @@
             },   
 
          });
+         
 
 
 
    });   
+  
   
      
    

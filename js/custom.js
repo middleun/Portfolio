@@ -2,6 +2,7 @@
 
 $(function(){
 
+
     // page tilt effect when topNavBar click
     var tiltPage={
         $contents:$('.contentsWrap'),
@@ -13,14 +14,14 @@ $(function(){
             this.$contents.addClass('tilt');
             this.$topBar.off('click');
             $('.topBar').on('click',this.close.bind(this));
-            this.topBarFix(true);
+            // this.topBarFix(true);
             // console.log('opening');
         },
         close:function(){
             this.$contents.removeClass('tilt');
             $('.topBar',).off('click');
             this.$topBar.on('click', this.open.bind(this));
-            this.topBarFix(false);
+            // this.topBarFix(false);
             // console.log('closing');
 
 
@@ -31,26 +32,26 @@ $(function(){
             this.$contentsFront.css('transform-origin','center' + equation +'%');
         },
 
-        topBarFix:function(opening){
-            if(opening){
-                $(".topBar").css({
-                    // position:'absolute',
-                    top:this.$contents.scrollTop() + 30 + 'px'
-                });
-            }else{
-                setTimeout(function(){
-                    $(".topBar").css({
-                        // position:'fixed',
-                        top:'30px'
-                    });
-                }, 300);
-            }
-        },
+        // topBarFix:function(opening){
+        //     if(opening){
+        //         $(".topBar").css({
+        //             // position:'absolute',
+        //             top:this.$contents.scrollTop() + 30 + 'px'
+        //         });
+        //     }else{
+        //         setTimeout(function(){
+        //             $(".topBar").css({
+        //                 // position:'fixed',
+        //                 top:'30px'
+        //             });
+        //         }, 300);
+        //     }
+        // },
 
         bindEvents:function(){
             this.$topBar.on('click',this.open.bind(this));
             $('.hiddenTopBar').on('click', this.close.bind(this));
-            $('.home, .about, .skill, .prtfol, .contact').on('click', this.close.bind(this));
+            $('.home, .about, .skill, .prtfol').on('click', this.close.bind(this));
             this.$contents.on('scroll',this.updateTransformOrigin.bind(this));
 
         },
@@ -67,6 +68,17 @@ $(function(){
 
     
      // Fixed Header
+    // $(window).on('mousewheel',function(e){ 
+    //     var wheel = e.originalEvent.wheelDelta; 
+    //     console.log(wheel);
+    //     // mouse wheel이 180부터 시작....
+    //     if(wheel = 180){
+    //         $("#header .topBar").css({"position":"fixed", "right":"50px"});
+            
+
+
+    //     }
+    // });    
 
     const offTop = $("#header").offset().top;    
     // console.log(offTop);
@@ -79,6 +91,8 @@ $(function(){
             
             
         }
+
+       
         // else{
         //     // $("#header").css({"background":"#f8dfb8"});
         //     $("#header .topBar").css({"position":"relative","background":"none"});
