@@ -78,7 +78,7 @@ transition:color 0.4s; cursor:pointer; }
 About Section Style 
 ******************/
 #aboutSec{background:#a3ccf413;}
-#aboutSec .about-grid{width:100%; height:500px; display:grid; grid-template-columns: repeat(4,max(25%));
+#aboutSec .about-grid{width:100%; height:550px; display:grid; grid-template-columns: repeat(4,max(25%));
 grid-template-rows: repeat(2, min(50%)); _gap:5px; _border:1px solid #000;}
 /* #aboutSec .about-grid .about-item{width:20%;} */
 /* #aboutSec .about-grid .about-item.about-img{height:70%;} */
@@ -106,8 +106,8 @@ align-items: center;}
 #aboutSec .skill-grid .skill-item .skill-con{width:90%;display: flex;flex-wrap: wrap; padding-left:20px;}
 #aboutSec .skill-grid .skill-item .skill-con h3{margin-right:20px;}
 #aboutSec .skill-grid .skill-item .skill-con p{font-size:20px;}
-#aboutSec .skill-grid .skill-item .skill-con p input{width:35px; font-size:20px;text-align:center}
+#aboutSec .skill-grid .skill-item .skill-con p input{width:35px; font-size:20px;text-align:center;}
 #aboutSec .skill-grid .skill-item .skill-con .skill-bar-box{width:600px;border:1px solid #bebcc1; padding:5px 0;}
 #aboutSec .skill-grid .skill-item .skill-con .skill-bar-box .skill-bar{display:block;height:15px; background:var(--main-color);width:0;}
-
+#aboutSec .skill-grid .skill-item .skill-con span{color:#5a595a;}
 
