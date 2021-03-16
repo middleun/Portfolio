@@ -323,10 +323,7 @@
 
 
 <script>
-   // loading page
-   $(document).ready(function(){
-         $(".loadingPage").css({"opacity":"0"},5000);
-      });
+  
 
    $(function(){   
           
@@ -358,17 +355,17 @@
      
 
       // full page 
-      $("#fullpage").fullpage({
-         // navigation:true,
-         // navigationPosition:'left',
-         sectionSelector:'.section',
-         autoScrolling:true,
-		   // scrollHorizontally: true,
-         fixedElement:".topBar",
-         anchors:['firstSec','secondSec','thirdSec','fourthSec','fifthSec'],
-         animateAnchor:true,
-         scrollBar:true,
-         responsiveHeight:537,
+      // $("#fullpage").fullpage({
+      //    // navigation:true,
+      //    // navigationPosition:'left',
+      //    sectionSelector:'.section',
+      //    autoScrolling:true,
+		//    // scrollHorizontally: true,
+      //    fixedElement:".topBar",
+      //    anchors:['firstSec','secondSec','thirdSec','fourthSec','fifthSec'],
+      //    animateAnchor:true,
+      //    scrollBar:true,
+      //    responsiveHeight:537,
          // scrollOverflowReset:true,
          
          // css3:true,
@@ -381,7 +378,7 @@
 		
          
          
-      });
+      // });
 
      
 
@@ -395,9 +392,9 @@
 
             },            
             loop:true,
-            autoplay:{
-               delay:5000,
-            },
+            // autoplay:{
+            //    delay:5000,
+            // },
             // spacebetween:30,
             keyboard:{
                enabled:true,
@@ -412,6 +409,10 @@
 
 
    });   
+    // loading page
+    $(document).ready(function(){
+         $(".loadingPage").css({"opacity":"0"},5000);
+      });
   
   
      

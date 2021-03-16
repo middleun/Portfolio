@@ -41,7 +41,7 @@ bottom:0; height:2px; background:#fff;  width:0; right: 0;transition:all 0.5s li
 
 
 /* common contents wrap style */
-.contentsWrap{width:100%; height: 100vh; position:relative; z-index:2;   _display:none;}
+.contentsWrap{width:100%; _height: 100vh; position:relative; z-index:2;   _display:none;}
 .contentsWrap.tilt{overflow: hidden; pointer-events: none;}
 .contentsWrap.tilt .contentsFront{transform: rotate(-10deg) translateZ(0); overflow:hidden;}
 
@@ -157,7 +157,7 @@ _align-items: center; }
 #prtfolSec .prtfolBox .prtfolTxt h2{width:100%; font-size: 30px; display:flex; justify-content: flex-start;}
 #prtfolSec .prtfolBox .prtfolTxt h2 span{display:block; text-transform: uppercase; margin-right:10px; color:var(--main-color)}
 
-#prtfolSec .prtfolBox .prtfolTxt .prtfolTag span{display:inline-block; margin-bottom:30px; margin-right:10px; font-size:25px; 
+#prtfolSec .prtfolBox .prtfolTxt .prtfolTag span{display:inline-block; margin-bottom:30px; margin-right:10px; font-size:20px; 
 color:#3C4572;}
 
 #prtfolSec .prtfolBox .prtfolTxt p{width:100%; text-align: justify;}
@@ -174,7 +174,7 @@ justify-content: space-between;_bottom:65%; padding:0 10%;}
 Footer Style 
  ******************/
 #footer{width:100%; height:80px; position:fixed; left:0; bottom:0;background: var(--main-color); opacity:0.9;display:flex; justify-content: center;align-items: center;
-transition:height 0.4s ease; }
+transition:height 0.4s ease; z-index:20;}
 #footer .contactTit{margin-bottom:0;z-index:20;position:relative; color:#fff; opacity:1; 
 _text-shadow: -2px 0 black, 0 2px black,2px 0 black, 0 -2px black;}
 #footer .contactCon{display:none;}
