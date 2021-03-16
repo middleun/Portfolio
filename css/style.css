@@ -1,186 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-.loadingPage{width:100%; height:100%; position:fixed; left:0; top:0; background:#3C4572; z-index:999;
-transition:all 1.2s linear 2s;}
-
-
-
 /********************
  Hidden Navigation style
  *********************/
 #hiddenNav{width:100%; height:100vh; background:var(--main-color);top:0; font-size:30px; position:fixed; max-width:inherit; }
-#hiddenNav .hiddenWrap{float:right; height:auto; padding:0 10px;}
+#hiddenNav .hidden-wrap{float:right; height:auto; padding:0 10px;}
 
-#hiddenNav .hiddenWrap .hiddenTopBar{width:50px; height:auto; padding:10px;float:right;margin-top:20px; _position:fixed;
+#hiddenNav .hidden-wrap .hidden-top-bar{width:50px; height:auto; padding:10px;float:right;margin-top:20px; _position:fixed;
 cursor:pointer;}
-#hiddenNav .hiddenWrap .hiddenTopBar span{display:block; width:100%; height:3px; background: #fff;
+#hiddenNav .hidden-wrap .hidden-top-bar span{display:block; width:100%; height:3px; background: #fff;
 border-radius: 10px; margin:5px auto; }
-#hiddenNav .hiddenWrap .hiddenTopBar span:nth-child(1){transform:translateY(219%) rotate(45deg);} 
-#hiddenNav .hiddenWrap .hiddenTopBar span:nth-child(2){transform:translateY(-50%) rotate(-45deg);} 
+#hiddenNav .hidden-wrap .hidden-top-bar span:nth-child(1){transform:translateY(219%) rotate(45deg);} 
+#hiddenNav .hidden-wrap .hidden-top-bar span:nth-child(2){transform:translateY(-50%) rotate(-45deg);} 
 
-#hiddenNav .hiddenWrap ul{margin-top:60px;   padding-top:10px;}
-#hiddenNav .hiddenWrap ul li{margin:20px; text-align: right; font-family: 'Montserrat'; }
-#hiddenNav .hiddenWrap ul li a{display:block;text-transform: uppercase; color:#fff; position:relative; transition:color 0.4s ease;}
-#hiddenNav .hiddenWrap ul li:hover a{color:#f8dfb8;}
+#hiddenNav .hidden-wrap ul{margin-top:60px;   padding-top:10px;}
+#hiddenNav .hidden-wrap ul li{margin:40px; text-align: right; font-family: 'Montserrat'; }
+#hiddenNav .hidden-wrap ul li a{display:block;text-transform: uppercase; color:#fff; position:relative; transition:color 0.4s ease;}
+#hiddenNav .hidden-wrap ul li:hover a{color:#c7bab1;}
 
-#hiddenNav .hiddenWrap ul li a:before{content:''; box-sizing:border-box; display:block; z-index:-1; opacity:0.6;
+#hiddenNav .hidden-wrap ul li a:before{content:''; box-sizing:border-box; display:block; z-index:-1; opacity:0.6;
 height:50%; background:#f8dfb8;  width: 0; bottom:0; right: 0; transition:transform 0.5s linear; position:absolute;}
-#hiddenNav .hiddenWrap ul li:hover a:before{ width:60%; }
-#hiddenNav .hiddenWrap ul li:nth-child(3):hover a:before{width:50%;}
-#hiddenNav .hiddenWrap ul li:nth-child(4):hover a:before{width:100%;}
-#hiddenNav .hiddenWrap ul li:nth-child(5):hover a:before{width:80%;}
-
-/* line hover effect */
-/* #hiddenNav .hiddenWrap ul li a:after{content:''; box-sizing:border-box; display:block; 
-bottom:0; height:2px; background:#fff;  width:0; right: 0;transition:all 0.5s linear; position:absolute;}
-#hiddenNav .hiddenWrap ul li:hover a:after{ width:60%; }
-#hiddenNav .hiddenWrap ul li:nth-child(3):hover a:after{width:50%;}
-#hiddenNav .hiddenWrap ul li:nth-child(4):hover a:after{width:100%;}
-#hiddenNav .hiddenWrap ul li:nth-child(5):hover a:after{width:80%;} */
+#hiddenNav .hidden-wrap ul li:hover a:before{ width:60%; }
+#hiddenNav .hidden-wrap ul li:nth-child(3):hover a:before{width:50%;}
+#hiddenNav .hidden-wrap ul li:nth-child(4):hover a:before{width:100%;}
+#hiddenNav .hidden-wrap ul li:nth-child(5):hover a:before{width:80%;}
 
 
-/* common contents wrap style */
-.contentsWrap{width:100%; _height: 100vh; position:relative; z-index:2;   _display:none;}
-.contentsWrap.tilt{overflow: hidden; pointer-events: none;}
-.contentsWrap.tilt .contentsFront{transform: rotate(-10deg) translateZ(0); overflow:hidden;}
-
-.contentsFront{background:#fff; transform-origin: center 70%;box-shadow: 4px -4px rgba(0, 0, 0, 0.39);transition:all 0.4s linear;
+/********************
+ Contents wrap style
+ *********************/
+.contents-wrap{_width:100%; _height: 100vh; position:relative; z-index:2;   _display:none;}
+.contents-wrap.tilt{overflow: hidden; pointer-events: none;}
+.contents-wrap.tilt .contents-front{transform: rotate(-10deg) translateZ(0); overflow:hidden;}
+ 
+.contents-front{width:100%; height:100vh;background:#fff; transform-origin: center 70%;box-shadow: 4px -4px rgba(0, 0, 0, 0.39);transition:all 0.4s linear;
 position:relative; z-index:3; pointer-events: auto;}
-
-.contentsWrap.tilt #header{justify-content: center;}
-.contentsWrap.tilt #header .topBar{display:none;}
-/* .contentsWrap.tilt .sectionWrap{overflow: hidden;} */
+ 
+.contents-wrap.tilt #header{justify-content: center;}
+.contents-wrap.tilt #header .top-bar{display:none;}
 
 
 /******************
  Header Style 
  *******************/
-#header{width:100%;  height:100px; display: flex;justify-content: space-between; align-items: center; position:relative;
-padding:0 50px; transition:all 0.4s linear; z-index:10; _border-bottom:1px solid #ba631c77; _background:#25381242;}
-
-
-#header .topLogo{height:100%;_background: #ba621c; display: flex; justify-content: center; align-items: center;}
-#header .topLogo h1{width:100%; text-align: center; font-family: 'Montserrat'; text-transform: uppercase;font-weight: 700;
+ #header{width:100%;  height:100px; display: flex;justify-content: space-between; align-items: center; position:relative;
+padding:0 0 0 50px; transition:all 0.4s linear; z-index:10; _border-bottom:1px solid #ba631c77; _background:#25381242;}    
+    
+#header .top-logo{height:100%;_background: #ba621c; display: flex; justify-content: center; align-items: center;}
+#header .top-logo h1{width:100%; text-align: center; font-family: 'Montserrat'; text-transform: uppercase;font-weight: 700;
 font-size:40px; }
-
-#header .topBar{width:35px; height:100%; z-index:10; cursor: pointer;  _padding:30px 0;}   
-#header .topBar span{display:block; width:100%; height:4px; background: #fff; _border-radius: 10px;
-margin:8px auto; position:relative;transition:width 0.4s ease; }
-
-#header .topBar::before{content:''; display: block; box-sizing: border-box; width:120px; height:50px; background:var(--main-color); 
-_position:absolute; z-index:-1; left:-20px; opacity:0.8; _transform:skewX(10deg); transform: translate(-25px, 45px) skew(16deg, 0deg);
-transition:opacity 0.4s ease;}
-#header .topBar:hover span:nth-child(1){width:80%;right:20%;}
-/* #header .topBar:hover span:nth-child(2){width:0%; } */
-#header .topBar:hover span:nth-child(3){width:60%;right:20%; }
-#header .topBar:hover::before{opacity:1;}
-
+    
+#header .top-bar{width:130px; _height:100%; z-index:10; cursor: pointer; background:var(--main-color); display:flex; flex-direction: column;
+align-items: flex-end; padding:10px 50px 10px 20px; }   
+#header .top-bar span{display:block; width:35px; height:4px; background:#fff; _border-radius: 10px;
+margin:4px; ;transition:all 0.4s ease; }
+    
+#header .top-bar:hover span:nth-child(1){width:80%;right:20%;}
+#header .top-bar:hover span:nth-child(3){width:60%;right:20%; }
 
 
 /*****************
 Main Section Style 
- ******************/
-/* #mainSec{background:#25381242;} */
-#mainSec .mainTit{width:100%; height:50%;_display: flex; _flex-direction:column;  _display:none; position:relative;
-justify-content: center; ;}
-#mainSec .mainTit h1{font-size:100px; font-family: 'Noto Sans KR'; }
-#mainSec .mainTit h1.topTit,
-#mainSec .mainTit h1.botTit{left:-50%; border-bottom:1px solid #253812;}
-#mainSec .mainTit h1.midTit{display:flex; justify-content: center;align-items: center; transition:transform 1.2s linear;
-_border-bottom:1px solid #253812;}
-#mainSec .mainTit h1.midTit:nth-child(1),
-#mainSec .mainTit h1.midTit:nth-child(3){color:#fff; text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;}
-#mainSec .mainTit h1.midTit.active{transform:translateX(-45%) ;}
-#mainSec .mainTit span{display: block; width:70%; position:absolute; left:10%; box-sizing: border-box;padding:20px;
-font-weight: 600; font-size: 40px; color:#253812; bottom:40%;}
+******************/
+#mainSec{display:flex; justify-content: center; flex-direction: column; align-items: center;}
+#mainSec .main-tit{width:100%; height:50%; display: flex; justify-content: center;
+align-items: center;position:relative; }
+#mainSec .main-tit h1{font-size:200px; font-family: 'Noto Sans KR';color:#fff; text-shadow: -3px 0 black, 0 3px black,3px 0 black, 0 -3px black;
+transition:color 0.4s; cursor:pointer; }
+#mainSec .main-tit h1:hover{color:#000; text-shadow: none;}
 
-
-
- /*****************
- About Section Style 
- ******************/
- 
- #aboutSec .aboutBox{width:100%; height:100%;position:relative; margin-top:30px;}
- #aboutSec .aboutVideo{width:50%;  float:left; display:flex; justify-content: flex-start; align-items: center; overflow: hidden;}
- #aboutSec .aboutVideo video{width:60%;display: block; box-sizing: border-box; padding:20px;  }
-
-#aboutSec .aboutTxt{_float:right; width:60%; height:100%;display:flex; justify-content: center; flex-direction: column;
-font-family: 'Noto Sans KR'; position:absolute; right:0;}
-#aboutSec .aboutTxt h1{font-weight: 700; font-size: 40px;text-align: right; text-transform: uppercase; padding-bottom:10px;
-border-bottom:2px solid #253812; padding:10px 0;}
-#aboutSec .aboutTxt h1 span{display: inline-block;color:var(--main-color);}
- #aboutSec .aboutTxt .aboutInfo{width:100%; height: 100%;  font-family: 'Montserrat';
-overflow:hidden; padding:50px 10px 0 10px ; }
- #aboutSec .aboutTxt .aboutInfo p{font-size:20px;font-weight: 600;text-align: justify;}
-
-
- /*****************
- Skill Section Style 
- ******************/
- 
-/* #skillSec{margin-top:50px;} */
-
-#skillSec .skillGrid{width:100%; height:auto;display:grid; grid-template-columns: repeat(3,1fr); grid-template-rows: repeat(2, minmax(200px,auto));
-gap:5px; padding-top:30px;}
-/* #skillSec .skillGrid .item{border:2px solid #f8dfb8;} */
-
-#skillSec .skillGraph{width:100%; height:100%; display:flex; flex-direction: column; position: relative;}
-#skillSec .skillGraph .graphContainer{width:100%; height:100%; display: flex; position:relative}
-#skillSec .skillGraph .graphContainer .graphCircle{width:100%; margin:0 15px;display:flex; flex-direction: column;
-justify-content: center; align-items: center; position:relative;}
-#skillSec .skillGraph .graphContainer .graphCircle p{font-family: 'Montserrats';font-size:30px; font-weight: 700;}
-#skillSec .skillGraph .graphContainer .graphCircle canvas{position:absolute;}
-
-
-
-#skillSec .skillGrid .item .skillTxt{width:100%; height:auto; text-align:center; font-size:20px; font-weight: 600;
-color:#253812;}
-
-
-/*****************
- Portfolio Section Style 
- ******************/
-
-#prtfolSec{position:relative; padding-bottom: 100px;}
-#prtfolSec .prtfolCon{width:100%; _height:100%; _border:1px solid #253812; margin-bottom:10px;box-shadow:3px 3px 15px rgba(0, 0, 0, 0.233);
-max-width:1200px;}
-#prtfolSec .prtfolBox{width:100%; height:auto; display:flex; justify-content: space-between; align-items: center; position:relative;
-padding:0 5% 0 0;}
-#prtfolSec .prtfolBox .prtfolImg{_width:45%; height:400px; _background:#ba621c; _margin:20px; _display:flex; _justify-content: center;
-_align-items: center; }
-/* #prtfolSec .prtfolBox:nth-child(2) .prtfolImg{background: #253812;;} */
-#prtfolSec .prtfolBox .prtfolImg img{height:100%; transition: all 0.4s linear;}
-#prtfolSec .prtfolBox .prtfolImg:hover img{transform: scale(1.2);}
-
-#prtfolSec .prtfolBox .prtfolTxt{width:50%; _height:150px; display:flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
-#prtfolSec .prtfolBox .prtfolTxt h2{width:100%; font-size: 30px; display:flex; justify-content: flex-start;}
-#prtfolSec .prtfolBox .prtfolTxt h2 span{display:block; text-transform: uppercase; margin-right:10px; color:var(--main-color)}
-
-#prtfolSec .prtfolBox .prtfolTxt .prtfolTag span{display:inline-block; margin-bottom:30px; margin-right:10px; font-size:20px; 
-color:#3C4572;}
-
-#prtfolSec .prtfolBox .prtfolTxt p{width:100%; text-align: justify;}
-#prtfolSec .prtfolBox .prtfolTxt .prtfolBtn{width:60%; margin-top:30px; display:flex; justify-content: space-between; align-items: center;}
-#prtfolSec .prtfolBox .prtfolTxt .prtfolBtn a{width:45%; height:50px; padding:10px;  border:1px solid #253812; text-align: center;
-_line-height: 1.2;}
-
-#prtfolSec .prtfolArrow{position:absolute;width:100%; height:100%; display:flex; align-items: center;
-justify-content: space-between;_bottom:65%; padding:0 10%;}
-#prtfolSec .prtfolArrow i{color:#bebcc1; font-size:80px;display:block; outline: none;}
-#prtfolSec .prtfolArrow i:focus{outline: none;}
-
-/*****************
-Footer Style 
- ******************/
-#footer{width:100%; height:80px; position:fixed; left:0; bottom:0;background: var(--main-color); opacity:0.9;display:flex; justify-content: center;align-items: center;
-transition:height 0.4s ease; z-index:20;}
-#footer .contactTit{margin-bottom:0;z-index:20;position:relative; color:#fff; opacity:1; 
-_text-shadow: -2px 0 black, 0 2px black,2px 0 black, 0 -2px black;}
-#footer .contactCon{display:none;}
-
-#footer.active{height:200px; opacity:1; justify-content: flex-start; flex-direction: column;}
-#footer.active .contactCon{ position:relative;width:100%; height:100px; margin-top:20px;   max-width:50%;  display:flex; }
-#footer.active .contactCon ul{width:100%;display:flex;justify-content:space-between;align-items: center;margin:auto;}
-/* #footer.active .contactCon ul li{width:33.33%;} */
-#footer.active .contactCon ul li a{font-size:50px; color:#fff;}
+#mainSec .main-con{width:40%; height:0; border:1px solid var(--main-color); display: flex; align-items: center; justify-content: center; transition:all 0.4s linear;}
+#mainSec .main-con ul{font-size:20px; font-family: 'Noto Sans KR'; font-weight: 500; opacity:0;}
+#mainSec .main-con ul li{margin-bottom:10px; opacity:0;}

@@ -5,21 +5,21 @@ $(function(){
 
     // page tilt effect when topNavBar click
     var tiltPage={
-        $contents:$('.contentsWrap'),
-        $contentsFront:$('.contentsFront'),
-        $topBar:$('.topBar'),
+        $contents:$('.contents-wrap'),
+        $contentsFront:$('.contents-front'),
+        $topBar:$('.top-bar'),
         offset:1800,
-        contentsHeight:$('.contentsFront').outerHeight(),
+        contentsHeight:$('.contents-front').outerHeight(),
         open:function(){
             this.$contents.addClass('tilt');
             this.$topBar.off('click');
-            $('.topBar').on('click',this.close.bind(this));
+            $('.top-bar').on('click',this.close.bind(this));
             // this.topBarFix(true);
             // console.log('opening');
         },
         close:function(){
             this.$contents.removeClass('tilt');
-            $('.topBar',).off('click');
+            $('.top-bar',).off('click');
             this.$topBar.on('click', this.open.bind(this));
             // this.topBarFix(false);
             // console.log('closing');
@@ -50,7 +50,7 @@ $(function(){
 
         bindEvents:function(){
             this.$topBar.on('click',this.open.bind(this));
-            $('.hiddenTopBar').on('click', this.close.bind(this));
+            $('.hidden-top-bar').on('click', this.close.bind(this));
             $('.home, .about, .skill, .prtfol').on('click', this.close.bind(this));
             this.$contents.on('scroll',this.updateTransformOrigin.bind(this));
 
@@ -67,47 +67,7 @@ $(function(){
 
 
     
-     // Fixed Header
-    // $(window).on('mousewheel',function(e){ 
-    //     var wheel = e.originalEvent.wheelDelta; 
-    //     console.log(wheel);
-    //     // mouse wheel이 180부터 시작....
-    //     if(wheel = 180){
-    //         $("#header .topBar").css({"position":"fixed", "right":"50px"});
-            
 
-
-    //     }
-    // });    
-
-    const offTop = $("#header").offset().top;    
-    // console.log(offTop);
-    $(window).scroll(function(){
-        let scroll = $(window).scrollTop();
-        // console.log(scroll)
-;        if(offTop <= scroll){
-           //  $("header").css({"position":"relative"});
-            $("#header .topBar").css({"position":"fixed", "right":"50px"});
-            
-            
-        }
-
-       
-        // else{
-        //     // $("#header").css({"background":"#f8dfb8"});
-        //     $("#header .topBar").css({"position":"relative","background":"none"});
-        // }
-    });        
-
-
-    // Footer click event
-    $('#footer').click(function(){
-        
-        $("#footer").toggleClass("active");
-        
-        
-
-    })
 
     
     

@@ -15,46 +15,9 @@ What i have to do //
 
 to do✔
 
-# page tilt
-   - 고정
-   - 스크롤이벤트 적용  
-   - menu 클릭시 tilt close -> menu위치로✔!!!!
-   ---> section margin 만큼 scrollTop에서 더 빼주기
+#Restart.
 
-# Hidden navigation
-    - 각 섹션 페이지 분리해서 클릭시 바로 이동 ✔     
-       - 부드럽게 전환되도록✔
-       ------>> 페이지 분리 X 원페이지로 변경!!! 메뉴클릭시 홈화면->스크롤이동 (X)
-       -------------->> 풀페이지 사용
-
-
-# header
-1. 스크롤이벤트 적용 
-2. fixed header!✔
-----> 풀페이지일 때 fixed header적용( scroll이 없을 때)
---------->> topBar 에만 fixed 적용
-
-# about section 
-1. 텍스트 효과✔
-2. 클릭 target 정확하게
-
-
-# portfolio section              
-1. 레이아웃✔   ---> swiper slide            
-2. 슬라이드 내 컨텐츠를 변수처리???   
-3. 반응형 (slider breakpoint)    
-4. 화살표                 
-5. 이미지 호버 -> 제작기간 / 사용 언어                                     
-
-
-# footer(contact section)
-1. fixed footer로✔
-2. 클릭시 contact icon display
-
------------------
-
-# 파비콘
-# seo
+Main Section / About Section( profile + skill ) / Portfolio Section
 
 
 

@@ -1,22 +1,4 @@
 1. Main Color 
-_warm pallete
-
-#f8dfb8(베이지)
-#e9d5c4
-
-
-
-#6b6343(브라운)
-#ba621c(오렌지브라운)
-#e09d30(머스타드)
-#253812(다크그린)
-
-
-------------------
-calm blue
-#084f93
-
-
 
 //deep sincerity.
 #1f2b6c
