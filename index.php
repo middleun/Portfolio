@@ -84,6 +84,7 @@
 <script src="../portfolio/js/custom.js"></script>
 
 <script>
+   // main title effect
    $(function(){
       let mainTit=$(".main-tit");
       let mainCon=$(".main-con");

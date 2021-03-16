@@ -64,6 +64,12 @@ $(function(){
     };
     tiltPage.init();
 
+    // about section skill progress bar effect
+    for(let i=0; i<$(".skill-item").length; i++){
+        let skillRate=$(".skill-item").eq(i).find(".skill-rate").val();
+        $(".skill-item").eq(i).find(".skill-bar").animate({width:skillRate + "%"}, 1200);
+    }    
+
 
 
     
