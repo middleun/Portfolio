@@ -34,7 +34,7 @@ height:50%; background:#f8dfb8;  width: 0; bottom:0; right: 0; transition:transf
 .contents-wrap.tilt{overflow: hidden; pointer-events: none;}
 .contents-wrap.tilt .contents-front{transform: rotate(-10deg) translateZ(0); overflow:hidden;}
  
-.contents-front{width:100%; height:100vh;background:#fff; transform-origin: center 70%;box-shadow: 4px -4px rgba(0, 0, 0, 0.39);transition:all 0.4s linear;
+.contents-front{width:100%; _height:100vh;background:#fff; transform-origin: center 70%;box-shadow: 4px -4px rgba(0, 0, 0, 0.39);transition:all 0.4s linear;
 position:relative; z-index:3; pointer-events: auto;}
  
 .contents-wrap.tilt #header{justify-content: center;}
@@ -45,16 +45,15 @@ position:relative; z-index:3; pointer-events: auto;}
  Header Style 
  *******************/
  #header{width:100%;  height:100px; display: flex;justify-content: space-between; align-items: center; position:relative;
-padding:0 0 0 50px; transition:all 0.4s linear; z-index:10; _border-bottom:1px solid #ba631c77; _background:#25381242;}    
+padding:0 0 0 50px; transition:all 0.4s linear; z-index:10; _border-bottom:1px solid #ba631c77; _background:#25381242;overflow: hidden;}    
     
 #header .top-logo{height:100%;_background: #ba621c; display: flex; justify-content: center; align-items: center;}
 #header .top-logo h1{width:100%; text-align: center; font-family: 'Montserrat'; text-transform: uppercase;font-weight: 700;
 font-size:40px; }
     
-#header .top-bar{width:130px; _height:100%; z-index:10; cursor: pointer; background:var(--main-color); display:flex; flex-direction: column;
-align-items: flex-end; padding:10px 50px 10px 20px; }   
-#header .top-bar span{display:block; width:35px; height:4px; background:#fff; _border-radius: 10px;
-margin:4px; ;transition:all 0.4s ease; }
+#header .top-bar{width:150px; _height:50%; z-index:10; cursor: pointer; background:var(--main-color); display:flex; flex-direction: column;
+align-items: flex-end; padding:10px 50px 10px 20px; transform: skewX(16deg) translateX(10%); _position:relative;}   
+#header .top-bar span{display:block; width:35px; height:4px; _position:fixed; z-index: 12;}
     
 #header .top-bar:hover span:nth-child(1){width:80%;right:20%;}
 #header .top-bar:hover span:nth-child(3){width:60%;right:20%; }
@@ -73,3 +72,26 @@ transition:color 0.4s; cursor:pointer; }
 #mainSec .main-con{width:40%; height:0; border:1px solid var(--main-color); display: flex; align-items: center; justify-content: center; transition:all 0.4s linear;}
 #mainSec .main-con ul{font-size:20px; font-family: 'Noto Sans KR'; font-weight: 500; opacity:0;}
 #mainSec .main-con ul li{margin-bottom:10px; opacity:0;}
+
+
+/*****************
+About Section Style 
+******************/
+#aboutSec .about-grid{width:100%; height:500px; display:grid; grid-template-columns: repeat(4,max(25%));
+grid-template-rows: repeat(2, min(50%)); _gap:5px; _border:1px solid #000;}
+/* #aboutSec .about-grid .about-item{width:20%;} */
+/* #aboutSec .about-grid .about-item.about-img{height:70%;} */
+#aboutSec .about-grid .about-item.about-info{grid-row:1/3; grid-column: 2/3;}
+#aboutSec .about-grid .about-item.about-skill{grid-row:1/3; grid-column: 3/5;}
+
+#aboutSec .about-grid .about-item.about-img{grid-row:1/3; grid-column:1/2; width:100%; height:100%;display:flex; justify-content: center;align-items: center;
+padding-right:20%;}
+#aboutSec .about-grid .about-item.about-img img{width:100%;}
+
+#aboutSec .about-grid .about-item.about-info{width:100%; padding:20px; display:flex; flex-direction: column; justify-content: center;}
+#aboutSec .about-grid .about-item.about-info p{display:block;text-align: justify; color:var(--main-color);}
+#aboutSec .about-grid .about-item.about-info ul{margin-top:30px;}
+#aboutSec .about-grid .about-item.about-info ul li{margin-bottom:20px;}
+
+#aboutSec .about-grid .about-item.about-tag{height:30%;}
+

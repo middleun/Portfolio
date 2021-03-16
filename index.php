@@ -45,9 +45,14 @@
                            <li><u>사물이나 행동에서 매우 중요하고 기본이 되는 부분</u></li>
                            <li>확고한 주관이나 줏대</li>
                         </ul>
+                        
                      </div>
                   </section> 
                   <!-- end of main section -->
+
+                  <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/about.php";?>         
+                  <!-- end of about section -->
+                  
 
                </div>
                <!-- end of center of section-wrap -->
