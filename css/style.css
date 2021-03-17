@@ -129,7 +129,8 @@ padding:5%; font-family:'Noto Sans KR';}
 #prtfolSec .prtfol-box .prtfol-txt .prtfol-tag span{display:inline-block; _margin-bottom:30px; margin-right:10px; font-size:20px;
 color:#3c4572;}
 
-#prtfolSec .prtfol-box .prtfol-txt p{width:100%; height:50%;text-align: justify; font-size:16px; display:flex; align-items: center;}
+#prtfolSec .prtfol-box .prtfol-txt p{width:100%; height:50%;text-align: justify; font-size:16px; display:flex; align-items: center;
+line-height:1.8;}
 #prtfolSec .prtfol-box .prtfol-txt .prtfol-btn{width:60%; height:20%;_margin-top:30px; display:flex; justify-content: space-between; align-items: center;bottom:0; }
 #prtfolSec .prtfol-box .prtfol-txt .prtfol-btn a{width:45%; height:50px; border:1px solid #bebcc1; text-align: center; padding:10px;}
 

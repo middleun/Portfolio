@@ -71,6 +71,16 @@ $(function(){
     }    
 
 
+    // portfolio img change when mouseenter
+        
+    $(".prtfol-img img").hover(function(){
+        // $(this).attr('src',$(this).attr('src')).replace('.png','_hover.png');
+        $(this).attr("src", $(this).attr("src").replace(".png", "_hover.png")); 
+    }, function(){ 
+        $(this).attr("src", $(this).attr("src").replace("_hover.png", ".png")); 
+     
+
+    });
 
     
 
