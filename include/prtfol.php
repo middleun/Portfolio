@@ -24,7 +24,7 @@
                         <p>데이터베이스를 활용하여 만든 사이트입니다.<br>제작기간<br>사용언어 </p>
                         <div class="prtfol-btn">
                             <a href="#">pdf다운로드</a>
-                            <a href="#">사이트 바로가기</a>
+                            <a href="http://middleun.dothome.co.kr/gold" target=" _blank">사이트 바로가기</a>
                         </div>
                     </div>              
                 
@@ -48,7 +48,8 @@
                         <p><br>제작기간<br>사용언어 </p>
                         <div class="prtfol-btn">
                             <a href="#">pdf다운로드</a>
-                            <a href="#">사이트 바로가기</a>
+                            <a href="http://middleun.dothome.co.kr/renewal" target=" _blank">사이트 바로가기</a>
+
                         </div>
                     </div>              
                 
@@ -72,7 +73,8 @@
                         <p>네이버와 yts의 영화 api를 활용한 영화 검색 사이트입니다.<br>제작기간<br>사용언어 </p>
                         <div class="prtfol-btn">
                             <a href="#">pdf다운로드</a>
-                            <a href="#">사이트 바로가기</a>
+                            <a href="http://middleun.dothome.co.kr/movie_api" target=" _blank">사이트 바로가기</a>
+
                         </div>
                     </div>              
                 
@@ -96,7 +98,7 @@
                         <p>일정관리용 사이트입니다. 타프로젝트의 준비 과정이 담겨있습니다.<br>제작기간<br>사용언어 </p>
                         <div class="prtfol-btn">
                             <a href="#">pdf다운로드</a>
-                            <a href="#">사이트 바로가기</a>
+                            <a href="http://middleun.dothome.co.kr/myschedule" target=" _blank">사이트 바로가기</a>
                         </div>
                     </div>              
                 

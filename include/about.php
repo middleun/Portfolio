@@ -5,7 +5,7 @@
    <div class="about-grid">
       <div class="about-item about-img">
           <!-- <div class="about-img"> -->
-              <img src="../portfolio/img/about_img_bg_4_2.png" alt="leejungeun's profile image">
+              <img src="../portfolio/img/about_img_1.png" alt="leejungeun's profile image">
           <!-- </div> -->
       </div>
       <!-- end of about-img -->
