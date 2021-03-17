@@ -17,14 +17,14 @@ border-radius: 10px; margin:5px auto; }
 #hiddenNav .hidden-wrap ul{margin-top:60px;   padding-top:10px;}
 #hiddenNav .hidden-wrap ul li{margin:40px; text-align: right; font-family: 'Montserrat'; }
 #hiddenNav .hidden-wrap ul li a{display:block;text-transform: uppercase; color:#fff; position:relative; transition:color 0.4s ease;}
-#hiddenNav .hidden-wrap ul li:hover a{color:#c7bab1;}
+/* #hiddenNav .hidden-wrap ul li:hover a{color:#c7bab1;} */
 
-#hiddenNav .hidden-wrap ul li a:before{content:''; box-sizing:border-box; display:block; z-index:-1; opacity:0.6;
-height:50%; background:#f8dfb8;  width: 0; bottom:0; right: 0; transition:transform 0.5s linear; position:absolute;}
+#hiddenNav .hidden-wrap ul li a:before{content:''; box-sizing:border-box; display:block; z-index:-1; _opacity:0.6;
+height:10%; background:#fff;  width: 0; bottom:-10px; right: 0; transition:transform 0.5s linear; position:absolute;}
 #hiddenNav .hidden-wrap ul li:hover a:before{ width:60%; }
-#hiddenNav .hidden-wrap ul li:nth-child(3):hover a:before{width:50%;}
-#hiddenNav .hidden-wrap ul li:nth-child(4):hover a:before{width:100%;}
-#hiddenNav .hidden-wrap ul li:nth-child(5):hover a:before{width:80%;}
+#hiddenNav .hidden-wrap ul li:nth-child(3):hover a:before{width:100%;}
+/* #hiddenNav .hidden-wrap ul li:nth-child(4):hover a:before{width:100%;}
+#hiddenNav .hidden-wrap ul li:nth-child(5):hover a:before{width:80%;} */
 
 
 /********************
@@ -32,7 +32,7 @@ height:50%; background:#f8dfb8;  width: 0; bottom:0; right: 0; transition:transf
  *********************/
 .contents-wrap{_width:100%; height: 100vh; position:relative; z-index:2;   _display:none;}
 .contents-wrap.tilt{overflow: hidden; pointer-events: none;}
-.contents-wrap.tilt .contents-front{transform: rotate(-10deg) translateZ(0); overflow:hidden;}
+.contents-wrap.tilt .contents-front{transform: rotate(-15deg) translateZ(0); overflow:hidden;}
  
 .contents-front{width:100%; _height:100vh;background:#fff; transform-origin: center 70%;box-shadow: 4px -4px rgba(0, 0, 0, 0.39);transition:all 0.4s linear;
 position:relative; z-index:3; pointer-events: auto; padding-bottom:100px;}
@@ -51,12 +51,17 @@ padding:0 0 0 50px; transition:all 0.4s linear; z-index:10; _border-bottom:1px s
 #header .top-logo h1{width:100%; text-align: center; font-family: 'Montserrat'; text-transform: uppercase;font-weight: 700;
 font-size:40px; }
     
-#header .top-bar{width:150px; _height:50%; z-index:10; cursor: pointer; background:var(--main-color); display:flex; flex-direction: column;
-align-items: flex-end; padding:10px 50px 10px 20px; transform: skewX(16deg) translateX(10%); _position:relative;}   
-#header .top-bar span{display:block; width:35px; height:4px; _position:fixed; z-index: 12;}
+#header .top-bar{width:30px; height:auto; z-index:10; cursor: pointer; _background:var(--main-color); display:flex; flex-direction: column;
+align-items: flex-end; _padding:10px 50px 10px 20px; _transform: skewX(16deg) translateX(10%); _position:relative;}   
+#header .top-bar span{display:block; width:100%; height:4px; _position:fixed; z-index: 12; background:#12193f;
+margin:4px; position:relative; border-radius: 10px;}
     
+/* #header .top-bar{width:30px; height:auto; z-index:10; cursor: pointer; }
+#header .top-bar span{display:block; width:100%; height:3px; background: #253812; border-radius: 10px;
+margin:8px auto; position:relative;} */
+
 #header .top-bar:hover span:nth-child(1){width:80%;right:20%;}
-#header .top-bar:hover span:nth-child(3){width:60%;right:20%; }
+#header .top-bar:hover span:nth-child(3){width:60%;right:40%; }
 
 
 /*****************
@@ -136,8 +141,11 @@ font-weight: 700; color:#3c4572;}
 padding:10% 0; }
 #prtfolSec .prtfol-box .prtfol-txt p em{font-style: normal; }
 #prtfolSec .prtfol-box .prtfol-txt .prtfol-btn{width:90%; height:20%;_margin-top:30px; display:flex; justify-content: space-between; align-items: center;bottom:0; }
-#prtfolSec .prtfol-box .prtfol-txt .prtfol-btn a{width:45%; height:50px; border:1px solid #bebcc1; text-align: center; 
-line-height: 1.8; display:flex; justify-content: center;align-items: center;}
+#prtfolSec .prtfol-box .prtfol-txt .prtfol-btn a{width:45%; height:50px; border:1px solid var(--main-color); text-align: center; 
+line-height: 1.8; display:flex; justify-content: center;align-items: center; transition: background-color 0.5s 1inear; cursor: pointer;}
+/* #prtfolSec .prtfol-box .prtfol-txt .prtfol-btn:hover{background:var(--main-color); } */
+#prtfolSec .prtfol-box .prtfol-txt .prtfol-btn a:hover{background:var(--main-color);color:#fff; }
+
 
 #prtfolSec .prtfol-prev,
 #prtfolSec .prtfol-next{position:absolute; top:50%;transform:translateY(-50%); display:flex; justify-content: center; align-items: center; cursor: pointer;
@@ -149,3 +157,22 @@ border:none; outline:none;}
 #prtfolSec .prtfol-prev:hover i,
 #prtfolSec .prtfol-next:hover i{color:var(--main-color);}
 
+/*****************
+Footer Style 
+ ******************/
+#contactSec{width:100%; height:50px; position:fixed; left:0; bottom:0;background: var(--main-color); opacity:0.9;display:flex; justify-content: center;align-items: center;
+transition:height 0.4s ease; z-index:20; }
+#contactSec .contact-tit{margin-bottom:0;z-index:20;position:relative; color:#fff; opacity:1; 
+_text-shadow: -2px 0 black, 0 2px black,2px 0 black, 0 -2px black;cursor: pointer;}
+#contactSec .contact-tit:hover{transform:scale(1.2);}
+#contactSec .contact-tit h2{font-size: 25px;}
+#contactSec .contact-tit h2 i{margin-left:10px;}
+
+#contactSec .contact-con{display:none;}
+   
+#contactSec.active{height:100px; opacity:1; justify-content: flex-start; flex-direction: column;}
+#contactSec.active .contact-con{ position:relative;width:80%; height:100px; margin-top:10px;   max-width:50%;  display:flex; }
+#contactSec.active .contact-con ul{width:100%;display:flex;justify-content:space-around;_align-items: center;}
+/* #footer.active .contactCon ul li{width:33.33%;} */
+#contactSec.active .contact-con ul li a{font-size:30px; color:#fff; cursor: pointer; transition:all 0.4s;}
+#contactSec.active .contact-con ul li a:hover{transform:scale(1.2);}

@@ -14,9 +14,11 @@
    <!-- reset css link -->
    <link rel="stylesheet" href="../portfolio/css/reset.css">
 
-   <!-- swiper slider css cdn link-->
-   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+   <!-- aos link -->
+   <link rel="stylesheet" href="../portfolio/plugin/aos.css">
+
+
+  <!-- swiper slider link -->
    <link rel="stylesheet" href="../portfolio/plugin/swiper.min.css">
    
 
@@ -73,10 +75,27 @@
             </div>
             <!--end of section-wrap  -->
 
+            <section id="contactSec">
+               <div class="contact-tit title">
+                  <h2>Contact me<i class="fas fa-smile"></i></h2>
+
+               </div>
+               <div class="contact-con">
+                  <ul>
+                     <li><a href="#"><i class="fas fa-phone"></i></a></li>
+                     <li><a href="mailto:eunallaco@gmaill.com"><i class="fas fa-envelope"></i></a></li>
+                     <li><a href="https://github.com/middleun" target=" _blank"><i class="fab fa-github"></i></a></li>
+                  </ul>
+               </div>
+            </section>
+            <!-- end of contact section -->
+
             
 
          </div>
+         <!-- end of front contents -->
       </div>
+      <!-- end of main contents wrap -->
       
       
 
@@ -89,16 +108,22 @@
 <!-- jQuery CDN link -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- swiper slider jquery cdn llink -->
-<!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<!-- aos link -->
+<script src="../portfolio/plugin/aos.js"></script>
+
+<!-- swiper slider link -->
 <script src="../portfolio/plugin/swiper.min.js"></script>
 
 
 <!-- main jquery link -->
 <script src="../portfolio/js/custom.js"></script>
 
+
 <script>
+
+   // aos
+   AOS.init();
+
    // main title effect
    $(function(){
       let mainTit=$(".main-tit");
@@ -127,9 +152,9 @@
 
             },            
             loop:true,
-            // autoplay:{
-            //    delay:3000,
-            // },
+            autoplay:{
+               delay:4000,
+            },
             spacebetween:30,
             keyboard:{
                enabled:true,

@@ -51,7 +51,7 @@ $(function(){
         bindEvents:function(){
             this.$topBar.on('click',this.open.bind(this));
             $('.hidden-top-bar').on('click', this.close.bind(this));
-            $('.home, .about, .skill, .prtfol').on('click', this.close.bind(this));
+            $('.home, .about, .prtfol').on('click', this.close.bind(this));
             this.$contents.on('scroll',this.updateTransformOrigin.bind(this));
 
         },
@@ -83,9 +83,80 @@ $(function(){
     });
 
     
+// resize fixed height
+    $(window).resize(function(){
+		winWidth = $(window).outerWidth();
+		winHeight = $(window).outerHeight();
+		
+		$(".section").height(winHeight - 100);
+    });
+
+    //  Move Scroll to each location when click menu
+    $('#hiddenNav ul li').click(function(event){
+        event.preventDefault();           
+
+    //  move scroll to each location when click menu
+        let navIdx=$(this).index();
+        // console.log(navIdx);
+        let navHref=$('#hiddenNav ul li').eq(navIdx).find("a").attr('href');
+          //console.log(navHref);
+        const offset=$(navHref).offset().top + 120;
+        // console.log(offset);
+        $('html,body').animate({scrollTop:offset}, 1000, 'linear');
+    });  
 
 
-    
+
+    // fixed header
+    const headerOffTop = $("#header").offset().top;    
+    // const contactOffTop = $("#contactSec").offset().top;
+    // console.log(contactOffTop);
+    // const winHeight = $(window).height();
+    $(window).scroll(function(){
+        let scroll = $(window).scrollTop();
+        // console.log(contactOffTop, scroll);
+        if(headerOffTop <= scroll){
+           //  $("header").css({"position":"relative"});
+            $("#header .top-bar").css({"position":"fixed", "right":"50px"});
+        }
+
+        // if($(scroll) == $(winHeight)){
+        //     $("#contactSec").show();
+        //         // if($(this).click(function(){
+            
+        //         //     $("#contactSec").toggleClass("active");
+                
+        //         // }));
+            
+        // }else{
+        //     $("#contactSec").hide();
+            
+        // };
+            
+
+        // console.log("bottom");
+
+        // if(contactOffTop < scroll){
+            // $("#contactSec").show();
+            
+            
+        // }else{
+        //     $("#contactSec").hide();
+            
+
+        
+        
+
+    });
+
+    // Contact section click event
+    if($("#contactSec").click(function(){
+        
+        $("#contactSec").toggleClass("active");
+    }));
+     
+
+
     
 
 });
