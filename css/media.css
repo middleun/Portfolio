@@ -1,12 +1,23 @@
+@media screen and (max-width:1290px){
+
+
+
+/* portfolio section */
+#prtfolSec .prtfol-box .prtfol-txt{padding:3%;}
+#prtfolSec .prtfol-box .prtfol-txt .prtfol-tag span{font-size:16px;}
+#prtfolSec .prtfol-box .prtfol-txt .prtfol-btn a{font-size:14px;}
+}
+
+
 @media screen and (max-width:1024px){
 
-    .center{max-width:890px; }
+   
 }
 
 
 @media screen and (max-width:890px){
 
-    .center{max-width:750px; }
+    
 
     
 

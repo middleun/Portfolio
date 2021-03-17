@@ -6,6 +6,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>LEEJUNGEUN's PORTFOLIO</title>
 
+   <!-- favicon link -->
+   <link rel="apple-touch-icon" href="./img/favicon.ico" />
+
+   <link rel="icon" href="./img/favicon.ico" />
+
    <!-- reset css link -->
    <link rel="stylesheet" href="../portfolio/css/reset.css">
 
@@ -24,7 +29,7 @@
    <!-- Awesome Font cdn link -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 
-
+   
 </head>
 <body>
 
@@ -122,9 +127,9 @@
 
             },            
             loop:true,
-            // autoplay:{
-            //    delay:5000,
-            // },
+            autoplay:{
+               delay:3000,
+            },
             spacebetween:30,
             keyboard:{
                enabled:true,

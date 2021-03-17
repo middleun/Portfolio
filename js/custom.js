@@ -71,8 +71,7 @@ $(function(){
     }    
 
 
-    // portfolio img change when mouseenter
-        
+    // portfolio img change when hover        
     $(".prtfol-img img").hover(function(){
         // $(this).attr('src',$(this).attr('src')).replace('.png','_hover.png');
         $(this).attr("src", $(this).attr("src").replace(".png", "_hover.png")); 

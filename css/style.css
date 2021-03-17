@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /********************
@@ -78,7 +78,10 @@ transition:color 0.4s; cursor:pointer; }
 About Section Style 
 ******************/
 #aboutSec{background:#a3ccf413;}
-#aboutSec .about-grid{width:100%; height:550px; display:grid; grid-template-columns: repeat(4,max(25%));
+#aboutSec .about-tit{height:20%; display:flex; flex-direction: column;}
+#aboutSec .about-tit p{display:block;text-align: justify; color:var(--main-color); font-size:20px; }
+#aboutSec .about-tit p i{color:#5a595a;padding:10px;}
+#aboutSec .about-grid{width:100%; height:80%; display:grid; grid-template-columns: repeat(4,max(25%));
 grid-template-rows: repeat(2, min(50%)); _gap:5px; _border:1px solid #000;}
 /* #aboutSec .about-grid .about-item{width:20%;} */
 /* #aboutSec .about-grid .about-item.about-img{height:70%;} */
@@ -86,12 +89,11 @@ grid-template-rows: repeat(2, min(50%)); _gap:5px; _border:1px solid #000;}
 #aboutSec .about-grid .about-item.about-skill{grid-row:1/3; grid-column: 3/5;}
 
 #aboutSec .about-grid .about-item.about-img{grid-row:1/3; grid-column:1/2; width:100%; height:100%;display:flex; justify-content: center;align-items: center;
-padding-right:20%;}
+_padding-right:20%;}
 #aboutSec .about-grid .about-item.about-img img{width:100%;}
 
-#aboutSec .about-grid .about-item.about-info{width:100%; padding:20px 50px 20px 20px; display:flex; flex-direction: column; justify-content: flex-start; text-align:right;}
-#aboutSec .about-grid .about-item.about-info p{display:block;text-align: justify; color:var(--main-color); font-size:20px; }
-#aboutSec .about-grid .about-item.about-info p i{color:#5a595a;padding:10px;}
+#aboutSec .about-grid .about-item.about-info{width:100%; padding:20px 50px 20px 20px; display:flex; flex-direction: column; justify-content: flex-start;}
+
 #aboutSec .about-grid .about-item.about-info ul{margin-top:50px;}
 #aboutSec .about-grid .about-item.about-info ul li{margin-bottom:20px;}
 
@@ -106,7 +108,7 @@ align-items: center;}
 #aboutSec .skill-grid .skill-item .skill-con{width:90%;display: flex;flex-wrap: wrap; padding-left:20px;}
 #aboutSec .skill-grid .skill-item .skill-con h3{margin-right:20px;}
 #aboutSec .skill-grid .skill-item .skill-con p{font-size:20px;}
-#aboutSec .skill-grid .skill-item .skill-con p input{width:35px; font-size:20px;text-align:center;}
+#aboutSec .skill-grid .skill-item .skill-con p input{width:35px; font-size:20px;text-align:center; background:none; }
 #aboutSec .skill-grid .skill-item .skill-con .skill-bar-box{width:100%;border:1px solid #bebcc1; _padding:5px 0; background:#bebcc1;}
 #aboutSec .skill-grid .skill-item .skill-con .skill-bar-box .skill-bar{display:block;height:15px; background:var(--main-color);width:0;}
 #aboutSec .skill-grid .skill-item .skill-con span{color:#5a595a;}
@@ -116,9 +118,9 @@ align-items: center;}
 Portfolio Section Style 
 ******************/
 #prtfolSec>div:nth-child(2){position:relative;}
-#prtfolSec .prtfol-con{width:100%; max-width:80%; height:80%;box-shadow:3px 3px 15px rgba(0, 0, 0, 0.233);}
+#prtfolSec .prtfol-con{width:100%; max-width:90%; height:80%;box-shadow:3px 3px 15px rgba(0, 0, 0, 0.233);}
 #prtfolSec .prtfol-box{width:100%; height:auto; _padding:0 5% 0 0; }
-#prtfolSec .prtfol-box .prtfol-img{float:left;width:50%; height:100%; overflow: hidden; padding:10px;}
+#prtfolSec .prtfol-box .prtfol-img{float:left;width:50%; height:100%; overflow: hidden; padding:10px; display:flex;}
 #prtfolSec .prtfol-box .prtfol-img img{width:100%; transition:all 0.4s linear;}
 #prtfolSec .prtfol-box .prtfol-img:hover img{transform:scale(1.05);}
 
@@ -127,12 +129,13 @@ padding:5%; font-family:'Noto Sans KR';}
 #prtfolSec .prtfol-box .prtfol-txt h2{font-size:30px; display:flex; justify-content: flex-start;}
 #prtfolSec .prtfol-box .prtfol-txt h2 span{display:block; text-transform: uppercase; margin-right:10px; color:#6389df;}
 #prtfolSec .prtfol-box .prtfol-txt .prtfol-tag span{display:inline-block; _margin-bottom:30px; margin-right:10px; font-size:20px;
-color:#3c4572;}
+font-weight: 700; color:#3c4572;}
 
-#prtfolSec .prtfol-box .prtfol-txt p{width:100%; height:50%;text-align: justify; font-size:16px; display:flex; align-items: center;
-line-height:1.8;}
-#prtfolSec .prtfol-box .prtfol-txt .prtfol-btn{width:60%; height:20%;_margin-top:30px; display:flex; justify-content: space-between; align-items: center;bottom:0; }
-#prtfolSec .prtfol-box .prtfol-txt .prtfol-btn a{width:45%; height:50px; border:1px solid #bebcc1; text-align: center; padding:10px;}
+#prtfolSec .prtfol-box .prtfol-txt p{width:100%; height:50%;text-align: justify; font-size:16px; line-height:1.8;}
+#prtfolSec .prtfol-box .prtfol-txt p em{font-style: normal; }
+#prtfolSec .prtfol-box .prtfol-txt .prtfol-btn{width:70%; height:20%;_margin-top:30px; display:flex; justify-content: space-between; align-items: center;bottom:0; }
+#prtfolSec .prtfol-box .prtfol-txt .prtfol-btn a{width:45%; height:50px; border:1px solid #bebcc1; text-align: center; padding:10px;
+line-height: 1.8;}
 
 #prtfolSec .prtfol-prev,
 #prtfolSec .prtfol-next{position:absolute; top:50%;transform:translateY(-50%); display:flex; justify-content: center; align-items: center; cursor: pointer;

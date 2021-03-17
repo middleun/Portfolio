@@ -21,7 +21,7 @@
                             <span>#댓글관리 </span>
                         </div>
 
-                        <p>데이터베이스를 활용하여 만든 사이트입니다.<br>제작기간<br>사용언어 </p>
+                        <p>데이터베이스를 활용하여 만든 사이트입니다.<br><br>제작기간:2개월 <br>사용언어 </p>
                         <div class="prtfol-btn">
                             <a href="#">pdf다운로드</a>
                             <a href="http://middleun.dothome.co.kr/gold" target=" _blank">사이트 바로가기</a>
@@ -45,7 +45,7 @@
                             <span> </span>
                         </div>
 
-                        <p><br>제작기간<br>사용언어 </p>
+                        <p>그리드 레이아웃을 적용한 사이트입니다.<br><br>제작기간 <em>: 일주일</em><br>사용언어 <em>: 일주일</em> </p>
                         <div class="prtfol-btn">
                             <a href="#">pdf다운로드</a>
                             <a href="http://middleun.dothome.co.kr/renewal" target=" _blank">사이트 바로가기</a>

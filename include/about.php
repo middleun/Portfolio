@@ -1,6 +1,8 @@
 <div id="aboutSec" class="section">
    <div class="about-tit title">
       <h2>이中은</h2>
+      <p><i class="fas fa-quote-left"></i>웹퍼블리셔에게 있어 중심은 웹표준과 웹접근성을 준수하는 것이라고 생각합니다. 
+            기본에 충실하고 중심을 잃지 않는 웹퍼블리셔가 되겠습니다.<i class="fas fa-quote-right"></i></p>
    </div>
    <div class="about-grid">
       <div class="about-item about-img">
@@ -10,8 +12,7 @@
       </div>
       <!-- end of about-img -->
       <div class="about-item about-info">
-          <p><i class="fas fa-quote-left"></i>웹퍼블리셔에게 있어 중심은 웹표준과 웹접근성을 준수하는 것이라고 생각합니다. 
-            기본에 충실하고 중심을 잃지 않는 웹퍼블리셔가 되겠습니다.<i class="fas fa-quote-right"></i></p>
+          
           
           <ul>
               <li>이중은(LEE JUNG EUN)</li>
