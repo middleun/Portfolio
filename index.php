@@ -127,9 +127,9 @@
 
             },            
             loop:true,
-            autoplay:{
-               delay:3000,
-            },
+            // autoplay:{
+            //    delay:3000,
+            // },
             spacebetween:30,
             keyboard:{
                enabled:true,
