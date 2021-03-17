@@ -9,6 +9,12 @@
    <!-- reset css link -->
    <link rel="stylesheet" href="../portfolio/css/reset.css">
 
+   <!-- swiper slider css cdn link-->
+   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+   <link rel="stylesheet" href="../portfolio/plugin/swiper.min.css">
+   
+
    <!-- main style css link -->
    <link rel="stylesheet" href="../portfolio/css/style.css">
 
@@ -52,6 +58,9 @@
 
                   <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/about.php";?>         
                   <!-- end of about section -->
+
+                  <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/prtfol.php";?>         
+                  <!-- end of portfolio section -->                 
                   
 
                </div>
@@ -76,8 +85,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <!-- swiper slider jquery cdn llink -->
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="../portfolio/plugin/swiper.min.js"></script>
 
 
 <!-- main jquery link -->
@@ -102,6 +112,30 @@
          }
       });
    });
+
+   // swiper slide
+         var swiper = new Swiper('.swiper-container',{
+            cssMode : true,
+            navigation:{
+               prevEl:'.prtfol-prev',
+               nextEl:'.prtfol-next',
+
+            },            
+            loop:true,
+            // autoplay:{
+            //    delay:5000,
+            // },
+            spacebetween:30,
+            keyboard:{
+               enabled:true,
+            },
+            mousewheel:{
+               invert:false,
+            },   
+
+         });
+
+
 </script>
 
 </html>

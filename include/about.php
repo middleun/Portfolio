@@ -5,7 +5,7 @@
    <div class="about-grid">
       <div class="about-item about-img">
           <!-- <div class="about-img"> -->
-              <img src="../portfolio/img/about_img_1.png" alt="leejungeun's profile image">
+              <img src="../portfolio/img/about_img_bg_4.png" alt="leejungeun's profile image">
           <!-- </div> -->
       </div>
       <!-- end of about-img -->
@@ -36,7 +36,7 @@
                   <div class="skill-bar-box">
                       <span class="skill-bar"></span>
                   </div>
-                  <span>웹표준과 웹접근성을 준수하며 크로스 브라우징을 최우선으로 합니다 </span>
+                  <span>웹표준과 웹접근성을 준수합니다 </span>
               </div>
           </div>
           <!-- end of skill-item -->
