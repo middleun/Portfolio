@@ -48,18 +48,25 @@
             <div class="section-wrap">
                <div class="center"> 
 
-                  <section id="mainSec" class="section">
+                  <section id="mainSec" class="section" data-aos="fade-right">
                      <div class="main-tit">
-                        <h1>中心</h1>                        
+                        <h1 class="main-hide">이</h1>                        
+                        <h1 class="main-show">中</h1>
+                        <h1 class="main-hide">은</h1>   
+                        <h1 class="hidden-tit"><span>心</span>을 잃지않는 웹퍼블리셔</h1>
+                                             
                      </div>
-                     <div class="main-con">
+                     <h3>웹퍼블리셔에게 있어 중심은 웹표준과 웹접근성을 준수하는 것이라고 생각합니다. <br>  
+                        기본에 충실하고 중심을 잃지 않는 웹퍼블리셔가 되겠습니다.</h3>
+
+                     <!-- <div class="main-con">
                         <ul>
                            <li>[명사]사물의 한가운데</li>
                            <li><u>사물이나 행동에서 매우 중요하고 기본이 되는 부분</u></li>
                            <li>확고한 주관이나 줏대</li>
                         </ul>
                         
-                     </div>
+                     </div> -->
                   </section> 
                   <!-- end of main section -->
 
@@ -127,18 +134,23 @@
    // main title effect
    $(function(){
       let mainTit=$(".main-tit");
-      let mainCon=$(".main-con");
+      // // let mainCon=$(".main-con");
 
       $(mainTit).click(function(){
          $(this).toggleClass("click");
          if($(this).hasClass("click")){
-            $(mainTit).addClass("active");
-            $(mainCon).css({"height":"200px"});
-            $(mainCon).find("ul").css({"opacity":"1"});
-            $(mainCon).find("li").css({"opacity":"1"});
+            $(mainTit).find(".main-hide").addClass("hide");
+            $(mainTit).find(".main-show").addClass("active");
+            $(mainTit).find(".hidden-tit").addClass("show");
+            // $("#mainSec h3").addClass("show");
+            
+
+            // $(mainCon).css({"height":"200px"});
+            // $(mainCon).find("ul").css({"opacity":"1"});
+            // $(mainCon).find("li").css({"opacity":"1"});
          
          }else{
-            $(mainTit).removeClass("active");
+            // $(mainTit).find(".main-show").removeClass("active");
          }
       });
    });

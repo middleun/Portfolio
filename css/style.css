@@ -68,15 +68,23 @@ margin:8px auto; position:relative;} */
 Main Section Style 
 ******************/
 #mainSec{display:flex; justify-content: center; flex-direction: column; align-items: center; }
-#mainSec .main-tit{width:100%; height:50%; display: flex; justify-content: center;
+#mainSec .main-tit{width:100%; height:60%; max-width:90%;display: flex; justify-content: center;
 align-items: center;position:relative; }
-#mainSec .main-tit h1{font-size:200px; font-family: 'Noto Sans KR';color:#fff; text-shadow: -3px 0 black, 0 3px black,3px 0 black, 0 -3px black;
-transition:color 0.4s; cursor:pointer; }
-#mainSec .main-tit h1:hover{color:#000; text-shadow: none;}
-
-#mainSec .main-con{width:40%; height:0; border:1px solid var(--main-color); display: flex; align-items: center; justify-content: center; transition:all 0.4s linear;}
+#mainSec .main-tit h1{font-size:200px; font-family: 'Noto Sans KR';_color:#fff; _text-shadow: -3px 0 black, 0 3px black,3px 0 black, 0 -3px black;
+transition:transform 0.4s; cursor:pointer; padding-right:20px; }
+/* #mainSec .main-tit h1:hover{color:#000; text-shadow: none;} */
+#mainSec .main-tit h1.main-show{transition: transform 0.4s linear;}
+#mainSec .main-tit h1.main-show.active{transform:translateX(4%); }
+#mainSec .main-tit h1.main-hide{transition:opacity 0.4s linear;}
+#mainSec .main-tit h1.main-hide.hide{display:none;}
+#mainSec .main-tit .hidden-tit{font-size:80px; display:flex; align-items: center;display:none;transition:display 0.4s; }
+#mainSec .main-tit .hidden-tit span{display:block;font-size:200px;}
+#mainSec .main-tit .hidden-tit.show{font-size:100px; display:flex; align-items: center;}
+#mainSec h3{height:40%; font-size:30px;color:#3c4572;display: flex;justify-content: center;text-align: center;}
+/* #mainSec h3.show{opacity: 0;} */
+/* #mainSec .main-con{width:40%; height:0; border:1px solid var(--main-color); display: flex; align-items: center; justify-content: center; transition:all 0.4s linear;}
 #mainSec .main-con ul{font-size:20px; font-family: 'Noto Sans KR'; font-weight: 500; opacity:0;}
-#mainSec .main-con ul li{margin-bottom:10px; opacity:0;}
+#mainSec .main-con ul li{margin-bottom:10px; opacity:0;} */
 
 
 /*****************
