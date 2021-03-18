@@ -92,18 +92,19 @@ $(function(){
     });
 
     //  Move Scroll to each location when click menu
-    $('#hiddenNav ul li').click(function(event){
-        event.preventDefault();           
+    // $('#hiddenNav ul li').click(function(event){
+    //     event.preventDefault();           
 
-    //  move scroll to each location when click menu
-        let navIdx=$(this).index();
-        // console.log(navIdx);
-        let navHref=$('#hiddenNav ul li').eq(navIdx).find("a").attr('href');
-          //console.log(navHref);
-        const offset=$(navHref).offset().top + 120;
-        // console.log(offset);
-        $('html,body').animate({scrollTop:offset}, 1000, 'linear');
-    });  
+
+    
+    //     let navIdx=$(this).index();
+    //     // console.log(navIdx);
+    //     let navHref=$('#hiddenNav ul li').eq(navIdx).find("a").attr('href');
+    //       //console.log(navHref);
+    //     const offset=$(navHref).offset().top + 120;
+    //     // console.log(offset);
+    //     $('html,body').animate({scrollTop:offset}, 1000, 'linear');
+    // });  
 
 
 

@@ -14,9 +14,11 @@
    <!-- reset css link -->
    <link rel="stylesheet" href="../portfolio/css/reset.css">
 
-   <!-- aos link -->
-   <link rel="stylesheet" href="../portfolio/plugin/aos.css">
+   <!-- full page plugin css link -->
+   <link rel="stylesheet" href="../portfolio/plugin/jquery.fullpage.css">
 
+   <!-- aos link -->
+   <!-- <link rel="stylesheet" href="../portfolio/plugin/aos.css"> -->
 
   <!-- swiper slider link -->
    <link rel="stylesheet" href="../portfolio/plugin/swiper.min.css">
@@ -45,7 +47,7 @@
             <!-- header -->
             <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/header.php";?>         
 
-            <div class="section-wrap">
+            <div class="section-wrap" id="fullpage">
                <div class="center"> 
 
                   <section id="mainSec" class="section" data-aos="fade-right">
@@ -115,8 +117,11 @@
 <!-- jQuery CDN link -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<!-- fullpage plugin jquery link -->
+<script src="../portfolio/plugin/jquery.fullpage.js"></script>
+
 <!-- aos link -->
-<script src="../portfolio/plugin/aos.js"></script>
+<!-- <script src="../portfolio/plugin/aos.js"></script> -->
 
 <!-- swiper slider link -->
 <script src="../portfolio/plugin/swiper.min.js"></script>
@@ -127,9 +132,26 @@
 
 
 <script>
+   // full page 
+   $("#fullpage").fullpage({
+      // navigation:true,
+      // navigationPosition:'left',
+      sectionSelector:'.section',
+      autoScrolling:true,
+	   // scrollHorizontally: true,
+      // fixedElement:".top-bar",
+      anchors:['firstSec','secondSec','thirdSec'],
+      animateAnchor:true,
+      scrollBar:true,
+      responsiveHeight:537,
+      // scrollOverflowReset:true,      
+      css3:true,      
+	
+      
+      
+   });
 
-   // aos
-   AOS.init();
+   
 
    // main title effect
    $(function(){
@@ -176,6 +198,8 @@
             },   
 
          });
+
+      
 
 
 </script>
