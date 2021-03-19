@@ -1,5 +1,5 @@
 
-<header id="header">
+<section id="header" class="section fp-auto-height">
                   
     <div class="top-logo">
        <h1>leejungeun</h1>
@@ -12,6 +12,6 @@
     </div>
       
       
-</header>
+</section>
 <!-- end of header -->
 

@@ -44,13 +44,15 @@
 
       <div class="contents-wrap">
          <div class="contents-front">
-            <!-- header -->
-            <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/header.php";?>         
+                   
 
             <div class="section-wrap" id="fullpage">
                <div class="center"> 
+                  <!-- header -->
+                  <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/header.php";?>
 
-                  <section id="mainSec" class="section" data-aos="fade-right">
+                  <section id="mainSec" class="section">                      
+
                      <div class="main-tit">
                         <h1 class="main-hide">이</h1>                        
                         <h1 class="main-show">中</h1>
@@ -139,13 +141,19 @@
       sectionSelector:'.section',
       autoScrolling:true,
 	   // scrollHorizontally: true,
-      // fixedElement:".top-bar",
+      // fixedElement:"#header .top-bar",
       anchors:['firstSec','secondSec','thirdSec'],
       animateAnchor:true,
-      scrollBar:true,
+      // scrollBar:true,   
       responsiveHeight:537,
       // scrollOverflowReset:true,      
       css3:true,      
+      // afterLoad:function(origin, destination, direction){
+      //    // console.log(destination.index);
+      //    if(destination.index > 0){
+      //       $("#header .top-bar").css({"position":"fixed"});
+      //    }
+      // },
 	
       
       
@@ -189,6 +197,7 @@
             autoplay:{
                delay:4000,
             },
+            // fixedElements:"#header",
             spacebetween:30,
             keyboard:{
                enabled:true,
@@ -196,6 +205,8 @@
             mousewheel:{
                invert:false,
             },   
+            verticalCentered:false,
+
 
          });
 

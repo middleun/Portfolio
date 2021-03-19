@@ -1,4 +1,4 @@
-<div id="aboutSec" class="section"  data-aos="fade-up">
+<div id="aboutSec" class="section"  >
    <div class="about-tit title">
       <h2>About Me</h2>
       <!-- <p><i class="fas fa-quote-left"></i>웹퍼블리셔에게 있어 중심은 웹표준과 웹접근성을 준수하는 것이라고 생각합니다. 

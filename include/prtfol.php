@@ -1,4 +1,4 @@
-<section id="prtfolSec" class="section" data-aos="zoom-in-right">
+<section id="prtfolSec" class="section" >
     <div class="prtfol-tit title">
        <h2>Portfolio</h2>
     </div>
