@@ -5,6 +5,13 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>LEEJUNGEUN's PORTFOLIO</title>
+   <meta name="keywords" content="웹퍼블리셔,포트폴리오">
+   <meta name="subject" content="신입 웹 퍼블리셔 이중은 포트폴리오">
+ <meta name="description" content="신입 웹퍼블리셔 이중은의 포트폴리오입니다.">
+ <meta name="author" content="eunallaco@gmail.com, 이중은">
+ <!-- <meta name="robots" content="index,follow"> -->
+ <meta name="copyright" content="copyrights 2021 LEEJUNGEUN.">
+
 
    <!-- favicon link -->
    <link rel="apple-touch-icon" href="./img/favicon.ico" />
@@ -52,8 +59,9 @@
                   <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/header.php";?>
 
                   <section id="mainSec" class="section">                      
-
+                     <div class="main-bg"></div>
                      <div class="main-tit">
+
                         <h1 class="main-hide">이</h1>                        
                         <h1 class="main-show">中</h1>
                         <h1 class="main-hide">은</h1>   

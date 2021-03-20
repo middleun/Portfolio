@@ -1,13 +1,18 @@
 @media screen and (max-width:1290px){
 
-/* about Section  */
-/* #aboutSec .skill-grid .skill-item .skill-img{height:30px;} */
-#aboutSec .skill-grid .skill-item .skill-con span{font-size:14px;}
+   /* main section */
+   #mainSec .main-tit h1{font-size:150px;}
+   #mainSec .main-tit .hidden-tit{font-size:50px;}
+   #mainSec .main-tit .hidden-tit span{font-size:150px;}
 
-/* portfolio section */
-#prtfolSec .prtfol-box .prtfol-txt{padding:3%;}
-#prtfolSec .prtfol-box .prtfol-txt .prtfol-tag span{font-size:16px;}
-#prtfolSec .prtfol-box .prtfol-txt .prtfol-btn a{font-size:14px;}
+   /* about Section  */
+   /* #aboutSec .skill-grid .skill-item .skill-img{height:30px;} */
+   #aboutSec .skill-grid .skill-item .skill-con span{font-size:14px;}
+
+   /* portfolio section */
+   #prtfolSec .prtfol-box .prtfol-txt{padding:3%;}
+   #prtfolSec .prtfol-box .prtfol-txt .prtfol-tag span{font-size:16px;}
+   #prtfolSec .prtfol-box .prtfol-txt .prtfol-btn a{font-size:14px;}
 }
 
 @media screen and (max-width:1120px){
