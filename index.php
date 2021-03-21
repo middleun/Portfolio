@@ -7,10 +7,10 @@
    <title>LEEJUNGEUN's PORTFOLIO</title>
    <meta name="keywords" content="웹퍼블리셔,포트폴리오">
    <meta name="subject" content="신입 웹 퍼블리셔 이중은 포트폴리오">
- <meta name="description" content="신입 웹퍼블리셔 이중은의 포트폴리오입니다.">
- <meta name="author" content="eunallaco@gmail.com, 이중은">
- <!-- <meta name="robots" content="index,follow"> -->
- <meta name="copyright" content="copyrights 2021 LEEJUNGEUN.">
+   <meta name="description" content="신입 웹퍼블리셔 이중은의 포트폴리오입니다.">
+   <meta name="author" content="eunallaco@gmail.com, 이중은">
+   <!-- <meta name="robots" content="index,follow"> -->
+   <meta name="copyright" content="copyrights 2021 LEEJUNGEUN.">
 
 
    <!-- favicon link -->
@@ -30,12 +30,14 @@
   <!-- swiper slider link -->
    <link rel="stylesheet" href="../portfolio/plugin/swiper.min.css">
    
-
-   <!-- main style css link -->
-   <link rel="stylesheet" href="../portfolio/css/style.css">
+   <!-- animation css link -->
+   <link rel="stylesheet" href="../portfolio/css/animation.css">
 
    <!-- media css link  -->
    <link rel="stylesheet" href="../portfolio/css/media.css">
+
+   <!-- main style css link -->
+   <link rel="stylesheet" href="../portfolio/css/style.css">
 
    <!-- Awesome Font cdn link -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
@@ -62,10 +64,14 @@
                      <div class="main-bg"></div>
                      <div class="main-tit">
 
-                        <h1 class="main-hide">이</h1>                        
-                        <h1 class="main-show">中</h1>
-                        <h1 class="main-hide">은</h1>   
-                        <h1 class="hidden-tit"><span>心</span>을 잃지않는 웹퍼블리셔</h1>
+                        <h1 class="main-first">이</h1>                        
+                        <h1 class="main-second">中</h1>
+                        <h1 class="main-third">은</h1>   
+                        
+                        <div class="hidden-tit">
+                              <h1><span>心</span>을 잃지않는 웹퍼블리셔</h1>
+                        </div>
+                        
                                              
                      </div>
                      <h3>웹퍼블리셔에게 있어 중심은 웹표준과 웹접근성을 준수하는 것이라고 생각합니다. <br>  
@@ -170,16 +176,31 @@
    
 
    // main title effect
-   $(function(){
+   // $(function(){
+   //    if($(".hidden-tit h1").attr({"opacity":"1"})){
+   //       $(".main-tit h1.main-first, .main-tit h1.main-third").addClass("hide");
+   //    }else{
+   //       $(".main-tit h1.main-first, .main-tit h1.main-third").removeClass("hide");
+
+   //    }
+   // });
+   // $(function(){
       let mainTit=$(".main-tit");
       // // let mainCon=$(".main-con");
 
       $(mainTit).click(function(){
          $(this).toggleClass("click");
          if($(this).hasClass("click")){
-            $(mainTit).find(".main-hide").addClass("hide");
-            $(mainTit).find(".main-show").addClass("active");
-            $(mainTit).find(".hidden-tit").addClass("show");
+            $(mainTit).find(".main-first, .main-third").delay(2000).addClass("hide");
+            $(".hidden-tit, .hidden-tit h1").addClass("show");
+         }else{
+            $(mainTit).find(".main-first, .main-third").removeClass("hide"),7000;
+            $(".hidden-tit, .hidden-tit h1").removeClass("show");
+         }
+      });
+   // )};
+      //       $(mainTit).find(".main-show").addClass("active");
+            // $(mainTit).find(".hidden-tit").addClass("show");
             // $("#mainSec h3").addClass("show");
             
 
@@ -187,11 +208,11 @@
             // $(mainCon).find("ul").css({"opacity":"1"});
             // $(mainCon).find("li").css({"opacity":"1"});
          
-         }else{
+         // }else{
             // $(mainTit).find(".main-show").removeClass("active");
-         }
-      });
-   });
+   //       }
+   //    });
+   // });
 
    // swiper slide
          var swiper = new Swiper('.swiper-container',{
