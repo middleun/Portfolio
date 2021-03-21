@@ -61,12 +61,15 @@
                   <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/header.php";?>
 
                   <section id="mainSec" class="section">                      
-                     <div class="main-bg"></div>
+                     <div class="main-bg">
+                        <span><i class="fas fa-caret-down"> click!</i></span>
+                     </div>
                      <div class="main-tit">
-
+                        
                         <h1 class="main-first">이</h1>                        
                         <h1 class="main-second">中</h1>
-                        <h1 class="main-third">은</h1>   
+                        <h1 class="main-third">은</h1>                    
+                           
                         
                         <div class="hidden-tit">
                               <h1><span>心</span>을 잃지않는 웹퍼블리셔</h1>
@@ -74,17 +77,15 @@
                         
                                              
                      </div>
-                     <h3>웹퍼블리셔에게 있어 중심은 웹표준과 웹접근성을 준수하는 것이라고 생각합니다. <br>  
+                     <div class="main-con">
+                        <i class="fas fa-quote-left"></i>
+                        <h3>웹퍼블리셔에게 있어 중심은 웹표준과 웹접근성을 준수하는 것이라고 생각합니다. <br>
                         기본에 충실하고 중심을 잃지 않는 웹퍼블리셔가 되겠습니다.</h3>
-
-                     <!-- <div class="main-con">
-                        <ul>
-                           <li>[명사]사물의 한가운데</li>
-                           <li><u>사물이나 행동에서 매우 중요하고 기본이 되는 부분</u></li>
-                           <li>확고한 주관이나 줏대</li>
-                        </ul>
-                        
-                     </div> -->
+                        <i class="fas fa-quote-right"></i>
+   
+                     </div>
+                     
+                    
                   </section> 
                   <!-- end of main section -->
 
@@ -156,63 +157,53 @@
       autoScrolling:true,
 	   // scrollHorizontally: true,
       // fixedElement:"#header .top-bar",
-      anchors:['firstSec','secondSec','thirdSec'],
+      anchors:['secondSec','thirdSec','fourthSec'],
       animateAnchor:true,
       // scrollBar:true,   
       responsiveHeight:537,
       // scrollOverflowReset:true,      
       css3:true,      
-      // afterLoad:function(origin, destination, direction){
-      //    // console.log(destination.index);
-      //    if(destination.index > 0){
-      //       $("#header .top-bar").css({"position":"fixed"});
-      //    }
-      // },
+      afterLoad:function(origin, destination, direction){
+         console.log(destination.index);
+         if(destination.index > 0){
+            $("#header .top-bar").css({"position":"fixed"});
+         }
+      },
 	
       
       
-   });
+   });   
 
    
-
-   // main title effect
-   // $(function(){
-   //    if($(".hidden-tit h1").attr({"opacity":"1"})){
-   //       $(".main-tit h1.main-first, .main-tit h1.main-third").addClass("hide");
-   //    }else{
-   //       $(".main-tit h1.main-first, .main-tit h1.main-third").removeClass("hide");
-
-   //    }
-   // });
-   // $(function(){
       let mainTit=$(".main-tit");
       // // let mainCon=$(".main-con");
 
       $(mainTit).click(function(){
          $(this).toggleClass("click");
          if($(this).hasClass("click")){
-            $(mainTit).find(".main-first, .main-third").delay(2000).addClass("hide");
-            $(".hidden-tit, .hidden-tit h1").addClass("show");
+            $(".main-first, .main-third").fadeOut(1000, function(){
+               $(".hidden-tit, .hidden-tit h1").addClass("show");
+               setTimeout(() => {
+                  $(".main-con").fadeTo(2000, 1);
+               }, 2000);
+
+            });           
+               
+            
          }else{
-            $(mainTit).find(".main-first, .main-third").removeClass("hide"),7000;
+            $(".main-first, .main-third").fadeIn(1000, function(){
+               $(".main-con").hide();   
+            });
+            
             $(".hidden-tit, .hidden-tit h1").removeClass("show");
-         }
-      });
-   // )};
-      //       $(mainTit).find(".main-show").addClass("active");
-            // $(mainTit).find(".hidden-tit").addClass("show");
-            // $("#mainSec h3").addClass("show");
+            
             
 
-            // $(mainCon).css({"height":"200px"});
-            // $(mainCon).find("ul").css({"opacity":"1"});
-            // $(mainCon).find("li").css({"opacity":"1"});
-         
-         // }else{
-            // $(mainTit).find(".main-show").removeClass("active");
-   //       }
-   //    });
-   // });
+            
+         }
+      });
+   
+      
 
    // swiper slide
          var swiper = new Swiper('.swiper-container',{
