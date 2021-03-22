@@ -21,4 +21,16 @@ Main Section / About Section( profile + skill ) / Portfolio Section
 
 
 
+# header.php
+- top-bar고정 문제 해결 
+
+# main Section
+- 애니메이션 수정
+
+# 반응형
+
+# contact section 
+- like Gold
+
+
 /////// Do the Next Right Thing. 

@@ -24,6 +24,7 @@
                         <p>데이터베이스를 활용하여 만든 사이트입니다.<br><br>제작기간 <em>: 2개월</em><br>사용언어 
                         <em>: html5, css3, javascript, php, mariaDB</em> </p>
                         <div class="prtfol-btn">
+                            <!-- <embed src="../portfolio/pdf/movie_api.pdf#toolbar=0&stausbar=0" type="application/pdf" width="100%" height="600px/"> -->
                             <a href="#">pdf다운로드</a>
                             <a href="http://middleun.dothome.co.kr/gold" target=" _blank">사이트 바로가기</a>
                         </div>

@@ -18,7 +18,7 @@ Main Section animation style
 /* @keyframes showup{0%{opacity:0;} 20%{opacity: 1;} 100%{opacity: 1;} 100%{_opacity: 0;}} */
 
 /* hidden title h1 */
-@keyframes slidein{0%{margin-left:-800px;opacity:0;} 20%{margin-left:-800px;opacity:0;} 35%{margin-left:0;opacity: 1;} 100%{margin-left:0;opacity:1;}}
+@keyframes slidein{0%{margin-left:-1000px;opacity:0;} 20%{opacity:0;} 35%{margin-left:0;opacity: 1;} 100%{margin-left:0;opacity:1;}}
 
 /* hidden title */
 @keyframes reveal{0%{opacity: 0; width:0;} 20%{opacity: 1; width:0;} 30%{width:80%;} 80%{opacity:1;} 100%{opacity: 1; width:80%;}}
