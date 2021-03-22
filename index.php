@@ -54,37 +54,34 @@
       <div class="contents-wrap">
          <div class="contents-front">
                    
+            <!-- header -->
+            <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/header.php";?>
 
             <div class="section-wrap" id="fullpage">
-               <div class="center"> 
-                  <!-- header -->
-                  <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/header.php";?>
+               <div class="center">                   
 
                   <section id="mainSec" class="section">                      
-                     <div class="main-bg">
+                     <div class="main-indicator">
                         <span><i class="fas fa-caret-down"> click!</i></span>
                      </div>
                      <div class="main-tit">
                         
                         <h1 class="main-first">이</h1>                        
                         <h1 class="main-second">中</h1>
-                        <h1 class="main-third">은</h1>                    
-                           
+                        <h1 class="main-third">은</h1>                                  
                         
                         <div class="hidden-tit">
                               <h1><span>心</span>을 잃지않는 웹퍼블리셔</h1>
-                        </div>
-                        
-                                             
+                        </div>                       
+                                        
                      </div>
+
                      <div class="main-con">
                         <i class="fas fa-quote-left"></i>
                         <h3>웹퍼블리셔에게 있어 중심은 웹표준과 웹접근성을 준수하는 것이라고 생각합니다. <br>
                         기본에 충실하고 중심을 잃지 않는 웹퍼블리셔가 되겠습니다.</h3>
-                        <i class="fas fa-quote-right"></i>
-   
-                     </div>
-                     
+                        <i class="fas fa-quote-right"></i>   
+                     </div>                     
                     
                   </section> 
                   <!-- end of main section -->
@@ -93,7 +90,56 @@
                   <!-- end of about section -->
 
                   <?php include $_SERVER["DOCUMENT_ROOT"]. "/portfolio/include/prtfol.php";?>         
-                  <!-- end of portfolio section -->                 
+                  <!-- end of portfolio section -->       
+                  
+                  <section id="contactSec" class="section">
+                     <div class="contact-tit title">
+                        <h2>Contact me</h2>
+
+                     </div>
+                     <div class="contact-con">
+                        
+                        <!-- <div class="contact-info">
+                           <h3>phone<i class="fas fa-phone"></i></h3>
+                           <p>010.6232.1986</p>
+                           <ul>
+                              <li><a href="https://instagram.com/writteun"><i class="fab fa-instagram"></i></a></li>                              
+                              <li><a href="https://github.com/middleun" target=" _blank"><i class="fab fa-github"></i></a></li>
+                           </ul>   
+
+                        </div> -->
+                        <ul>
+                              <li><a href="https://instagram.com/writteun" target=" _blank"><i class="fab fa-instagram"></i></a></li>                              
+                              <li><a href="https://github.com/middleun" target=" _blank"><i class="fab fa-github"></i></a></li>
+                        </ul> 
+                        <div class="contact-form">
+                           <form action="https://script.google.com/macros/s/AKfycbyCUHCBGc5ytwuFgaxIUo7puequvIHZuesZvyGPuE4/dev" 
+                           method="post" class="gform" data-email="leejungeun.p@gmail.com">
+                              <p class="name-mail">
+                                 <input type="text" name="name" placeholder="Your Name" />
+                                 <input type="text" name="email" placeholder="Your Email" />
+                              </p>
+                              <p class="subject">
+                                 <input type="text" name="msgTit" placeholder="Subject" />
+                              </p>
+                              <p class="message">
+                                 <textarea name="msgTxt" placeholder="Your Message"></textarea>
+                              </p>
+                              <p>
+                                 <button type="submit" class="send-btn">Send Message<i class="fas fa-envelope"></i></button>
+                                 <!-- <a href="#" class="send-btn" onclick="msgSend" >Send Message<i class="fas fa-envelope"></i></a> -->
+                                 
+                              </p>
+                           </form>
+                           
+                        </div>
+                        <!-- end of contact form -->
+                     </div>
+                     <!-- end of contact contents -->
+                     
+                  </section>
+            <!-- end of contact section -->
+
                   
 
                </div>
@@ -101,21 +147,7 @@
             </div>
             <!--end of section-wrap  -->
 
-            <section id="contactSec">
-               <div class="contact-tit title">
-                  <h2>Contact me<i class="fas fa-smile"></i></h2>
-
-               </div>
-               <div class="contact-con">
-                  <ul>
-                     <li><a href="#"><i class="fas fa-phone"></i></a></li>
-                     <li><a href="mailto:eunallaco@gmaill.com"><i class="fas fa-envelope"></i></a></li>
-                     <li><a href="https://github.com/middleun" target=" _blank"><i class="fab fa-github"></i></a></li>
-                  </ul>
-               </div>
-            </section>
-            <!-- end of contact section -->
-
+            
             
 
          </div>
@@ -156,13 +188,15 @@
       sectionSelector:'.section',
       autoScrolling:true,
 	   // scrollHorizontally: true,
-      // fixedElement:"#header .top-bar",
-      anchors:['secondSec','thirdSec','fourthSec'],
+      fixedElement:"#header .top-bar",
+      anchors:['firstSec','secondSec','thirdSec','fourthSec'],
+      menu:"#hiddenNav",
       animateAnchor:true,
       // scrollBar:true,   
       responsiveHeight:537,
       // scrollOverflowReset:true,      
-      css3:true,      
+      css3:true, 
+      // paddingBottom:50,     
       afterLoad:function(origin, destination, direction){
          console.log(destination.index);
          if(destination.index > 0){
@@ -184,18 +218,21 @@
             $(".main-first, .main-third").fadeOut(1000, function(){
                $(".hidden-tit, .hidden-tit h1").addClass("show");
                setTimeout(() => {
-                  $(".main-con").fadeTo(2000, 1);
+                  $(".main-con").addClass("show");
                }, 2000);
 
             });           
+            $(".main-indicator").hide();
                
             
          }else{
+            $(".main-con").removeClass("show");
             $(".main-first, .main-third").fadeIn(1000, function(){
-               $(".main-con").hide();   
+                  
             });
             
             $(".hidden-tit, .hidden-tit h1").removeClass("show");
+            $(".main-indicator").show();
             
             
 

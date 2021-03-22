@@ -51,7 +51,7 @@ $(function(){
         bindEvents:function(){
             this.$topBar.on('click',this.open.bind(this));
             $('.hidden-top-bar').on('click', this.close.bind(this));
-            $('.home, .about, .prtfol').on('click', this.close.bind(this));
+            $('.home, .about, .prtfol, .contact').on('click', this.close.bind(this));
             this.$contents.on('scroll',this.updateTransformOrigin.bind(this));
 
         },
@@ -88,7 +88,7 @@ $(function(){
 		winWidth = $(window).outerWidth();
 		winHeight = $(window).outerHeight();
 		
-		$(".section").height(winHeight - 100);
+		$(".section").height(winHeight -100);
     });
 
     //  Move Scroll to each location when click menu
@@ -109,52 +109,30 @@ $(function(){
 
 
     // fixed header
-    const headerOffTop = $("#header").offset().top;    
-    // const contactOffTop = $("#contactSec").offset().top;
-    // console.log(contactOffTop);
-    // const winHeight = $(window).height();
-    $(window).scroll(function(){
-        let scroll = $(window).scrollTop();
-        // console.log(contactOffTop, scroll);
-        if(headerOffTop <= scroll){
-           //  $("header").css({"position":"relative"});
-            $("#header .top-bar").css({"position":"fixed", "right":"50px"});
-        }
-
-        // if($(scroll) == $(winHeight)){
-        //     $("#contactSec").show();
-        //         // if($(this).click(function(){
-            
-        //         //     $("#contactSec").toggleClass("active");
-                
-        //         // }));
-            
-        // }else{
-        //     $("#contactSec").hide();
-            
-        // };
-            
-
-        // console.log("bottom");
-
-        // if(contactOffTop < scroll){
-            // $("#contactSec").show();
-            
-            
-        // }else{
-        //     $("#contactSec").hide();
-            
+    // --- full page는 scroll 인식 X
+    // const headerOffTop = $("#header").offset().top;    
+    // // const contactOffTop = $("#contactSec").offset().top;
+    // // console.log(contactOffTop);
+    // // const winHeight = $(window).height();
+    // $(window).scroll(function(){
+    //     let scroll = $(window).scrollTop();
+    //     // console.log(contactOffTop, scroll);
+    //     if(headerOffTop <= scroll){
+    //        //  $("header").css({"position":"relative"});
+    //         $("#header .top-bar").css({"position":"fixed", "right":"50px"});
+    //     }
+      
 
         
         
 
-    });
+    // });
 
     // Contact section click event
-    if($("#contactSec").click(function(){
+    // if($("#contactSec").click(function(){
         
-        $("#contactSec").toggleClass("active");
-    }));
+    //     $("#contactSec").toggleClass("active");
+    // }));
      
 
 

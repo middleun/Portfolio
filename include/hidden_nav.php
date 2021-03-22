@@ -7,11 +7,11 @@
           <span></span>
        </div>
        <ul>
-          <li data-anchors="secondSec"><a href="#secondSec" class="home">Home</a></li>
-          <li data-anchors="thirdSec"><a href="#thirdSec" class="about">About</a></li>
+          <li data-menuanchor="firstSec"><a href="#firstSec" class="home">Home</a></li>
+          <li data-menuanchor="secondSec"><a href="#secondSec" class="about">About</a></li>
           <!-- <li><a href="#thirdSec" class="skill">Skill</a></li> -->
-          <li data-anchors="fourthSec"><a href="#fourthSec" class="prtfol">Portfolio</a></li>
-          <!-- <li data-menuanchor="fourthSec"><a href="#fifthSec" class="contact">Contact</a></li> -->
+          <li data-menuanchor="thirdSec"><a href="#thirdSec" class="prtfol">Portfolio</a></li>
+          <li data-menuanchor="fourthSec"><a href="#fourthSec" class="contact">Contact</a></li>
        </ul>
        
     </div>           
