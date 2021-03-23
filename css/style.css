@@ -32,7 +32,7 @@ height:10%; background:#fff;  width: 0; bottom:-10px; right: 0; transition:trans
  *********************/
 .contents-wrap{_width:100%; height: 100vh; position:relative; z-index:2;   _display:none;}
 .contents-wrap.tilt{overflow: hidden; pointer-events: none;}
-.contents-wrap.tilt .contents-front{transform: rotate(-15deg) translateZ(0); overflow:hidden;}
+.contents-wrap.tilt .contents-front{transform: rotate(-10deg) translateZ(0); overflow:hidden;}
  
 .contents-front{width:100%; _height:100vh;background:#fff; transform-origin: center 70%;box-shadow: 4px -4px rgba(0, 0, 0, 0.39);transition:all 0.4s linear;
 position:relative; z-index:3; pointer-events: auto; padding-bottom:100px;}
@@ -70,7 +70,7 @@ Main Section Style
 overflow:hidden;}
 #mainSec .main-indicator{width:30%; height:50%;position:absolute; _background:#6389df; border-radius: 50%; z-index:-1;
 top:33%;_transform:translateY(-86%);  display: flex; justify-content: center;}
-#mainSec .main-indicator span{display: block; animation: shake 20s ease-in-out infinite forwards; color:#6389df; font-size:14px;}
+#mainSec .main-indicator span{display: block; animation: shake 20s ease-in-out infinite forwards; color:#6389df; font-size:20px;}
 
 #mainSec .main-tit{width:100%; height:60%; max-width:90%;   position:relative;overflow: hidden; display: flex; justify-content: center;
 align-items: center; padding-top:10px;}
@@ -184,7 +184,7 @@ Footer Style
 /* #contactSec{padding-bottom:100px;} */
 /* #contactSec .fp-tableCell{} */
 #contactSec .contact-tit{_justify-content: flex-start; _align-items: flex-start; _text-transform: uppercase; margin-bottom:10px;
-_margin-top:50px; }
+_margin-top:50px; height:20%; }
 #contactSec .contact-tit h2{font-size:50px;}
 /* 양쪽 쓸 때 사용 */
 /* #contactSec .contact-con{width:100%; display:flex; justify-content: space-between;align-items: flex-end;}
