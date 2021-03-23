@@ -196,6 +196,7 @@
       responsiveHeight:537,
       // scrollOverflowReset:true,      
       css3:true, 
+      bigSectionsDestination: top,
       // paddingBottom:50,     
       afterLoad:function(origin, destination, direction){
          console.log(destination.index);
