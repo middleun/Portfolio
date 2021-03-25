@@ -2,7 +2,7 @@
     <div class="prtfol-tit title">
        <h2>Portfolio</h2>
     </div>
-    <div>    
+    <div class="prtfol-con-wrap">    
         <div class="prtfol-con swiper-container">
             <div class="swiper-wrapper">
         

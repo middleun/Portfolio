@@ -253,7 +253,7 @@
             },            
             loop:true,
             autoplay:{
-               delay:4000,
+               delay:5000,
             },
             // fixedElements:"#header",
             spacebetween:30,
