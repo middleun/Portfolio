@@ -23,8 +23,6 @@ $(function(){
             this.$topBar.on('click', this.open.bind(this));
             // this.topBarFix(false);
             // console.log('closing');
-
-
         },
         updateTransformOrigin:function(){
             scrollTop = this.$contents.scrollTop();
@@ -65,7 +63,7 @@ $(function(){
     tiltPage.init();
 
     // about section skill progress bar effect
-    // $(".")
+    
     for(let i=0; i<$(".skill-item").length; i++){
         let skillRate=$(".skill-item").eq(i).find(".skill-rate").val();
         $(".skill-item").eq(i).find(".skill-bar").animate({width:skillRate + "%"}, 1200);
@@ -91,21 +89,7 @@ $(function(){
 		$(".section").height(winHeight - 100);
     });
 
-    //  Move Scroll to each location when click menu
-    // $('#hiddenNav ul li').click(function(event){
-    //     event.preventDefault();           
-
-
     
-    //     let navIdx=$(this).index();
-    //     // console.log(navIdx);
-    //     let navHref=$('#hiddenNav ul li').eq(navIdx).find("a").attr('href');
-    //       //console.log(navHref);
-    //     const offset=$(navHref).offset().top + 120;
-    //     // console.log(offset);
-    //     $('html,body').animate({scrollTop:offset}, 1000, 'linear');
-    // });  
-
 
 
     // fixed header

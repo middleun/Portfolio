@@ -193,7 +193,7 @@
       menu:"#hiddenNav",
       animateAnchor:true,
       // scrollBar:true,   
-      responsiveHeight:700,
+      // responsiveHeight:700,
       // scrollOverflowReset:true,      
       css3:true, 
       bigSectionsDestination: top,

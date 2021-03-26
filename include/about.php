@@ -6,9 +6,9 @@
    </div>
    <div class="about-grid">
       <div class="about-item about-img">
-          <!-- <div class="about-img"> -->
-              <!-- <img src="../portfolio/img/about_img_1.png" alt="leejungeun's profile image"> -->
-          <!-- </div> -->
+          
+        <img src="../portfolio/img/about_img_1.png" alt="이중은의 프로필 이미지">
+          
       </div>
       <!-- end of about-img -->
       <div class="about-item about-info">
@@ -28,7 +28,7 @@
           <div class="skill-item">
               <div class="skill-img">
                   <p>html5</p>
-                  <img src="../portfolio/img/about_icon_1.png" alt="">
+                  <img src="../portfolio/img/about_icon_1.png" alt="HTML5 아이콘">
               </div>
               <div class="skill-con">
                   <p>html5</p>
@@ -43,7 +43,7 @@
           <div class="skill-item">
               <div class="skill-img">
                 <p>css3</p>      
-                <img src="../portfolio/img/about_icon_2.png" alt="">
+                <img src="../portfolio/img/about_icon_2.png" alt="CSS3 아이콘">
 
               </div>
               <div class="skill-con">
@@ -59,7 +59,7 @@
           <div class="skill-item">
               <div class="skill-img">
                 <p>jquery</p>
-                <img src="../portfolio/img/about_icon_3.png" alt="">
+                <img src="../portfolio/img/about_icon_3.png" alt="jQuery 아이콘">
 
               </div>
               <div class="skill-con">
@@ -75,7 +75,7 @@
           <div class="skill-item">
               <div class="skill-img">
                 <p>php</p>  
-                <img src="../portfolio/img/about_icon_4.png" alt="">
+                <img src="../portfolio/img/about_icon_4.png" alt="php 아이콘">
               </div>
               <div class="skill-con">
                   <p>php</p>
@@ -90,7 +90,7 @@
           <div class="skill-item">
               <div class="skill-img">
                 <p>photoshop</p>
-                <img src="../portfolio/img/about_icon_5.png" alt="">
+                <img src="../portfolio/img/about_icon_5.png" alt="Adobe Photoshop 아이콘">
 
               </div>
               <div class="skill-con">
@@ -106,7 +106,7 @@
           <div class="skill-item">
               <div class="skill-img">
                 <p>illustrator</p>
-                <img src="../portfolio/img/about_icon_6.png" alt="">
+                <img src="../portfolio/img/about_icon_6.png" alt="Adobe Illustrator 아이콘">
 
               </div>
               <div class="skill-con">
