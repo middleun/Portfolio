@@ -16,6 +16,8 @@
 
    #mainSec .main-con{font-size:20px;}
 
+   /* about section */
+   #aboutSec .about-grid .about-item.about-info ul li{font-size:16px;}
 
 }
 
@@ -28,19 +30,20 @@
    #mainSec .main-tit .hidden-tit span{font-size:150px;}
 
    /* about Section  */
-   /* #aboutSec .skill-grid .skill-item .skill-img{height:30px;} */
+   #aboutSec .about-grid .about-item.about-info ul li{font-size:14px;}
    #aboutSec .skill-grid .skill-item .skill-con span{font-size:14px;}
 
    /* portfolio section */
+   
    #prtfolSec .prtfol-box .prtfol-txt{padding:3%;}
-   #prtfolSec .prtfol-box .prtfol-txt .prtfol-tag span{font-size:16px;}
+   #prtfolSec .prtfol-box .prtfol-txt h3{font-size:25px;}
+   #prtfolSec .prtfol-box .prtfol-txt .prtfol-tag span{font-size:16px; margin-right:0;}
    #prtfolSec .prtfol-box .prtfol-txt .prtfol-btn a{font-size:14px;}
 }
 
 @media screen and (max-width:1120px){
 
    /* about Section  */
-   #aboutSec .about-grid .about-item.about-info ul li{font-size:14px;}
    #aboutSec .skill-grid .skill-item .skill-con p{font-size:14px;}
 }   
 
@@ -83,7 +86,7 @@
    #aboutSec .about-grid .about-item.about-info ul li{margin-bottom:5px;}
 
    /* portfolio section */
-   #prtfolSec .prtfol-box .prtfol-img{float:none; width:100%; height:75%; padding:5px;}
+   #prtfolSec .prtfol-box .prtfol-img{float:none; width:100%; height:70%; padding:5px;}
    #prtfolSec .prtfol-box .prtfol-txt{float:none; width:100%; height:25%;justify-content: flex-start; align-items: center;}
    #prtfolSec .prtfol-box .prtfol-txt h3{height:50%;}
    #prtfolSec .prtfol-box .prtfol-txt .prtfol-tag{display:none;}

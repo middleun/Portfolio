@@ -33,11 +33,11 @@
    <!-- animation css link -->
    <link rel="stylesheet" href="../portfolio/css/animation.css">
 
-   <!-- media css link  -->
-   <link rel="stylesheet" href="../portfolio/css/media.css">
-
    <!-- main style css link -->
    <link rel="stylesheet" href="../portfolio/css/style.css">
+
+   <!-- media css link  -->
+   <link rel="stylesheet" href="../portfolio/css/media.css">
 
    <!-- Awesome Font cdn link -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
@@ -193,7 +193,7 @@
       menu:"#hiddenNav",
       animateAnchor:true,
       // scrollBar:true,   
-      responsiveHeight:537,
+      responsiveHeight:700,
       // scrollOverflowReset:true,      
       css3:true, 
       bigSectionsDestination: top,
@@ -252,9 +252,10 @@
 
             },            
             loop:true,
-            autoplay:{
-               delay:5000,
-            },
+            autoplay:false,
+            // autoplay:{
+            //    delay:6000,
+            // },
             // fixedElements:"#header",
             spacebetween:30,
             keyboard:{

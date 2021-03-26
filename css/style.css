@@ -117,7 +117,7 @@ grid-template-rows: repeat(2, minmax(50%,auto)); _gap:5px; _border:1px solid #00
 _padding-right:20%; background:url(../img/about_img_1.png) no-repeat center center; background-size:contain;}
 #aboutSec .about-grid .about-item.about-img img{width:100%;}
 
-#aboutSec .about-grid .about-item.about-info{width:100%; padding:0 10px; display:flex; flex-direction: column; justify-content: center;
+#aboutSec .about-grid .about-item.about-info{width:100%; padding:0 10px 0 20px; display:flex; flex-direction: column; justify-content: center;
 _border-right:1px solid #bebcc1;}
 
 #aboutSec .about-grid .about-item.about-info ul{margin-top:50px;}
@@ -144,6 +144,7 @@ background:linear-gradient(153deg, rgba(31,43,108,1) 0%, rgba(99,137,223,1) 100%
 Portfolio Section Style 
 ******************/
 /* #prtfolSec{padding-bottom:0;} */
+#prtfolSec .prtfol-tit{margin-bottom:0; height:20%;}
 #prtfolSec>div:nth-child(2){position:relative; height:85%;}
 #prtfolSec .prtfol-con-wrap{position:relative;}
 #prtfolSec .prtfol-con{width:100%; max-width:90%; height:100%;box-shadow:3px 3px 15px rgba(0, 0, 0, 0.233);}
@@ -153,7 +154,7 @@ Portfolio Section Style
 #prtfolSec .prtfol-box .prtfol-img:hover img{transform:scale(1.05);}
 
 #prtfolSec .prtfol-box .prtfol-txt{float:right; width:50%; height:100%;display:flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;
-padding:5%; font-family:'Noto Sans KR';}
+padding:3%; font-family:'Noto Sans KR';}
 #prtfolSec .prtfol-box .prtfol-txt h3{font-size:30px; display:flex; justify-content: flex-start;}
 #prtfolSec .prtfol-box .prtfol-txt h3 span{display:block; text-transform: uppercase; margin-right:10px; color:#6389df;}
 #prtfolSec .prtfol-box .prtfol-txt .prtfol-tag span{display:inline-block; _margin-bottom:30px; margin-right:10px; font-size:20px;
@@ -184,7 +185,7 @@ Footer Style
  ******************/
 /* #contactSec{padding-bottom:100px;} */
 /* #contactSec .fp-tableCell{} */
-#contactSec .contact-tit{_justify-content: flex-start; _align-items: flex-start; _text-transform: uppercase; margin-bottom:10px;
+#contactSec .contact-tit{_justify-content: flex-start; _align-items: flex-start; _text-transform: uppercase; margin-bottom:0;
 _margin-top:50px; height:20%; }
 #contactSec .contact-tit h2{font-size:50px;}
 /* 양쪽 쓸 때 사용 */
@@ -195,12 +196,12 @@ display:flex; flex-direction:column;_align-items:  flex-end; _justify-content: f
 #contactSec .contact-con .contact-info ul li{padding:10px;}
 #contactSec .contact-con .contact-info ul li i{font-size: 20px;} */
 
-#contactSec .contact-con{width:100%;_max-width: 60%; display:flex; justify-content: center;align-items: center; flex-direction: column;}
-#contactSec .contact-con ul{width:100%; display: flex; justify-content: center;}
-#contactSec .contact-con ul li{padding: 10px;}
+#contactSec .contact-con{width:100%; height: 80%; display:flex; justify-content: center;align-items: center; flex-direction: column;}
+#contactSec .contact-con ul{width:100%; display: flex; justify-content: center; margin-bottom:30px;}
+#contactSec .contact-con ul li{padding: 0 30px;}
 #contactSec .contact-con ul li{cursor: pointer;}
-#contactSec .contact-con ul li a i{font-size: 25px; z-index: 30;}
-#contactSec .contact-con .contact-form{width:50%; _background:#bebcc1;}
+#contactSec .contact-con ul li a i{font-size: 40px; z-index: 30;}
+/* #contactSec .contact-con .contact-form{width:50%; _background:#bebcc1;} */
 #contactSec .contact-con .contact-form form{border:1px solid #6389df; padding:10px;}
 #contactSec .contact-con .contact-form form .name-mail{width:100%; height:auto; display: flex; justify-content: space-between;}
 #contactSec .contact-con .contact-form form .name-mail>input{width:calc(50% - 5px);}

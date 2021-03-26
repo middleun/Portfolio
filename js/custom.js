@@ -88,7 +88,7 @@ $(function(){
 		winWidth = $(window).outerWidth();
 		winHeight = $(window).outerHeight();
 		
-		$(".section").height(winHeight -100);
+		$(".section").height(winHeight - 100);
     });
 
     //  Move Scroll to each location when click menu
