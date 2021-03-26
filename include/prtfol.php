@@ -25,8 +25,8 @@
                         <em>: html5, css3, javascript, php, mariaDB</em> </p>
                         <div class="prtfol-btn">
                             <!-- <embed src="../portfolio/pdf/movie_api.pdf#toolbar=0&stausbar=0" type="application/pdf" width="100%" height="600px/"> -->
-                            <a href="../portfolio/pdf/db.pdf" target="_blank">pdf다운로드</a>
-                            <a href="http://middleun.dothome.co.kr/gold" target=" _blank">사이트 바로가기</a>
+                            <a href="../portfolio/pdf/db.pdf" target="_blank" alt="요약서 다운로드 버튼">요약서 다운로드</a>
+                            <a href="http://middleun.dothome.co.kr/gold" target=" _blank" alt="사이트 바로가기 버튼">사이트 바로가기</a>
                         </div>
                     </div>              
                 
@@ -50,8 +50,8 @@
                         <p>그리드 레이아웃을 적용한 사이트입니다.<br><br>제작기간 <em>: 7일</em><br>
                         사용언어 <em>: html5, css3, jquery, php</em> </p>
                         <div class="prtfol-btn">
-                            <a href="../portfolio/pdf/renewal.pdf" target="_blank">pdf다운로드</a>
-                            <a href="http://middleun.dothome.co.kr/renewal" target=" _blank">사이트 바로가기</a>
+                            <a href="../portfolio/pdf/renewal.pdf" target="_blank" alt="요약서 다운로드 버튼">pdf다운로드</a>
+                            <a href="http://middleun.dothome.co.kr/renewal" target=" _blank" alt="사이트 바로가기 버튼">사이트 바로가기</a>
 
                         </div>
                     </div>              
@@ -76,8 +76,8 @@
                         <p>네이버와 yts의 영화 api를 활용한 영화 검색 사이트입니다.<br><br>제작기간 <em>: 6일</em><br>
                         사용언어 <em>: css3, javascript, php </em> </p>
                         <div class="prtfol-btn">
-                            <a href="../portfolio/pdf/movie_api.pdf" target="_blank">pdf다운로드</a>
-                            <a href="http://middleun.dothome.co.kr/movie_api" target=" _blank">사이트 바로가기</a>
+                            <a href="../portfolio/pdf/movie_api.pdf" target="_blank" alt="요약서 다운로드 버튼">요약서 다운로드</a>
+                            <a href="http://middleun.dothome.co.kr/movie_api" target=" _blank" alt="사이트 바로가기 버튼">사이트 바로가기</a>
 
                         </div>
                     </div>              
@@ -102,8 +102,8 @@
                         <p>일정관리용 사이트입니다. <br>타프로젝트의 준비 과정이 담겨있습니다.<br><br>제작기간 <em>: 10일</em><br>
                         사용언어 <em>: css3, javascript, php, mariaDB</em> </p>
                         <div class="prtfol-btn">
-                            <a href="../portfolio/pdf/my_schedule.pdf" target="_blank">pdf다운로드</a>
-                            <a href="http://middleun.dothome.co.kr/myschedule" target=" _blank">사이트 바로가기</a>
+                            <a href="../portfolio/pdf/my_schedule.pdf" target="_blank" alt="요약서 다운로드 버튼">요약서 다운로드</a>
+                            <a href="http://middleun.dothome.co.kr/myschedule" target=" _blank" alt="사이트 바로가기 버튼">사이트 바로가기</a>
                         </div>
                     </div>              
                 
@@ -128,32 +128,32 @@
                         사용언어 <em>: css3, javascript, php</em> </p>
                         <div class="prtfol-btn">
                             
-                            <a href="../portfolio/pdf/web_planning_1.pdf" target="_blank">pdf다운로드</a>
+                            <a href="../portfolio/pdf/web_planning_1.pdf" target="_blank" alt="요약서 다운로드 버튼">요약서 다운로드</a>
                             <a href="#">사이트 바로가기</a>
                         </div>
                     </div>              
                 
                 </div>
-                <!-- end of prtfolBox /swiper-slide  -->                          
-                            
+                <!-- end of prtfolBox /swiper-slide  -->                            
             
             </div>
             <!-- end of swiper wrapper -->         
                 
         </div>
         <!-- end of prtfol contents -->   
-
         
-            <div class="prtfol-prev">
-                <i class="fas fa-caret-left"></i>
-            </div>
-            <div class="prtfol-next">
-                <i class="fas fa-caret-right"></i>
-            </div>     
-        
+        <div class="prtfol-prev">
+            <i class="fas fa-caret-left"></i>
+        </div>
+        <div class="prtfol-next">
+            <i class="fas fa-caret-right"></i>
+        </div>     
+        <!-- end of prev, next button -->
                           
                         
     </div>
+    <!-- end of portfolio contents wrap -->
+    <!-- prev, next버튼까지 감싸기 위함 -->
                         
                         
 

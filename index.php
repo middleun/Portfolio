@@ -209,7 +209,7 @@
       
    });   
 
-   
+      // main title click event
       let mainTit=$(".main-tit");
       // // let mainCon=$(".main-con");
 
@@ -243,20 +243,18 @@
    
       
 
-   // swiper slide
+      // swiper slide
          var swiper = new Swiper('.swiper-container',{
             cssMode : true,
             navigation:{
                prevEl:'.prtfol-prev',
                nextEl:'.prtfol-next',
-
             },            
             loop:true,
             autoplay:false,
             // autoplay:{
             //    delay:6000,
             // },
-            // fixedElements:"#header",
             spacebetween:30,
             keyboard:{
                enabled:true,
