@@ -114,7 +114,7 @@
                         </ul> 
                         <div class="contact-form">
                            <form action="https://script.google.com/macros/s/AKfycbyCUHCBGc5ytwuFgaxIUo7puequvIHZuesZvyGPuE4/dev" 
-                           method="post" class="gform" data-email="leejungeun.p@gmail.com">
+                           method="post" class="gform" data-email="eunallaco@gmail.com">
                               <p class="name-mail">
                                  <input type="text" name="name" placeholder="Your Name" />
                                  <input type="text" name="email" placeholder="Your Email" />
@@ -127,7 +127,7 @@
                               </p>
                               <p>
                                  <button type="submit" class="send-btn">Send Message<i class="fas fa-envelope"></i></button>
-                                 <!-- <a href="#" class="send-btn" onclick="msgSend" >Send Message<i class="fas fa-envelope"></i></a> -->
+                                 
                                  
                               </p>
                            </form>
@@ -243,7 +243,7 @@
    
       
 
-      // swiper slide
+         // swiper slide
          var swiper = new Swiper('.swiper-container',{
             cssMode : true,
             navigation:{

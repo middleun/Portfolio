@@ -13,9 +13,10 @@
                 <li>1992.03.11</li>
                 <li>010.6232.1986</li>
                 <li>서울시 용산구 보광동</li>
-                <li>덕성여자대학교 심리학과 졸업</li>
-                
+                <li>덕성여자대학교 심리학과 졸업</li>                
             </ul>
+            <a href="#" target="_blank" alt="요약서 다운로드 버튼">요약서 보러가기</a>
+
         </div>
         <!-- end of about-info -->
         <div class="about-item about-skill skill-grid">
