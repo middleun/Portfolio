@@ -11,6 +11,11 @@
    <meta name="author" content="eunallaco@gmail.com, 이중은">
    <!-- <meta name="robots" content="index,follow"> -->
    <meta name="copyright" content="copyrights 2021 LEEJUNGEUN.">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="LEEJUNGEUN's PORTFOLIO">
+   <meta property="og:description" content="신입 웹퍼블리셔 이중은의 포트폴리오입니다.">
+   <meta property="og:image" content="../portfolio/img/favicon.ico">
+   <meta property="og:url" content="https://middleun.dothome.co.kr/portfolio">
 
 
    <!-- favicon link -->
