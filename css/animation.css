@@ -5,10 +5,6 @@ Main Section animation style
 @keyframes shake{0%,100%{transform:rotate(0deg);transform-origin:50% 50%}10%{transform:rotate(8deg)}
 20%,40%,60%{transform:rotate(-10deg)}30%,50%,70%{transform:rotate(10deg)}80%{transform:rotate(-8deg)}90%{transform:rotate(8deg)}}
    
-/* main title */
-
-/* main title h1.main-first, main-second, main-third */
-/* @keyframes showup{0%{opacity:0;} 20%{opacity: 1;} 100%{opacity: 1;} 100%{_opacity: 0;}} */
 
 /* hidden title h1 */
 @keyframes slidein{0%{margin-left:-1000px;opacity:0;} 20%{opacity:0;} 35%{margin-left:0;opacity: 1;} 100%{margin-left:0;opacity:1;}}

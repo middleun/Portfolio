@@ -1,9 +1,6 @@
 
-<section id="header">
-                  
-    <div class="top-logo">
-       <!-- <h1>leejungeun</h1> -->
-       <!-- <img src="../portfolio/img/favicon-32x32.png" alt=""> -->
+<header id="header">                  
+    <div class="top-logo">      
     </div>
     <div class="top-bar">
        <span></span>
@@ -12,6 +9,6 @@
     </div>
       
       
-</section>
+</header>
 <!-- end of header -->
 

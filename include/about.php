@@ -15,8 +15,7 @@
                 <li>서울시 용산구 보광동</li>
                 <li>덕성여자대학교 심리학과 졸업</li>                
             </ul>
-            <a href="#" target="_blank" alt="요약서 다운로드 버튼">요약서 보러가기</a>
-
+            <a href="#" target="_blank" title="포트폴리오 사이트 요약서 새창 바로가기">요약서 보러가기</a>
         </div>
         <!-- end of about-info -->
         <div class="about-item about-skill skill-grid">
@@ -46,7 +45,7 @@
                     <div class="skill-bar-box">
                         <span class="skill-bar"></span>
                     </div>
-                    <!-- <span>미디어쿼리를 활용한 반응형웹 구현이 가능합니다 </span> -->
+                    
                 </div>
             </div>
             <!-- end of skill-item -->
@@ -62,7 +61,7 @@
                     <div class="skill-bar-box">
                         <span class="skill-bar"></span>
                     </div>
-                    <!-- <span>블라블라</span> -->
+                    
                 </div>
             </div>
             <!-- end of skill-item -->
@@ -76,8 +75,7 @@
                     <input type="text" value="65" class="skill-rate">
                     <div class="skill-bar-box">
                         <span class="skill-bar"></span>
-                    </div>
-                    <!-- <span>jquery플러그인 활용 및 구현이 가능합니다  </span> -->
+                    </div>                  
                 </div>
             </div>
             <!-- end of skill-item -->
@@ -93,7 +91,7 @@
                     <div class="skill-bar-box">
                         <span class="skill-bar"></span>
                     </div>
-                    <!-- <span>이미지 합성, 보정을 비롯한 메인 시안 디자인이 가능합니다</span> -->
+                  
                 </div>
             </div>
             <!-- end of skill-item -->
@@ -109,13 +107,12 @@
                     <div class="skill-bar-box">
                         <span class="skill-bar"></span>
                     </div>
-                    <!-- <span>로고 제작 및 일러스트 제작이 가능합니다 </span> -->
+                    
                 </div>
             </div>
             <!-- end of skill-item -->
         </div>
-        <!-- end of about-skill / sub grid -->      
-      
+        <!-- end of about-skill / sub grid -->            
     </div>
 </div>
 <!-- end of about section -->
