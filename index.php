@@ -14,7 +14,7 @@
    <meta property="og:type" content="website">
    <meta property="og:title" content="LEEJUNGEUN's PORTFOLIO">
    <meta property="og:description" content="신입 웹퍼블리셔 이중은의 포트폴리오입니다.">
-   <meta property="og:image" content="../portfolio/img/favicon.ico">
+   <meta property="og:image" content="http://middleun.dothome.co.kr/portfolio/img/prtfol_img_5_hover.png">
    <meta property="og:url" content="https://middleun.dothome.co.kr/portfolio">
 
 

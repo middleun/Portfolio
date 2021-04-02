@@ -154,7 +154,7 @@
                         사용언어 <em>: css3, javascript, php</em> </p>
                         <div class="prtfol-btn button">
                             
-                            <a href="#" target="_blank" alt="요약서 다운로드 버튼">요약서 다운로드</a>
+                            <a href="#" target="_blank">요약서 다운로드</a>
                             <a href="#">사이트 바로가기</a>
                         </div>
                     </div>              
@@ -180,7 +180,7 @@
                         사용언어 <em>: css3, javascript, php</em> </p>
                         <div class="prtfol-btn button">
                             
-                            <a href="../portfolio/pdf/web_planning_1.pdf" target="_blank" alt="요약서 다운로드 버튼">요약서 다운로드</a>
+                            <a href="#" target="_blank">요약서 다운로드</a>
                             <a href="#">사이트 바로가기</a>
                         </div>
                     </div>              

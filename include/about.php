@@ -10,10 +10,10 @@
         <div class="about-item about-info">              
             <ul>
                 <li>이중은(LEE JUNG EUN)</li>
-                <li>1992.03.11</li>
-                <li>010.6232.1986</li>
-                <li>서울시 용산구 보광동</li>
-                <li>덕성여자대학교 심리학과 졸업</li>                
+                <li>0000.00.00</li>
+                <li>010.0000.000</li>
+                <li>서울시 00구 00동</li>
+                <li>졸업</li>                
             </ul>
             <a href="#" target="_blank" title="포트폴리오 사이트 요약서 새창 바로가기">요약서 보러가기</a>
         </div>
