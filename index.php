@@ -4,19 +4,22 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <meta http-equv="Page-Enter" content="Circle in(Duration=5,Transition=20)"/> -->
    <title>LEEJUNGEUN's PORTFOLIO</title>
    <meta name="keywords" content="웹퍼블리셔,포트폴리오">
-   <meta name="subject" content="신입 웹 퍼블리셔 이중은 포트폴리오">
+   <meta name="title" content="신입 웹 퍼블리셔 이중은 포트폴리오">
+   <meta name="subject" content="포트폴리오">
    <meta name="description" content="신입 웹퍼블리셔 이중은의 포트폴리오입니다.">
    <meta name="author" content="eunallaco@gmail.com, 이중은">
-   <!-- <meta name="robots" content="index,follow"> -->
+   <meta name="robots" content="index,follow">
    <meta name="copyright" content="copyrights 2021 LEEJUNGEUN.">
    <meta property="og:type" content="website">
+   <meta property="og:url" content="https://middleun.dothome.co.kr/portfolio">
    <meta property="og:title" content="LEEJUNGEUN's PORTFOLIO">
    <meta property="og:description" content="신입 웹퍼블리셔 이중은의 포트폴리오입니다.">
-   <meta property="og:image" content="http://middleun.dothome.co.kr/portfolio/img/prtfol_img_5_hover.png">
-   <meta property="og:url" content="https://middleun.dothome.co.kr/portfolio">
-
+   <meta property="og:image" content="http://middleun.dothome.co.kr/portfolio/img/about_img_1.png">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="630">
 
    <!-- favicon link -->
    <link rel="apple-touch-icon" href="./img/favicon.ico" />
@@ -42,9 +45,7 @@
    <link rel="stylesheet" href="../portfolio/css/media.css">
 
    <!-- Awesome Font cdn link -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
-
-   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">   
 </head>
 <body>
 
