@@ -128,8 +128,8 @@
                         사용언어 <em>: css3, javascript, php</em> </p>
                         <div class="prtfol-btn button">
                             
-                            <a href="../portfolio/pdf/web_planning.pdf" target="_blank" title="요약서 새창 바로가기">요약서 다운로드</a>
-                            <a href="#">사이트 바로가기</a>
+                            <a href="../portfolio/pdf/web_planning_2.pdf" target="_blank" title="요약서 새창 바로가기">요약서 다운로드</a>
+                            <a href="http://middleun.dothome.co.kr/fullants" target="_blank" title="식물판매사이트 새창 바로가기">사이트 바로가기</a>
                         </div>
                     </div>              
                 
@@ -138,7 +138,7 @@
                 <div class="prtfol-box swiper-slide clear">     
         
                     <div class="prtfol-img">
-                        <img src="../portfolio/img/prtfol_img_5.png" alt="리액트 프로젝트 포트폴리오 이미지">
+                        <img src="" alt="리액트 프로젝트 포트폴리오 이미지">
                     </div>
                     <div class="prtfol-txt">
                         <h3><span>React</span> Project</h3>
@@ -160,33 +160,7 @@
                     </div>              
                 
                 </div>
-                <!-- end of prtfolBox /swiper-slide  --> 
-                <div class="prtfol-box swiper-slide clear">     
-        
-                    <div class="prtfol-img">
-                        <img src="../portfolio/img/prtfol_img_5.png" alt="식물판매사이트 기획 포트폴리오 이미지">
-                    </div>
-                    <div class="prtfol-txt">
-                        <h3><span>기획</span> Project</h3>
-                        <div class="prtfol-tag">
-                            <span>#식물판매사이트</span>
-                            <span>#분석 </span>
-                            <span>#설계 </span>
-                            <span>#개발 </span>
-                            <span></span>
-                        </div>
-
-                        <p>식물 판매 사이트의 기획자료와 메인페이지입니다.<br><br>제작기간 <em>: 6개월</em><br>
-                        사용언어 <em>: css3, javascript, php</em> </p>
-                        <div class="prtfol-btn button">
-                            
-                            <a href="#" target="_blank">요약서 다운로드</a>
-                            <a href="#">사이트 바로가기</a>
-                        </div>
-                    </div>              
-                
-                </div>
-                <!-- end of prtfolBox /swiper-slide  --> 
+                <!-- end of prtfolBox /swiper-slide  -->                
 
             
             </div>

@@ -4,7 +4,7 @@
     </div>
     <div class="about-grid">
         <div class="about-item about-img">          
-            <img src="../portfolio/img/about_img_1.png" alt="이중은의 프로필 이미지">          
+            <!-- <img src="../portfolio/img/about_img_1.png" alt="이중은의 프로필 이미지">           -->
         </div>
         <!-- end of about-img -->
         <div class="about-item about-info">              
@@ -15,7 +15,7 @@
                 <li>서울시 00구 00동</li>
                 <li>졸업</li>                
             </ul>
-            <a href="#" target="_blank" title="포트폴리오 사이트 요약서 새창 바로가기">요약서 보러가기</a>
+            <!-- <a href="#" target="_blank" title="포트폴리오 사이트 요약서 새창 바로가기">요약서 보러가기</a> -->
         </div>
         <!-- end of about-info -->
         <div class="about-item about-skill skill-grid">
