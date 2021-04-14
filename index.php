@@ -109,7 +109,7 @@
                                 </ul> 
                                 <div class="contact-form">
                                     <form action="https://script.google.com/macros/s/AKfycbyCUHCBGc5ytwuFgaxIUo7puequvIHZuesZvyGPuE4/dev" 
-                                    method="post" class="gform" data-email="eunallaco@gmail.com">
+                                    method="post" class="contact-form" name="contact_form" data-email="eunallaco@gmail.com">
                                         <p class="name-mail">
                                             <input type="text" name="name" placeholder="Your Name" />
                                             <input type="text" name="email" placeholder="Your Email" />
@@ -121,7 +121,7 @@
                                             <textarea name="msgTxt" placeholder="Your Message"></textarea>
                                         </p>
                                         <p>
-                                            <button type="submit" class="send-btn">Send Message<i class="fas fa-envelope"></i></button>                                  
+                                            <button type="submit" class="send-btn" id="sendBtn">Send Message<i class="fas fa-envelope"></i></button>                                  
                                             
                                         </p>
                                     </form>
@@ -242,7 +242,38 @@
             verticalCentered:false,
         });
 
-        
+
+
+        // send btn alert
+        const sendBtn=document.querySelector("#sendBtn");
+
+        sendBtn.addEventListener('click',function(){
+            if(!document.contact_form.name.value){
+            alert('이름을 입력해주세요');
+            document.contact_form.name.focus();
+            return false;
+            }
+            if(!document.contact_form.email.value){
+            alert('메일을 입력해주세요');
+            document.contact_form.email.focus();
+            return false;
+            }
+            if(!document.contact_form.msgTit.value){
+            alert('제목을 입력해주세요');
+            document.contact_form.msgTit.focus();
+            return false;
+            }
+            if(!document.contact_form.msgTxt.value){
+            alert('내용을 입력해주세요');
+            document.contact_form.msgTxt.focus();
+            return false;
+            }
+
+            document.contact-form.submit();
+        });    
+
+
+        // console.log(document.contact_form.name.);
 
 
     </script>
