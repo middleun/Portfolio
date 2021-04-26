@@ -108,20 +108,20 @@
                                     <li><a href="https://github.com/middleun" target=" _blank"><i class="fab fa-github"></i></a></li>
                                 </ul> 
                                 <div class="contact-form">
-                                    <form action="https://script.google.com/macros/s/AKfycbyCUHCBGc5ytwuFgaxIUo7puequvIHZuesZvyGPuE4/dev" 
-                                    method="post" class="contact-form" name="contact_form" data-email="eunallaco@gmail.com">
+                                    <form action="https://script.google.com/macros/s/AKfycbzwD3NLPKLprXSOdImj2amYLobps_ItrlvjqPXZ1Vg0Yg_pU-M/exec" 
+                                    method="post" class="gform" name="contact_form" >
                                         <p class="name-mail">
                                             <input type="text" name="name" placeholder="Your Name" />
-                                            <input type="text" name="email" placeholder="Your Email" />
+                                            <input type="text" name="mail" placeholder="Your Email" />
                                         </p>
                                         <p class="subject">
-                                            <input type="text" name="msgTit" placeholder="Subject" />
+                                            <input type="text" name="subject" placeholder="Subject" />
                                         </p>
                                         <p class="message">
-                                            <textarea name="msgTxt" placeholder="Your Message"></textarea>
+                                            <textarea name="message" placeholder="Your Message"></textarea>
                                         </p>
                                         <p>
-                                            <button type="submit" class="send-btn" id="sendBtn">Send Message<i class="fas fa-envelope"></i></button>                                  
+                                            <button type="submit" class="send-btn" onclick="msgSend()">Send Message<i class="fas fa-envelope"></i></button>                                  
                                             
                                         </p>
                                     </form>
@@ -161,12 +161,13 @@
     <!-- main jquery link -->
     <script src="../portfolio/js/custom.js"></script>
 
+    <!-- form data jquery cdn -->
+    <script data-cfasync="false" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
 
     <script>
     // full page 
     $("#fullpage").fullpage({
-        // navigation:true,
-        // navigationPosition:'left',
         sectionSelector:'.section',
         autoScrolling:true,
         // scrollHorizontally: true,
@@ -245,38 +246,44 @@
 
 
         // send btn alert
-        const sendBtn=document.querySelector("#sendBtn");
+        const sendBtn=document.querySelector(".send-btn");
 
-        sendBtn.addEventListener('click',function(){
+        sendBtn.addEventListener('click',msgSend);
+        function msgSend(e){
+            e.preventDefault();
             if(!document.contact_form.name.value){
             alert('이름을 입력해주세요');
             document.contact_form.name.focus();
-            return false;
+            return;
             }
-            if(!document.contact_form.email.value){
+            if(!document.contact_form.mail.value){
             alert('메일을 입력해주세요');
-            document.contact_form.email.focus();
-            return false;
+            document.contact_form.mail.focus();
+            return;
             }
-            if(!document.contact_form.msgTit.value){
+            if(!document.contact_form.subject.value){
             alert('제목을 입력해주세요');
-            document.contact_form.msgTit.focus();
-            return false;
+            document.contact_form.subject.focus();
+            return;
             }
-            if(!document.contact_form.msgTxt.value){
+            if(!document.contact_form.message.value){
             alert('내용을 입력해주세요');
-            document.contact_form.msgTxt.focus();
-            return false;
+            document.contact_form.message.focus();
+            return;
             }
 
-            document.contact-form.submit();
-        });    
+            document.contact_form.submit();
+        };   
+        window.location.href='middleun.dothome.co.kr/portfolio' 
+        
 
 
         // console.log(document.contact_form.name.);
+                
 
 
     </script>
+    
    
 </body>
 </html>
