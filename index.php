@@ -50,7 +50,6 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">   
 </head>
 <body>
-
     <div class="wrap">
 
       <!-- hidden navigation -->
@@ -166,28 +165,28 @@
 
 
     <script>
-    // full page 
-    $("#fullpage").fullpage({
-        sectionSelector:'.section',
-        autoScrolling:true,
-        // scrollHorizontally: true,
-        fixedElement:"#header .top-bar",
-        anchors:['firstSec','secondSec','thirdSec','fourthSec'],
-        menu:"#hiddenNav",
-        animateAnchor:true,    
-        css3:true, 
-        bigSectionsDestination: top,
-        // paddingBottom:50,     
-        afterLoad:function(origin, destination, direction){
-            console.log(destination.index);
-            if(destination.index > 0){
-                $("#header .top-bar").css({"position":"fixed"});
-            }
-        },
-        
-        
-        
-    });   
+    
+    
+        // full page 
+        $("#fullpage").fullpage({
+            sectionSelector:'.section',
+            autoScrolling:true,
+            // scrollHorizontally: true,
+            fixedElement:"#header .top-bar",
+            anchors:['firstSec','secondSec','thirdSec','fourthSec'],
+            menu:"#hiddenNav",
+            animateAnchor:true,    
+            css3:true, 
+            bigSectionsDestination: top,
+            // paddingBottom:50,     
+            afterLoad:function(origin, destination, direction){
+                console.log(destination.index);
+                if(destination.index > 0){
+                    $("#header .top-bar").css({"position":"fixed"});
+                }
+            },
+            
+        });   
 
         // main title click event
         let mainTit=$(".main-tit");
@@ -245,7 +244,7 @@
 
 
 
-        // send btn alert
+        // contact form send btn alert
         const sendBtn=document.querySelector(".send-btn");
 
         sendBtn.addEventListener('click',msgSend);
@@ -274,11 +273,14 @@
 
             document.contact_form.submit();
         };   
-        window.location.href='middleun.dothome.co.kr/portfolio' 
-        
-
 
         // console.log(document.contact_form.name.);
+
+        // loading page
+        function loadingPage(){
+            window.location.href="loading.php"
+        }
+        window.onload=loadingPage;
                 
 
 

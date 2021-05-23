@@ -24,9 +24,10 @@
                         <p>데이터베이스를 활용하여 만든 사이트입니다.<br><br>제작기간 <em>: 2개월</em><br>사용언어 
                         <em>: html5, css3, javascript, php, mariaDB</em> </p>
                         <div class="prtfol-btn button">
-                            <!-- <embed src="../portfolio/pdf/movie_api.pdf#toolbar=0&stausbar=0" type="application/pdf" width="100%" height="600px/"> -->
-                            <a href="../portfolio/pdf/db_1.pdf" target="_blank" title="요약서 새창 바로가기">요약서 다운로드</a>
-                            <a href="http://middleun.dothome.co.kr/gold" target=" _blank" title="DB 사이트 새창 바로가기">사이트 바로가기</a>
+                            <!-- <a href="../portfolio/pdf/db_1.pdf" target="_blank" title="요약서 새창 바로가기">요약서 다운로드</a>
+                            <a href="http://middleun.dothome.co.kr/gold" target=" _blank" title="DB 사이트 새창 바로가기">사이트 바로가기</a> -->
+                            <a href="#" title="요약서 새창 바로가기">요약서 다운로드</a>
+                            <a href="#" title="DB 사이트 새창 바로가기">사이트 바로가기</a>
                         </div>
                     </div>              
                 
@@ -51,8 +52,10 @@
                         <p>네이버와 yts의 영화 api를 활용한 영화 검색 사이트입니다.<br><br>제작기간 <em>: 6일</em><br>
                         사용언어 <em>: css3, javascript, php </em> </p>
                         <div class="prtfol-btn">
-                            <a href="../portfolio/pdf/movie_api.pdf" target="_blank" title="요약서 새창 바로가기">요약서 다운로드</a>
-                            <a href="http://middleun.dothome.co.kr/movie_api" target=" _blank" title="movie api 사이트 새창 바로가기">사이트 바로가기</a>
+                            <!-- <a href="../portfolio/pdf/movie_api.pdf" target="_blank" title="요약서 새창 바로가기">요약서 다운로드</a>
+                            <a href="http://middleun.dothome.co.kr/movie_api" target=" _blank" title="movie api 사이트 새창 바로가기">사이트 바로가기</a> -->
+                            <a href="#"  title="요약서 새창 바로가기">요약서 다운로드</a>
+                            <a href="#"  title="movie api 사이트 새창 바로가기">사이트 바로가기</a>
 
                         </div>
                     </div>              
@@ -77,8 +80,10 @@
                         <p>일정관리용 사이트입니다. <br>타프로젝트의 준비 과정이 담겨있습니다.<br><br>제작기간 <em>: 10일</em><br>
                         사용언어 <em>: css3, javascript, php, mariaDB</em> </p>
                         <div class="prtfol-btn button">
-                            <a href="../portfolio/pdf/my_schedule.pdf" target="_blank" title="요약서 새창 바로가기">요약서 다운로드</a>
-                            <a href="http://middleun.dothome.co.kr/myschedule" target=" _blank" title="일정관리 사이트 새창 바로가기">사이트 바로가기</a>
+                            <!-- <a href="../portfolio/pdf/my_schedule.pdf" target="_blank" title="요약서 새창 바로가기">요약서 다운로드</a>
+                            <a href="http://middleun.dothome.co.kr/myschedule" target=" _blank" title="일정관리 사이트 새창 바로가기">사이트 바로가기</a> -->
+                            <a href="#" title="요약서 새창 바로가기">요약서 다운로드</a>
+                            <a href="#" title="movie api 사이트 새창 바로가기">사이트 바로가기</a>
                         </div>
                     </div>              
                 
@@ -101,8 +106,10 @@
                         <p>그리드 레이아웃을 적용한 사이트입니다.<br><br>제작기간 <em>: 7일</em><br>
                         사용언어 <em>: html5, css3, jquery, php</em> </p>
                         <div class="prtfol-btn button">
-                            <a href="../portfolio/pdf/renewal.pdf" target="_blank" title="요약서 새창 바로가기">pdf다운로드</a>
-                            <a href="http://middleun.dothome.co.kr/renewal" target=" _blank" title="리뉴얼 사이트 새창 바로가기">사이트 바로가기</a>
+                            <!-- <a href="../portfolio/pdf/renewal.pdf" target="_blank" title="요약서 새창 바로가기">pdf다운로드</a>
+                            <a href="http://middleun.dothome.co.kr/renewal" target=" _blank" title="리뉴얼 사이트 새창 바로가기">사이트 바로가기</a> -->
+                            <a href="#" title="요약서 새창 바로가기">요약서 다운로드</a>
+                            <a href="#" title="movie api 사이트 새창 바로가기">사이트 바로가기</a>
 
                         </div>
                     </div>              
@@ -128,8 +135,10 @@
                         사용언어 <em>: css3, javascript, php</em> </p>
                         <div class="prtfol-btn button">
                             
-                            <a href="../portfolio/pdf/web_planning_2.pdf" target="_blank" title="요약서 새창 바로가기">요약서 다운로드</a>
-                            <a href="http://middleun.dothome.co.kr/fullants" target="_blank" title="식물판매사이트 새창 바로가기">사이트 바로가기</a>
+                            <!-- <a href="../portfolio/pdf/web_planning_2.pdf" target="_blank" title="요약서 새창 바로가기">요약서 다운로드</a>
+                            <a href="http://middleun.dothome.co.kr/fullants" target="_blank" title="식물판매사이트 새창 바로가기">사이트 바로가기</a> -->
+                            <a href="#" title="요약서 새창 바로가기">요약서 다운로드</a>
+                            <a href="#" title="movie api 사이트 새창 바로가기">사이트 바로가기</a>
                         </div>
                     </div>              
                 
@@ -150,11 +159,11 @@
                             <span></span>
                         </div>
 
-                        <p>식물 판매 사이트의 기획자료와 메인페이지입니다.<br><br>제작기간 <em>: 6개월</em><br>
-                        사용언어 <em>: css3, javascript, php</em> </p>
+                        <p>날씨 api를 활용해 만든 리액트 사이트입니다.<br><br>제작기간 <em>: 7일</em><br>
+                        사용언어 <em>: </em> </p>
                         <div class="prtfol-btn button">
                             
-                            <a href="#" target="_blank">요약서 다운로드</a>
+                            <a href="#">요약서 다운로드</a>
                             <a href="#">사이트 바로가기</a>
                         </div>
                     </div>              
